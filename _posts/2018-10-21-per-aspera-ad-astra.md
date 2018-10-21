@@ -32,7 +32,7 @@ Best,
 Björn
 
 # Table of Contents
-1. [What made us interested in GraphQL](what-made-us-interested-in-graphql)
+1. [What made us interested in GraphQL](/what-made-us-interested-in-graphql/)
 2. Kickstarting the project
 3. Choosing the right technology
 4. Adaptive software design
