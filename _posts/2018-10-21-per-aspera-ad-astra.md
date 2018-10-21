@@ -44,25 +44,26 @@ Björn
 10. GraphQL in a traditional application performance monitoring tool
 11. Context aware scalars
 12. Don't ever, ever, ever use the JSON scalar
-13. Who the f**k put 150k metrics per 5 minute into my Graphite?
+13. Who the f**k put 150k metrics in the last minutes into my Graphite?
 14. Resilience in a distributed environment
 15. Help, we need to upload some images
-16. Getting crazy with SDL
-17. The first GraphQL workshops
-18. Federated team structures aka building a community
-19. First field test for pure SDL schemas
-20. Managing WIP and variability
-21. Doing an internal private beta
-22. On managing risk, part 2
-23. Supercharging SDL
-24. Fixing the SDL development workflow
-25. Cashing with Varnish
-26. Team, this is Apollo!
-27. Our mutation semantics suck
-28. Delegating epic level priority to the organisation
-29. Metrics and alerts, part 2
-30. Limitations of federated structures
-31. Improving image uploads
-32. Beyond the private beta
+16. Documentation first, instead of an afterthought
+17. Getting crazy with SDL
+18. The first GraphQL workshops
+19. Federated team structures aka building a community
+20. First field test for pure SDL schemas
+21. Managing WIP and variability
+22. Doing an internal private beta
+23. On managing risk, part 2
+24. Supercharging SDL
+25. Fixing the SDL development workflow
+26. Cashing with Varnish
+27. Team, this is Apollo!
+28. Our mutation semantics suck
+29. Delegating epic level priority to the organisation
+30. Metrics and alerts, part 2
+31. Limitations of federated structures
+32. Improving image uploads
+33. Beyond the private beta
 
 ... and probably some other topics
