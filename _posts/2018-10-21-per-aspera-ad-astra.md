@@ -7,7 +7,7 @@ All of this kinda changed when I became responsible for a little, then still unn
 
 At the time `GraphQL` was still fairly new and certainly not such a hot topic as it is today. 
 It was just me in the beginning. Not a single line of code was yet written. No clue what 
-programming language we would use. All I knew back then was what I wanted to achieve and that `GraphQL` could be an important piece to the puzzle to get there. And one suspicioun: That the organisational impact of `GraphQL` might be on a different scale, compared to other technologies I had used before.
+programming language we would use. All I knew back then was what I wanted to achieve and that `GraphQL` could be an important piece to the puzzle to get there. And one suspicion: That the organisational impact of `GraphQL` might be on a different scale, compared to other technologies I had used before.
 
 Today more than 45 engineers have contributed to `XING One`, our `GraphQL` to `REST` proxy. It's not yet powering all of our products but some of the more important ones. It's also on the verge of becoming "the way to build things" at XING. 
 
