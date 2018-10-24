@@ -36,5 +36,24 @@ Remember part of the teams mission statement was to make the APIs as easy and se
 Ultimately this experience made me realize that whatever solution might appear in the future that would improve the API game for mobile applications, it would be one with a very good developer experience and strong, multi platform tooling support.
 
 # 2014
+Between 2012 and 2014 something interesting happened somwhere else inside `XING`. When I started in the company in 2012, the majority of the developers was still working in one of two monolithic applications. One being written in `Perl` (the original `OpenBC`) and another one in `Ruby on Rails` (containing all recent developments). 
+
+#TODO: insert picture here
+
+But a larget project had been already started by the Architecture team to break apart the `Rails` monolith and introduce `HTTP+JSON` APIs in between. `XING` was already experiencing the first wave of organisational growth challenges and the platform architecture moved into the direction of something akin to a service oriented architecture. With that timeouts, concurrency and partial results also became something to deal with for the backend applications. 
+
+#TODO: insert picture here.
+
+I had moved on from the API team and after a short stint working on our hybrid `iPad` application, I found some new interesting challengines in the Architecture team. Even though it was not my responsibility anymore, the API topic never really let go of me and I kept constantly wondering about a better solution.
+
+Another trend in 2014 emerged: Mobile first. And with that the development resources for the native mobile applications were heavily scaled up. What became obvious pretty fast was that the API team, as the primary data source for the mobile applications, became an organisational bottleneck, because more and more teams were waiting for new APIs to appear. It was a classic `Littles Law` effect. Demand went up, capacity stayed the same and waiting queues started to form. The organisation didn't take long to react and somewhere during 2014 we made the decision to distribute the responsibilities for building the mobile APIs to all backend applications. The infrastructure for the public API was again re-used and became a proxy that was dealing with authentication and ratelimiting. The actual business logic resides in the connected APIs.
+
+#TODO: insert picture here
+
+We lost some features along the way (the mentioned `fields` / `user_fields` being one of them), but this change allowed teams to break out of the public API conventions. Some teams experimented with new forms of APIs, screen based ones. We didn't call it that way but I think later the same idea was coined `Backends For Frontends` or just `BFF`. The idea with `BFF` in the mobile case being that request coordination closer to the APIs reduces the likelyhood of partial results and that performance shortcomings could be easier addressed in the backend. 
+
+In general this change was perceived well at the time. But trouble was already showing up on the horizon. These freedoms were a double edged sword. Using different APIs with different concepts was not always considered as a win by mobile developers. Turns out they actually like the consistency the old public API was giving them. Even worse, since now everyone was building APIs (mostly in untyped languages), even more inconsistencies started to creep in that drove some people nuts. For example dates in one API were expressed as `iso8601` strings, in a different one as `seconds from epoc` and in a third one as a `JSON` object with `day`,`month`, etc fields.
 
 # 2016
+
+# So why GraphQL?
