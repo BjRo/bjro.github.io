@@ -11,7 +11,7 @@ Unfortunately, driven by the overarching goal to make things as straightforward 
 
 Talking about change, I think there's a field of tension if you're attempting to re-use a public API for your mobile applications (or the other way around) like we did. Good public APIs are like a promise of stability. They change very infrequently. You can rely on them and build solid, long living integrations on them. And judging from my experience, it takes significant time to design them that way. 
 
-On the other end of the spectrum are your own mobile applications where you (or at least the company) more often than not want to iterate fast, get features out as fast as you can and learn based on actual usage. These two things were always at odds at the time. Often the desired change some of our product teams wanted to make wasn't easily possible without breaking exising consumers of the public API, or introducing some kind of versioning which we tried not to do at the time (since we just had come out with the v1 of the API). 
+On the other end of the spectrum are your own mobile applications where you (or at least the company) more often than not want to iterate fast, get features out as fast as you can and learn based on actual usage. These two things were always at odds at the time. Often the desired change some of our product teams wanted to make wasn't easily possible without breaking existing consumers of the public API, or introducing some kind of versioning which we tried not to do at the time (since we just had come out with the v1 of the API). 
 
 > Side joke: Guess what the version number of the public API is in 2018?
 
@@ -21,7 +21,7 @@ Usually we would end up with either additional API calls to get the necessary da
 
 But we did have a lot of talks about the "real `REST`", this elusive unicorn. My colleagues from that time can probably acknowledge that I in particular might have been pretty much a pain in the ass about that one, at least for some time. Like many people at the time I've read Fieldings thesis and the few available books for that topic. I was exited about it because it seemed to offer a way out of the coupling problems we experienced with our API consumers (if the client played by the rules). 
 
-Whenver I tried to convince my peers though, the exitement grinded to halt in record time. Discussions usually ended with blank stares, when we came to the point clients had to do in order to make the `Hypermedia` game work. 
+Whenever I tried to convince my peers though, the excitement grinded to halt in record time. Discussions usually ended with blank stares, when we came to the point clients had to do in order to make the `Hypermedia` game work. 
 
 > ME: So, what do you think about that?
 
@@ -36,43 +36,43 @@ Remember part of the teams mission statement was to make the APIs as easy and se
 Ultimately this experience made me realize that whatever solution might appear in the future that would improve the API game for mobile applications, it would be one with a very good developer experience and strong, multi platform tooling support.
 
 # 2014
-Between 2012 and 2014 something interesting happened somwhere else inside `XING`. When I started in the company in 2012, the majority of the developers was still working in one of two monolithic applications. One being written in `Perl` (the original `OpenBC`) and another one in `Ruby on Rails` (containing all recent developments). The architecture kinda looked like this:
+Between 2012 and 2014 something interesting happened somewhere else inside `XING`. When I started in the company in 2012, the majority of the developers was still working in one of two monolithic applications. One being written in `Perl` (the original `OpenBC`) and another one in `Ruby on Rails` (containing all recent developments). The architecture kinda looked like this:
 
 #TODO: insert picture here
 
-But a larget project had been already started by the Architecture team to break apart the `Rails` monolith and introduce `HTTP+JSON` APIs in between. `XING` was already experiencing the first wave of organisational growth challenges and the platform architecture moved into the direction of something akin to a service oriented architecture. With that request coordination, timeouts and partial results also became something to deal with for the backend applications. 
+But a larger project had been already started by the Architecture team to break apart the `Rails` monolith and introduce `HTTP+JSON` APIs in between. `XING` was already experiencing the first wave of organizational growth challenges and the platform architecture moved into the direction of something akin to a service oriented architecture. With that request coordination, timeouts and partial results also became something to deal with for the backend applications. 
 
 #TODO: insert picture here.
 
 I had moved on from the API team and after a short stint working on our hybrid `iPad` application, I found some new interesting challenges in the Architecture team.
 
-Another trend in 2014 emerged: Mobile first. And with that the development resources for the native mobile applications were heavily scaled up. What became obvious pretty fast was that the API team, as the primary data source for the mobile applications, became an organisational bottleneck, because more and more teams were waiting for new APIs to appear. It was a classic `Littles Law` effect. Demand went up, capacity stayed the same and waiting queues started to form. The organisation didn't take long to react and somewhere during 2014 we made the decision to distribute the responsibilities for building the mobile APIs to all backend applications. The infrastructure for the public API was still re-used for it, but limited to a simple proxy dealing with authentication and ratelimiting. The actual business logic resides in the connected APIs (including all responsibilities for getting all necessary dependent data).
+Another trend in 2014 emerged: Mobile first. And with that the development resources for the native mobile applications were heavily scaled up. What became obvious pretty fast was that the API team, as the primary data source for the mobile applications, became an organizational bottleneck, because more and more teams were waiting for new APIs to appear. It was a classic `Littles Law` effect. Demand went up, capacity stayed the same and waiting queues started to form. The organization didn't take long to react and somewhere during 2014 we made the decision to distribute the responsibilities for building the mobile APIs to all backend applications. The infrastructure for the public API was still re-used for it, but limited to a simple proxy dealing with authentication and rate-limiting. The actual business logic resides in the connected APIs (including all responsibilities for getting all necessary dependent data).
 
 #TODO: insert picture here
 
-We lost some features along the way (the mentioned `fields` / `user_fields` being one of the),but this change allowed teams to break out of the public API conventions (if they wanted to). Some teams experimented with new forms of APIs, screen based ones. We didn't call it that way but I think later the same idea was coined `Backends For Frontends` or just `BFF`. The idea with `BFF` in the mobile case being that request coordination closer to the APIs reduces the likelyhood of partial results and that performance shortcomings could be easier addressed in the backend. 
+We lost some features along the way (the mentioned `fields` / `user_fields` being one of the),but this change allowed teams to break out of the public API conventions (if they wanted to). Some teams experimented with new forms of APIs, screen based ones. We didn't call it that way but I think later the same idea was coined `Backends For Frontends` or just `BFF`. The idea with `BFF` in the mobile case being that request coordination closer to the APIs reduces the likelihood of partial results and that performance shortcomings could be easier addressed in the backend. 
 
 In general this change was perceived well at the time. But trouble was already showing up on the horizon. This change was a double edged sword. Using different APIs with different concepts was not always considered as a win by mobile developers. Turns out they actually like the consistency the old public API was giving them. Even worse, since now everyone was building APIs (mostly in untyped languages), even more inconsistencies started to creep in that drove some people nuts. For example dates in one API were expressed as `iso8601` strings, in a different one as `seconds from epoc` and in a third one as a `JSON` object with `day`,`month`, etc fields. Also screen based APIs are a lot less long lived (at least in the experience I gathered at `XING`). A next version of the mobile application might have completely different requirements for the screen and since you can't (or don't want to) shut the old version down (since some people are still using it), now a backend team is the unfortunate situation to handle multiple versions of these screen APIs. 
 
 Last but not least, let's admit it, programming in a distributed environment is quite a bit harder than in a monolithic application. There's a reason why the first rule of distribution is "Don't distribute". Getting your mobile API to be robust and perform well in a distributed setting requires often quite a bit of thinking about failure modes and how to deal with them. Over the years I've seen them all: 
 
 * Huge wait time passenger request pools because somebody was having a 10 second timeout somewhere on a dependency that was having some issue
-* An API that was so well craften that it managed to produce internal 1k requests on a single request (when actually <10 would have been suffice)
+* An API that was so well crafted that it managed to produce internal 1k requests on a single request (when actually <10 would have been suffice)
 * APIs that simply ran into a 500 sitation whenever one dependency couldn't be reached
 
 The list can probably go further. The jump into this kind of architecture is not easy and definitely comes with a cost associated.
 
-> It makes me even more chuckle seeing some people on the internet advocating microservice architecture (that shares similar traits) to small teams when starting their app. Good luck my friends, good luck.
+> It makes me even more chuckle seeing some people on the internet advocating micro-service architecture (that shares similar traits) to small teams when starting their app. Good luck my friends, good luck.
 
 # 2016
-During 2016 more interesting stuff happened. The quick fixes outlined above allowed us to parallelize our API development and with that our mobile development quite a bit. And we grew as an organisation A LOT. Just to give you and idea: This is one of the slides I've been using in internal and external presentations for this. Together with the growth, the complexities associated with our quick fix noticably caused more and more pain in our organisation. The general theme emerged that it's too difficult for frontend colleagues to develop on our platform and we're loosing development speed because of that. We did an extensive survey with our colleagues that supported the perceived mood.
+During 2016 more interesting stuff happened. The quick fixes outlined above allowed us to parallelize our API development and with that our mobile development quite a bit. And we grew as an organization A LOT. Just to give you and idea: This is one of the slides I've been using in internal and external presentations for this. Together with the growth, the complexities associated with our quick fix noticeably caused more and more pain in our organization. The general theme emerged that it's too difficult for frontend colleagues to develop on our platform and we're loosing development speed because of that. We did an extensive survey with our colleagues that supported the perceived mood.
 
-Also `React` became a thing (pushed by our collegues from the Frontend Architecture department) and with that teams needed to support yet another breed of APIs. I was part of the revamp project for `XINGs` messages section at the time. Internally we call it the "messenger". Its web version was one of the first larger projects written in `React` at `XING`. What we realized somewhere mid in the project is that we basically were building pretty much the same APIs for mobile and the web, but due to some differences on how they needed to integrate with the rest of the platform, we had to expose them twice: Once for mobile, once for web. What a bummer :-/
+Also `React` became a thing (pushed by our colleagues from the Frontend Architecture department) and with that teams needed to support yet another breed of APIs. I was part of the revamp project for `XINGs` messages section at the time. Internally we call it the "messenger". Its web version was one of the first larger projects written in `React` at `XING`. What we realized somewhere mid in the project is that we basically were building pretty much the same APIs for mobile and the web, but due to some differences on how they needed to integrate with the rest of the platform, we had to expose them twice: Once for mobile, once for web. What a bummer :-/
 
 These two things in combination were the last drops that were necessary to convince us that we needed to do something more radical about the API topic and a new project was started. This eventually became `XING One`, the project and `XING One` the application which I want to talk about in more detail in this series.
 
 # Our requirements
-This was probably the longest prologue I've ever written for a blog post. I hope I didn't lose you on the way. What I hopefully managed to convey is the steps and misteps we made with our API and what impact it had on the organisation as a whole as it grew. 
+This was probably the longest prologue I've ever written for a blog post. I hope I didn't lose you on the way. What I hopefully managed to convey is the steps and missteps we made with our API and what impact it had on the organization as a whole as it grew. 
 
 When we were gathering requirements for our new project, one thing became very clear: We wanted the new solution to have the good properties of our previous ones, while having less of their downsides. 
 
@@ -101,10 +101,10 @@ If you go through the desired characteristics, some obviously needed some creati
 - The server takes care of a lot of the request coordination aspects that formerly developers needed to figure out
 - It can fetch many different things in a single `GraphQL` query (latency optimization)
 - It only gives you back what you requested (bandwidth optimization)
-- Its sematic are clearly defined in a specification that's openly available, so `GraphQL` probably wouldn't stay particularly tied to the technology stack of the reference implemention
+- Its semantics are clearly defined in a specification that's openly available, so `GraphQL` probably wouldn't stay particularly tied to the technology stack of the reference implementation
 
-For the rest, we thought could probably fill in the blanks and make it somehow work. At the end of 2016 first glimses of SDL, the Schema Definition Language, showed up and we decided to make a lofty goal: This how we wanted the glue code between our infrastructure and the underlying APIs look like. The people that work with our system shouldn't have to learn the programming language in which we would develop the infrastructure in. We would have to extend the format for that to work, but we were highly energetic and commited to figure that out.
+For the rest, we thought could probably fill in the blanks and make it somehow work. At the end of 2016 first glimpses of SDL, the Schema Definition Language, showed up and we decided to make a lofty goal: This how we wanted the glue code between our infrastructure and the underlying APIs look like. The people that work with our system shouldn't have to learn the programming language in which we would develop the infrastructure in. We would have to extend the format for that to work, but we were highly energetic and committed to figure that out.
 
-But before we were to start this technological adventure, I felt that it was necessary to do some additional non technical steps: Basically setting this project up for success in the organisation. 
+But before we were to start this technological adventure, I felt that it was necessary to do some additional non technical steps: Basically setting this project up for success in the organization. 
 
 How exactly I approached this is a topic for the next entry in the series ...
