@@ -67,12 +67,44 @@ The list can probably go further. The jump into this kind of architecture is not
 # 2016
 During 2016 more interesting stuff happened. The quick fixes outlined above allowed us to parallelize our API development and with that our mobile development quite a bit. And we grew as an organisation A LOT. Just to give you and idea: This is one of the slides I've been using in internal and external presentations for this. Together with the growth, the complexities associated with our quick fix noticably caused more and more pain in our organisation. The general theme emerged that it's too difficult for frontend colleagues to develop on our platform and we're loosing development speed because of that. We did an extensive survey with our colleagues that supported the perceived mood.
 
-Also `React` became a thing (pushed by our collegues from the Frontend Architecture department) and with that teams needed to support yet another breed of APIs. I was part of the revamp project for `XINGs` messages section at the time. Internally we called it the "messenger" project. The web version was one of the first larger projects written in `React` at `XING`. What we realized somewhere mid in the project is that we basically had build pretty much the same APIs for mobile and the web, but due to some differences on how they needed to integrate with the rest of the platform, we had to expose them twice: Once for mobile, once for web. What a bummer :-/
+Also `React` became a thing (pushed by our collegues from the Frontend Architecture department) and with that teams needed to support yet another breed of APIs. I was part of the revamp project for `XINGs` messages section at the time. Internally we call it the "messenger". Its web version was one of the first larger projects written in `React` at `XING`. What we realized somewhere mid in the project is that we basically were building pretty much the same APIs for mobile and the web, but due to some differences on how they needed to integrate with the rest of the platform, we had to expose them twice: Once for mobile, once for web. What a bummer :-/
 
-Unfortunately at the time, my boss in the Architecture team didn't consider this a problem worth solving. At the time I was really dissatisfied about this. Even though API wasn't my direct responsibility anymore, the topic never really let go of me and I kept constantly wondering about how we could improve this. Again, distance makes some things clearer. Compared to the rest of the organisation, the Architecture team had always more topics on their plate than they could realistically handle. They weren't adjusted to the growth of the organisation, but their responsibilties stayed the same. Now being responsible for a team myself, I can understand why sometimes you have to make tough decisions about what not to do in order to protect your team.
-
-Fortunately for me though his boss thought this problem needs to be direly changed and was already starting to setup a project for this. And that's how I ended up in the driving seat of a project that was tasked with improving the situation. However not in the Architecture team, but in the API team (or what was left of it at the end of 2016). You could say I went full circle.
+These two things in combination were the last drops that were necessary to convince us that we needed to do something more radical about the API topic and a new project was started. This eventually became `XING One`, the project and `XING One` the application which I want to talk about in more detail in this series.
 
 # Our requirements
+This was probably the longest prologue I've ever written for a blog post. I hope I didn't lose you on the way. What I hopefully managed to convey is the steps and misteps we made with our API and what impact it had on the organisation as a whole as it grew. 
+
+When we were gathering requirements for our new project, one thing became very clear: We wanted the new solution to have the good properties of our previous ones, while having less of their downsides. 
+
+To give you an idea what that meant, we figured that our target solution should have the following properties. It should ...
+
+1. eliminate the need to write different APIs for mobile and web
+2. integrate well with our existing internal APIs and internal API conventions
+3. have a very clear separation of business logic and the other infrastructure concerns, where the business logic resides in backend APIs and the infrastructure is almost 100% free of business logic
+4. allow the domain teams to be more agile with their APIs by making more information available about who is using what and allowing more flexibility in exposing content
+5. improve consistency in the whole API
+6. free our frontend developers from a lot of the request coordination ceremony
+8. ideally be build around an existing standard with available tools that our developers could leverage
+9. be easy to extend and teach
+10. have a top not development experience
 
 # So why GraphQL?
+I still remember the first wave of `GraphQL` talks that were coming out in 2015. They weren't showing much code at the time, but I remember thinking: "Jeeez, this might be it", "Hey that almost sounds like they had similar problems" or "I bet this could develop into something that might be super helpful to fix our API issues".
+
+If you go through the desired characteristics, some obviously needed some creativity from us, but others were already solved by how `GraphQL` was conceptually designed.
+
+- The idea that the server exposes a type system greatly helps with the consistency issue
+- The introspection capabilities form the basis for top not tools
+- Those in turn lead to a first class development experience 
+- Explicit queries against the type system improve the insights on the backend side about who is using what by a significant margin
+- The setup that `Lee Byron`, `Dan Schafer` and `Nick Schrock` were showing in their early presentations was also an API gateway, where the logic resided in the underlying APIs. Exactly The separation we wanted to have
+- The server takes care of a lot of the request coordination aspects that formerly developers needed to figure out
+- It can fetch many different things in a single `GraphQL` query (latency optimization)
+- It only gives you back what you requested (bandwidth optimization)
+- Its sematic are clearly defined in a specification that's openly available, so `GraphQL` probably wouldn't stay particularly tied to the technology stack of the reference implemention
+
+For the rest, we thought could probably fill in the blanks and make it somehow work. At the end of 2016 first glimses of SDL, the Schema Definition Language, showed up and we decided to make a lofty goal: This how we wanted the glue code between our infrastructure and the underlying APIs look like. The people that work with our system shouldn't have to learn the programming language in which we would develop the infrastructure in. We would have to extend the format for that to work, but we were highly energetic and commited to figure that out.
+
+But before we were to start this technological adventure, I felt that it was necessary to do some additional non technical steps: Basically setting this project up for success in the organisation. 
+
+How exactly I approached this is a topic for the next entry in the series ...
