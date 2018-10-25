@@ -69,8 +69,9 @@ During 2016 more interesting stuff happened. The quick fixes outlined above allo
 
 Also `React` became a thing (pushed by our collegues from the Frontend Architecture department) and with that teams needed to support yet another breed of APIs. I was part of the revamp project for `XINGs` messages section at the time. Internally we called it the "messenger" project. The web version was one of the first larger projects written in `React` at `XING`. What we realized somewhere mid in the project is that we basically had build pretty much the same APIs for mobile and the web, but due to some differences on how they needed to integrate with the rest of the platform, we had to expose them twice: Once for mobile, once for web. What a bummer :-/
 
-TODO: Switch out of architecture team
-Even though it wasn't my responsibility anymore, the API topic never really let go of me and I kept constantly wondering about a better solution.
+Unfortunately at the time, my boss in the Architecture team didn't consider this a problem worth solving. At the time I was really dissatisfied about this. Even though API wasn't my direct responsibility anymore, the topic never really let go of me and I kept constantly wondering about how we could improve this. Again, distance makes some things clearer. Compared to the rest of the organisation, the Architecture team had always more topics on their plate than they could realistically handle. They weren't adjusted to the growth of the organisation, but their responsibilties stayed the same. Now being responsible for a team myself, I can understand why sometimes you have to make tough decisions about what not to do in order to protect your team.
+
+Fortunately for me though his boss thought this problem needs to be direly changed and was already starting to setup a project for this. And that's how I ended up in the driving seat of a project that was tasked with improving the situation. However not in the Architecture team, but in the API team (or what was left of it at the end of 2016). You could say I went full circle.
 
 # Our requirements
 
