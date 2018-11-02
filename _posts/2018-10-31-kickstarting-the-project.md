@@ -1,4 +1,5 @@
 ---
+title: Kickstarting the XING One project
 ---
 The last time around I shed some light on why `GraphQL` was appealing to me for sorting out our API game. It would have been easy after the project was green lit just to directly dive into the technical challenges. 
 
