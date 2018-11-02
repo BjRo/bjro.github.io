@@ -52,14 +52,14 @@ I had moved on from the API team and after a short stint working on our hybrid `
 
 Another trend in 2014 emerged: Mobile first. And with that the development resources for the native mobile applications were heavily scaled up. What became obvious pretty fast was that the API team, as the primary data source for the mobile applications, became an organizational bottleneck, because more and more teams were waiting for new APIs to appear. It was a classic `Littles Law` effect. Demand went up, capacity stayed the same and waiting queues started to form. The organization didn't take long to react and somewhere during 2014 we made the decision to distribute the responsibilities for building the mobile APIs to all backend applications. The infrastructure for the public API was still re-used for it, but limited to a simple proxy dealing with authentication and rate-limiting. The actual business logic resides in the connected APIs (including all responsibilities for getting all necessary dependent data).
 
-We lost some features along the way (the mentioned `fields` / `user_fields` being one of the),but this change allowed teams to break out of the public API conventions (if they wanted to) and get rid of sharing APIs with external consumers. Some teams experimented with new forms of APIs, screen based ones. We didn't call it that way but I think later the same idea was coined `Backends For Frontends` or just `BFF`. The idea with `BFF` in the mobile case being that request coordination closer to the APIs reduces the likelihood of partial results and that performance shortcomings could be easier addressed in the backend. 
+We lost some features along the way (the mentioned `fields` / `user_fields` being one of the), but this change allowed teams to break out of the public API conventions (if they wanted to) and get rid of sharing APIs with external consumers. Some teams experimented with new forms of APIs, screen based ones. We didn't call it that way but I think later the same idea was coined `Backends For Frontends` or just `BFF`. The idea with `BFF` in the mobile case being that request coordination closer to the APIs reduces the likelihood of partial results and that performance shortcomings could be easier addressed in the backend. 
 
 In general this change was perceived well at the time. But trouble was already showing up on the horizon. This change was a double edged sword. Using different APIs with different concepts was not always considered as a win by mobile developers. Turns out they actually like the consistency the old public API was giving them. Even worse, since now everyone was building APIs (mostly in untyped languages), even more inconsistencies started to creep in that drove some people nuts. For example dates in one API were expressed as `iso8601` strings, in a different one as `seconds from epoc` and in a third one as a `JSON` object with `day`,`month`, etc fields. Also screen based APIs are a lot less long lived (at least in the experience I gathered at `XING`). A next version of the mobile application might have completely different requirements for the screen and since you can't (or don't want to) shut the old version down (since some people are still using it), now a backend team is in the unfortunate situation to handle multiple versions of these screen APIs. 
 
 Last but not least, let's admit it, programming in a distributed environment is quite a bit harder than in a monolithic application. There's a reason why the first rule of distribution is "Don't distribute". Getting your mobile API to be robust and perform well in a distributed setting requires often quite a bit of thinking about failure modes and how to deal with them. Over the years I've seen them all: 
 
 * Huge wait time and exhausted request pools because somebody was having a 10 second timeout somewhere on a dependency that was having some issues
-* An API that was so well crafted that it managed to produce internally 1k requests on a single request (when actually <10 would have been suffice)
+* An API that was so well crafted that it managed to produce internally 1k requests on a single request (when actually <10 would have been sufficient)
 * APIs that simply ran into a 500 sitation whenever one dependency couldn't be reached
 
 The list can probably go further. The jump into this kind of architecture is not easy and definitely comes with a cost associated.
@@ -93,7 +93,7 @@ To give you an idea what that meant, we figured that our target solution should 
 7. free our backend developers from a lot of response coordination ceremony when assembling responses
 8. ideally be build around an existing standard with available tools that our developers could leverage
 9. be easy to extend and teach
-10. have a top not development experience
+10. have a top notch development experience
 
 The picture that was forming in our head as a goal looked like this:
 
