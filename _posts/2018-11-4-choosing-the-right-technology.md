@@ -34,7 +34,7 @@ We extracted all gaps of knowledge and risks we surfaced in the `Premortem` that
 In the end the shortlist of candidates for our prototyping phase were:
 
 * `Ruby` with [graphql-ruby](https://github.com/rmosolgo/graphql-ruby)
-* `Javascript` with [graphql-js](https://github.com/graphql/graphql-js) and [apollo-server](https://github.com/apollographql/apollo-server)
+* `Javascript` with the [graphql-js](https://github.com/graphql/graphql-js) reference implementation
 * `Elixir` with [absinthe](https://github.com/absinthe-graphql/absinthe)
 * and `Scala` with [Sangria](https://github.com/sangria-graphql/sangria)
 
@@ -54,7 +54,7 @@ On top of that it contained a whole bunch of other things to investigate:
 * How easy is it to get changes in when necessary?
 * As a gut feeling how big is the part that we need to build on top and what was our gut feeling whether we could pull this of?
 
-I wrote the prototypes for `Ruby`, `Scala` and `Javascript`. During the third week of the prototyping phase [Alexis Mas](https://www.xing.com/profile/Alexis_Mas/cv) joined the project, coming over from a different part of the company (together with the rest of our old API infrastructure). He build the `Elixir` prototype. And finally I wasn't alone in this anymore.
+I wrote the prototypes for `Ruby`, `Scala` and `Javascript`. During the third week of the prototyping phase [Alexis Mas](https://www.xing.com/profile/Alexis_Mas/cv) joined the project, coming over from a different part of the company. He build the `Elixir` prototype. And finally I wasn't alone in this anymore.
 
 We had planned to use only 1 month for the evaluation. In the end it took us 1,5 months. The net result of the prototyping phase can be seen in the following two pictures. The symbols you see in the checklist follow the following scheme:
 
@@ -66,7 +66,7 @@ Please note that your looking at the summary overview. Internally a longer descr
 
 > I'm pretty certain that our conclusions might be not be shared by some folks out there. We tried hard to make them somewhat transparent and comprehensible, but they still contain subjective impressions. But hey, companies are different and not everyone might arrive at the same conclusions coming from different contexts. 
 >
->Please also note that we were doing this evaluation in __February 2017__. Some implementations, `Apollo` in particular, have made a larger jump in their capabilities. Re-doing the evaluation today might result in a slightly different ranking. I doubt though, that the top spot for us would be different.
+>Please also note that we were doing this evaluation in __February 2017__. Work on `apollo-server` had just begun. Re-doing the evaluation today might result in a slightly different ranking. I doubt though, that the top spot for us would be different.
 
 # Why we chose Sangria
 In the end `Sangria`, the `Scala` solution, turned out to be our favorite. It collected many plus points during the prototyping phase:
@@ -76,11 +76,11 @@ In the end `Sangria`, the `Scala` solution, turned out to be our favorite. It co
 * The concurrency capabilities of the platform looked like a good fit for our proxy scenario and `Sangria` provided a lot of interesting batching and execution options out of the box. 
 * Some features were already implemented in `Sangria` that were still being discussed in the `GraphQL` community at the time and lacking in some of the other implementations (for instance the complexity analysis or SDL based schema materialization)
 
-Last but not least, I had a good gut feeling about `Sangria` as an open source project itself. In the short contacts and brief online interactions I had with its maintainer [Oleg Ilyenko](https://github.com/OlegIlyenko) I was amazed how knowledgable and at the same time humble and helpful he was. My impression was that if we would ever run into dead-ends with `Sangrias` code, for most scenarios we wouldn't have to run a fork, simply because of `Sangrias` extensibility. And for the other cases where this wasn't true, we could work with him to bring the necessary changes to `Sangria`. This gut feeling turned out to be true multiple times and I think this is also one of the reasons for the success of `Sangria` and why especially bigger companies seem to be betting on it. I'll write a bit more about that aspect in future posts, promised :)
+Last but not least, I had a good gut feeling about `Sangria` as an open source project itself. In the short contacts and brief online interactions I had with its maintainer [Oleg Ilyenko](https://github.com/OlegIlyenko) I was amazed how knowledgable and at the same time humble and helpful he was. My impression was that if we would ever run into dead-ends with `Sangrias` code, for most scenarios we wouldn't have to run a fork, simply because of `Sangrias` extensibility. And for the other cases where this wasn't true, we could work with him to bring the necessary changes to `Sangria`. This gut feeling turned out to be true multiple times and I think this is also one of the reasons for the success of `Sangria` and why especially bigger companies seem to be betting on it. I'll write a bit more about that aspect in future posts, promised! 
 
-Choosing `Sangria` is one of those decisions that I've never regretted. I never even once looked back thinking "This would be so much easier|better|cooler in XYZ". We're still happy with that choice, even after roughly 1,5 years of working with it. And you will see in the following posts, that our usage of `Sangria` is, well, a bit unconventional (to say the least). 
+Choosing `Sangria` is one of those decisions that I've never regretted. I never even once looked back thinking "This would be so much easier, better or cooler in XYZ". We're still happy with that choice, even after roughly 1,5 years of working with it. And you will see in the following posts, that our usage of `Sangria` is, well, a bit unconventional (to say the least). 
 
-In the next post I will talk a bit about the initial game plan we derived from the `Premortem` and prototyping phase. Remember, in the last post, I mentioned that we were simultaneously building a new version of the profile with the respective product team. But so far we didn't have a single line of code written (since we archived the prototypes and started again from scratch). Obviously we had some stuff to figure out at that stage. 
+In the next post I will talk a bit about the initial game plan we derived from the `Premortem` and prototyping phase. Remember, in the last post, I mentioned that we were simultaneously building a new version of the profile with the respective product team. But so far we didn't have a single line of code written (since we archived the prototypes and started again from scratch). Obviously we had some additional stuff to figure out at that stage. 
 
 I hope you enjoyed this. See you next time around!!!
 
