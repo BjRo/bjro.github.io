@@ -39,7 +39,7 @@ In the end the shortlist of candidates for our prototyping phase were:
 
 How did we end up with those? The reason for this is two-fold. First, we made a pre-requisite that for every technology stack option we would require at least some minimal in-house production experience. This was primarily intended as a fallback scenario when our problem solving or troubleshooting skills hit an impasse.
 
-Second, we didn't want to to have deep integration into our monitoring and deployment infrastructure in the critical project path. (I was just coming of a stint in our messenger product where I spend 1,5 months of building integration with our in-house messaging system for `Elixir`)
+Second, we didn't want to to have deep integration into our monitoring and deployment infrastructure in the critical project path. (I was just coming of a stint in our messenger product where I spend 1,5 months building an integration with our in-house messaging system for `Elixir`)
 
 Our checklist contained an example schema, 3 different `GraphQL` queries and 1 `GraphQL` mutation to execute against the server. That was primarily for observing and comparing the execution behavior, but also to get a decent understanding how a `GraphQL` server in general works. 
 
