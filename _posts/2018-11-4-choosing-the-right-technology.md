@@ -1,7 +1,7 @@
 ---
 title: Choosing the right technology for XING One
 ---
-Figuring out what technology to use for a large scale, long term project is never an easy feat. 8 years ago `XING` was pretty much only using `Perl` and `Ruby (on Rails)` in the backend. In 2017 we had plenty of options to choose from: `Java`, `Scala`, `Elixir`, `Go`, `PHP` and `Ruby`. Most of them offer `GraphQL` implementations. 
+Figuring out what technology to use for a large scale, long term project is never an easy feat. 8 years ago `XING` was pretty much only using `Perl` and `Ruby (on Rails)` in the backend. In 2017 we had plenty of options to choose from: `Java`, `Scala`, `Elixir`, `PHP`, `Javascript` and `Ruby`. Most of them offer `GraphQL` implementations. 
 
 So how do you skin that cat?
 
@@ -80,8 +80,8 @@ Last but not least, I had a good gut feeling about `Sangria` as an open source p
 
 Choosing `Sangria` is one of those decisions that I've never regretted. I never even once looked back thinking "This would be so much easier, better or cooler in XYZ". We're still happy with that choice, even after roughly 1,5 years of working with it. And you will see in the following posts, that our usage of `Sangria` is, well, a bit unconventional (to say the least). 
 
-In the next post I will talk a bit about the initial game plan we derived from the `Premortem` and prototyping phase. Remember, in the last post, I mentioned that we were simultaneously building a new version of the profile with the respective product team. But so far we didn't have a single line of code written (since we archived the prototypes and started again from scratch). Obviously we had some additional stuff to figure out at that stage. 
+Now, you might remember from the last post, that we were not planning to build our `GraphQL` infrastructure in isolation. Instead were gearing up to build a new version of the profile with the respective product team. There was only one tiny complication: In March 2017, not a single line of production code for our infrastructure was yet written (since we archived the prototypes). On top, a bit more than one week of `Scala` coding also did not magically turn us into `Scala` professionals. Obviously we had some additional stuff to figure out for our next steps. And we had to figure them out fast.
 
-I hope you enjoyed this. See you next time around!!!
+In the next post I will talk a bit about the initial game plan we derived from the `Premortem` and prototyping phase. I'll also outline our ideas for the general design of our `GraphQL` infrastructure and how we wanted to evolve it over the year. I hope you enjoyed this one. See you next time around!!!
 
 :wq
