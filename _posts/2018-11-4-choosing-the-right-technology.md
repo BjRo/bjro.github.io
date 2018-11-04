@@ -7,21 +7,20 @@ So how do you skin that cat?
 
 First of all, I made the conscious decision not to make my personal skills or the widespread availability of knowhow within `XING` a trumping factor in the decision. 
 
-I had successfully delivered products and projects in `Ruby` and `Elixir` within `XING` and a longer history with `C#` before that. I even had done [Martin Oderskys Functional Programming Principles in Scala course](https://www.coursera.org/learn/progfun1) in my free-time one or two years prior to the project. All in all, I was confident enough that I would manage to get proficient enough to deliver in any programming language if I really had to. 
+I had successfully delivered products and projects in `Ruby` and `Elixir` within `XING` and a longer history with `C#` before that. I even had done Martin Oderskys [Functional Programming Principles in Scala](https://www.coursera.org/learn/progfun1) course on Coursera in my free-time one or two years prior to the project. All in all, I was confident enough that I would manage to get proficient enough to deliver in any programming language if I really had to. 
 
 I also felt that our project shouldn't be restricted by heritage and that we should pick the best solution for the company with a forward oriented mindset. If I were to base the decision predominantly on the availability of knowhow within `XING`, the answer would involuntarily lead me to `Ruby`, which is still the most used technology stack within our company in 2018. But I had my doubts whether `Ruby` would be a good implementation choice for our proxy.
 
 "Opinions", "doubts", let's be honest, we're all more or less biased one way or another. I definitely know I was biased when it came to certain technologies I had used before (at the time I was a heavy advocate for `Elixir` for example). But I thought it was a good idea to counter balance that bias through a more transparent and structured selection process.
 
 # Enter the Premortem
-Some months prior, I had read [Decisive by Chip and Dan Heath](https://www.goodreads.com/book/show/15798078-decisive) and one of the tools that was described in there, was a `Premortem`. In a nutshell a `Premortem` is the hypothetical opposite of a `Postmortem`: You don't analyze the failure after the fact, but instead hypothesize what could turn the project into a spectacular failure and then ask the simple questions of **"Why?"** and **"What would I have done about it, if I had known earlier?"**. 
+Some months prior, I had read [Decisive](https://www.goodreads.com/book/show/15798078-decisive) by Chip and Dan Heath and one of the tools that was described in there, was a `Premortem`. In a nutshell a `Premortem` is the hypothetical opposite of a `Postmortem`: You don't analyze the failure after the fact, but instead hypothesize what could turn the project into a spectacular failure and then ask the simple questions of *"Why?"* and *"What would I have done about it, if I had known earlier?"*. 
 
 Done collaboratively it allows you to surface risk and brainstorm detection and mitigation strategies from multiple viewpoints in the earlier phases of an initiative. Those phases when you can still do something about it. Of course this doesn't rule out `Black Swans`, the [unknown unknowns](https://de.wikipedia.org/wiki/There_are_known_knowns), but it certainly helps to form the right mindset: To be proactive, instead of reactive. Since it was only me back then, I mostly used my boss as the sparring partner for the `Premortem`, which also helped me to understand the project from a management perspective better. 
 
 > We did another larger `Premortem` for our rollout strategy into the company. I'll show this in a separate blog post, because this one contained one  additional element that I find fascinating: Tripwires, or how you would know when something is actually starting to happen.
 
-You don't need some sophisticated tech for this. Our first version was an `Excel` sheet that was later moved to `Confluence` for documentation purposes. To give you some general idea how this might look like, ours kinda looked like this:  
-
+You don't need some sophisticated tech for this. Our first version was an `Excel` sheet that was later moved to `Confluence` for documentation purposes. To give you some general idea how this might look like, ours kinda looked like this (even though this is just an excerpt, the real one is multiple pages long):  
 {% include figure image_path="/assets/images/premortem.png" %}
 
 # The checklist
@@ -82,6 +81,6 @@ Choosing `Sangria` is one of those decisions that I've never regretted. I never 
 
 Now, you might remember from the last post, that we were not planning to build our `GraphQL` infrastructure in isolation. Instead were gearing up to build a new version of the profile with the respective product team. There was only one tiny complication: In March 2017, not a single line of production code for our infrastructure was yet written (since we archived the prototypes). On top, a bit more than one week of `Scala` coding also did not magically turn us into `Scala` professionals. Obviously we had some additional stuff to figure out for our next steps. And we had to figure them out fast.
 
-In the next post I will talk a bit about the initial game plan we derived from the `Premortem` and prototyping phase. I'll also outline our ideas for the general design of our `GraphQL` infrastructure and how we wanted to evolve it over the year. I hope you enjoyed this one. See you next time around!!!
+In the next post I will talk a bit about the initial game plan we derived from the `Premortem` and prototyping phase. I'll also outline our ideas for the general design of our `GraphQL` infrastructure and how we wanted to evolve it over the year. See you next time around!!!
 
 :wq
