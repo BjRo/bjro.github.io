@@ -39,7 +39,7 @@ In the end the shortlist of candidates for our prototyping phase were:
 
 How did we end up with those? The reason for this is two-fold. First, we made a pre-requisite that for every technology stack option we would require at least some minimal in-house production experience. This was primarily intended as a fallback scenario when our problem solving or troubleshooting skills hit an impasse.
 
-Second, we didn't want to to have deep integration into our monitoring and deployment infrastructure in the critical project path. (I was just coming of a stint in our messenger product where I spend 1,5 months building an integration with our in-house messaging system for `Elixir`)
+Second, we didn't want to to have deep integration into our monitoring and deployment infrastructure in the critical project path. (I was just coming of a stint in our messenger product where I spent 1,5 months on building an integration with our in-house messaging system for `Elixir`)
 
 Our checklist contained an example schema, 3 different `GraphQL` queries and 1 `GraphQL` mutation to execute against the server. That was primarily for observing and comparing the execution behavior, but also to get a decent understanding how a `GraphQL` server in general works. 
 
@@ -53,7 +53,7 @@ On top of that it contained a whole bunch of other things to investigate:
 * How easy is it to get changes in when necessary?
 * As a gut feeling how big is the part that we need to build on top and what was our gut feeling whether we could pull this of?
 
-I wrote the prototypes for `Ruby`, `Scala` and `Javascript`. During the third week of the prototyping phase [Alexis Mas](https://www.xing.com/profile/Alexis_Mas/cv) joined the project, coming over from a different part of the company. He build the `Elixir` prototype. And finally I wasn't alone in this anymore.
+I wrote the prototypes for `Ruby`, `Scala` and `Javascript`. During the third week of the prototyping phase [Alexis Mas](https://www.xing.com/profile/Alexis_Mas/cv) joined the project, coming over from a different part of the company. He built the `Elixir` prototype. And finally I wasn't alone in this anymore.
 
 We had planned to use only 1 month for the evaluation. In the end it took us 1,5 months. The net result of the prototyping phase can be seen in the following two pictures. The symbols you see in the checklist follow the following scheme:
 
