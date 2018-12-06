@@ -1,5 +1,5 @@
 ---
-title: On adaptive Software Design
+title: Regarding that A**** thing
 ---
 I've participated in efforts to deliver software for more than 15 years now. The first five using the good old waterfall approach with infrequent, big releases; the last 10 years in teams that followed one of the flavors of the agile method. 
 
@@ -40,7 +40,9 @@ I'm repeating myself here, but I want to emphasize the point. If you can't chang
 
 There are different opinions on what makes a codebase easy to refactor. Dynamic typing advocates usually mention that you have less code to work with and less abstractions that you need to deal with, while people from the static typing camp usually bring up the better tool support and that the compiler does things for you (that you don't have to write tests for).
 
-I've build production systems in `C#`, `Ruby`, `Elixir` and `Scala` now, with a bit patching and bug-fixing in `Objective-C`, `Perl` and `Erlang` sprinkled in. I always like the inital breeze of working in `Ruby`, but after applications got sufficiently large, I almost always also hated refactoring them. 
+I've build production systems in `C#`, `Ruby`, `Elixir` and `Scala` now, with a bit patching and bug-fixing in `Objective-C`, `Perl` and `Erlang` sprinkled in. I always like the initial breeze of working in `Ruby`, but after applications got sufficiently large, I almost always also hated refactoring them. 
+
+
 
 # 3. Throw out refactoring unfriendly language features
 

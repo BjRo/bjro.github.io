@@ -36,7 +36,7 @@ Björn
 2. [Kickstarting the project](/kickstarting-the-project/)
 3. [Choosing the right technology](/choosing-the-right-technology/)
 4. [The initial game plan](/the-game-plan)
-5. [Adaptive software design](/on-adaptive-software-design/)
+5. [Regarding that A**** thing](/regarding-that-a-thing/)
 6. Curating an adaptive team culture
 7. GraphQL meet lighthouse project, lighthouse project meet GraphQL
 8. Wait, are you saying I can't use the status code anymore for checking for errors?
