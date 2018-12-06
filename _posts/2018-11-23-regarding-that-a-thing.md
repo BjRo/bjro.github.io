@@ -38,13 +38,14 @@ What I want to say is this: Even though our outside `GraphQL` server interface d
 # 2. Use an refactoring friendly language stack
 I'm repeating myself here, but I want to emphasize the point. If you can't change your software fast and in a fairly cheap manner, you will have a hard time trying to work with agile and iterative product development. The ability to pull of refactoring with confidence, low ceremony and fairly low effort is key to a successful agile implementation. Move fast and break things sounds super sexy until you actually start breaking things and turn your users against your product. Your product customers like when things are predictable and they've got a feeling of certainty the product. Your boss probably, too .... and wait ... I guess you as well. So make sure that you can refactor with ease.
 
-There are different opinions on what makes a codebase easy to refactor. Dynamic typing advocates usually mention that you have less code to work with and less abstractions that you need to deal with, while people from the static typing camp usually bring up the better tool support and that the compiler does things for you (that you don't have to write tests for).
+There are different opinions on what makes a codebase easy to refactor out there. Dynamic typing advocates usually mention that you have less code to work with and less abstractions that you need to deal with, that it's faster because the compiler is usually slow. People from the static typing camp usually bring up the better tool support and that the compiler does a great job for you (whose absence you have to compensate in dynamic languages for instance by writing more tests).
 
-I've build production systems in `C#`, `Ruby`, `Elixir` and `Scala` now, with a bit patching and bug-fixing in `Objective-C`, `Perl` and `Erlang` sprinkled in. I always like the initial breeze of working in `Ruby`, but after applications got sufficiently large, I almost always also hated refactoring them. 
+I've build production systems in `C#`, `Ruby`, `Elixir` and `Scala` now, with a bit patching and bug-fixing in `Objective-C`, `Perl` and `Erlang` sprinkled in. So compared to a lot of people out there who have strong opinions regarding this, I can at least say that I spend significant time in each technology to feel its benefits and downsides first hand. I always liked the feeling of speed that you have when you're working on a new `Ruby` or `Rails` codebase. But I also have to admit that working on large `Ruby` codebases, at least for me, was almost always outside the fun category. And refactoring `Ruby` applications even today ends up with a glorified 'search and replace' and 'fingers crossed that you found all references' (yes, I've also tried `Rubymine` and didn't see a lot of improvements there).
 
-
+Once a codebase has reached a certain size I can definitely see a lot for value in static typing. Having `Resharper` in `C#` or `IntelliJ` in `Scala` at your disposal for me makes one hell of a difference. And I also think a good refactoring tool changes the way you work. You rename more often and you move stuff around more often. You can easier check where code is actually used in the codebase. And much much more.
 
 # 3. Throw out refactoring unfriendly language features
+
 
 # 4. Actual unit tests
 
