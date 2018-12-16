@@ -1,4 +1,4 @@
-title: Regarding that A**** thing
+title: On agile codebases
 ---
 I've participated in efforts to deliver software for more than 15 years now. The first five using the good old waterfall approach with infrequent, big releases; the last 10 years in teams that followed one of the flavors of the agile method. 
 
@@ -59,8 +59,12 @@ Debates about code style are lovely time-sinks and I'm super grateful for the de
 
 We also had fairly conservative [Scalastyle](http://www.scalastyle.org/) checks in place early on. `Scala` gives you many options on how to write your code (ranging from `obj.method()` to `obj function`). While I like the idea of the "scalable programming language", having multiple of those styles mixed together in one application, makes it more confusing to work with the code in a team and creates unnecessary distractions. Also here we favored the boring solution of `obj.method()` over the more functional syntax.
 
-# 5. TODO:
-Until now in this post, some of you probably thought of "Captain Obvious" while reading this. The last few things may bring you some more interesting ideas on how to accelerate your development. One thing that I've seen many teams struggle with that embraced automatic testing, is finding the right testing approach that brings not only safety, but also speed and confidence. 
+# 5. In-memory integration tests yield the most bang for the buck 
+One thing that I've seen many teams struggle with that embraced automatic testing, is finding the right testing approach that brings not only safety, but also speed and confidence. Similar to agile, I think you can see quite a bit of cargo culting in the automated testing area. 
+
+Don't get me wrong, automated tests are an essential part of everything I've done in the last years, but somehow more often than not when I look into different teams codebases, the typical setup falls into one of two categories:
+
+1. Heavy focus on integration tests, that are usually slow, often you don't know 
 
 The primary sin I've seen, is that tests are usually too much coupled to the implementation so that when the implementation changes the tests need to be completely rewritten. Usually those codebases made extensive use of mocks or stubs and similarly often they test things on multiple levels again and again. 
 
