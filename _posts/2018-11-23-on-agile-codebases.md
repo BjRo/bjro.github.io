@@ -1,5 +1,3 @@
-title: On agile codebases
----
 I've participated in efforts to deliver software for more than 15 years now. The first five using the good old waterfall approach with infrequent, big releases; the last 10 years in teams that followed one of the flavors of the agile method. 
 
 Some of the teams I was working on were using `Scrum`. Others used `Kanban`. Some used a mixture of both. The worst application of the agile method I encountered in the last 10 years (and sadly the most prominent one) is what I would generally describe as `Agile without a soul`, or as Martin Fowler calls it [faux-agile](https://martinfowler.com/articles/agile-aus-2018.html). You know, the version that heavily focuses on the prescriptive process portions. Which sometimes has teams whose members don't meet on eye level because the Product Owner actually turns out to be a manager in disguise, othertimes has developers that don't care at all about business outcomes but celebrate technical discussions about `KISS`, `DRY` and friends to the death, often in places where it doesn't really matter. 
@@ -71,7 +69,7 @@ The result of this in my experience is that tests tend to become more central to
 
 > Out of curiosity I took a look into the `XING One` repository while writing this.
 > 
-> At the time of writing the test codebase consists of **1229 tests** that take **~55 seconds** to run on my machine (a 2018 Macbook Pro). The testcode is of similar size compared to the actual application code (`22628` vs. `21018` lines of code)
+> At the time of writing the test codebase consists of **1229 tests** that take **~55 seconds** to run on my machine (a 2018 Macbook Pro). The testcode is of similar size compared to the actual application code (**22628** vs. **21018** lines of code)
 
 The 'big unit' in our case is the `GraphQlEngine`, the piece of code that immediately takes over in our application once the outside HTTP interface received a request. It can be configured in different ways (authenticator, schema, middlewares and query providers). A spec for a particular feature usually showcases the feature or capability with the minimum necessary configuration. 
 
@@ -104,21 +102,8 @@ class ConstResolverSpec extends EngineSpecification {
 
   "successful conversions" >> {
     "String!" >> {
-      val response = runQuery(engine, "query ConstTest { aString }")
-
-      response.statusCode must beEqualTo(StatusCodes.OK)
-
-      response.result must beJson("""
-         | {
-         |   "data" : {
-         |     "aString" : "MUCH STRING"
-         |   }
-         | }
-       """)
-    }
-
-    "Int!" >> {
-      val response = runQuery(engine, "query ConstTest { anInt }")
+      val query    = "query ConstTest { aString }"
+      val response = runQuery(engine, query)
 
       response.statusCode must beEqualTo(StatusCodes.OK)
       response.result must beJson("""
@@ -129,6 +114,22 @@ class ConstResolverSpec extends EngineSpecification {
           | }
         """)
     }
+
+    "Int!" >> {
+      val query    = "query ConstTest { anInt }"
+      val response = runQuery(engine, query)
+
+      response.statusCode must beEqualTo(StatusCodes.OK)
+      response.result must beJson("""
+          | {
+          |   "data" : {
+          |     "anInt" : 1234
+          |   }
+          | }
+        """)
+    }
+
+    // Shortened
   }
 ```
-# 5. Use a mono repository 
+# 6. Use a mono repository 
