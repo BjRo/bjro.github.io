@@ -60,35 +60,75 @@ Debates about code style are lovely time-sinks and I'm super grateful for the de
 We also had fairly conservative [Scalastyle](http://www.scalastyle.org/) checks in place early on. `Scala` gives you many options on how to write your code (ranging from `obj.method()` to `obj function`). While I like the idea of the "scalable programming language", having multiple of those styles mixed together in one application, makes it more confusing to work with the code in a team and creates unnecessary distractions. Also here we favored the boring solution of `obj.method()` over the more functional syntax.
 
 # 5. In-memory integration tests yield the most bang for the buck 
-One thing that I've seen many teams struggle with that embraced automatic testing, is finding the right testing approach that brings not only safety, but also speed and confidence. Similar to agile, I think you can see quite a bit of cargo culting in the automated testing area. 
+One thing that I've seen many teams struggle with that embraced automatic testing, is finding the right testing approach that brings not only safety, but also speed and confidence. Similar to agile, I think you can see quite a bit of cargo culting in the automated testing area. Don't get me wrong, automated tests are an essential part of everything I've done in the last years, but somehow more often than not, when I look into different teams codebases, the setup falls into one of two extremes:
 
-Don't get me wrong, automated tests are an essential part of everything I've done in the last years, but somehow more often than not when I look into different teams codebases, the typical setup falls into one of two categories:
+1. Heavy reliance on end-to-end integration tests, which are usually not very insightful, very slow, aren't run often and even worse sometimes even flaky (especially when you're dealing with distributed applications)
+2. Heavy reliance on unit level tests and mocks, which are usually very fast, but very closely coupled to the implementation (resulting in parallel rewrites of the tests whenever the application changes)
 
-1. Heavy focus on integration tests, that are usually slow, often you don't know 
+I think there's a sweet spot in between, when you can figure out a big enough functional unit that can be decoupled from outside dependencies (`HTTP`, `DBs`, `AMQP`, etc.) and at the same time be effectively used to describe the behavior of your application. The decoupling from outside dependencies brings the necessary speed to run them often. The 'big unit' usually brings the ability to describe your applications behavior without describing the internal implementation, which often means little rework when the implementation changes. 
 
-The primary sin I've seen, is that tests are usually too much coupled to the implementation so that when the implementation changes the tests need to be completely rewritten. Usually those codebases made extensive use of mocks or stubs and similarly often they test things on multiple levels again and again. 
+The result of this in my experience is that tests tend to become more central to the development workflow of a team and that testcode is also more considered as being 'part of the package' and not an 'appendix to the actual thing'. There's value in treating test code like production code. Remember it's not about the amount of code written, it's about the right amount. An imbalance between effort for test automation and and writing the actual feature can have a severe impact of flow in your team.
 
-The strategy we chose may not be applicable for other contexts, but it served us very well. In a nutshell we use a multi-layered test strategy consisting out of 
+> Out of curiosity I took a look into the `XING One` repository while writing this.
+> 
+> At the time of writing the test codebase consists of **1229 tests** that take **~55 seconds** to run on my machine (a 2018 Macbook Pro). The testcode is of similar size compared to the actual application code (`22628` vs. `21018` lines of code)
 
-* unit tests (for functionality that can easily be tested in isolation, e.g. verification of signatures, decomposing a cookie, etc.), 
-* in-memory integration tests (running a full `GraphQL` engine against a stub `HTTP` backend)
-* and end to end integration tests (running the actual server against a sandboxed version of the `XING` platform).
+The 'big unit' in our case is the `GraphQlEngine`, the piece of code that immediately takes over in our application once the outside HTTP interface received a request. It can be configured in different ways (authenticator, schema, middlewares and query providers). A spec for a particular feature usually showcases the feature or capability with the minimum necessary configuration. 
 
-I would specifically like to elaborate on the middle strategy here, the in-memory integration tests. These are in my opinion our most important tests and are fully used to describe what our `GraphQL` servers capabilities and behavior. 
+Tests typically follow an [AAA format](http://wiki.c2.com/?ArrangeActAssert):
 
-Tests typically follow the following format:
+1. Given a `GraphQLEngine` with the following middleware, schema and query providers configured
+2. Stubbing the following HTTP requests (Optional)
+3. When I run the following query 
+4. It should have performed the following requests
+5. It should produce the following result
 
-1. Given a `GraphQL` engine with the following middlewares configured
-2. Given the following schema definition
-3. Stubbing the following HTTP requests (Optional)
-4. When I run the following query 
-5. It should 
-6. It should produce the following result
-
-TODO: Simple example
+To give you some better idea how that might look in code, here's an actual (simplified) example from the codebase:
 
 ```scala
-```
+class ConstResolverSpec extends EngineSpecification {
 
-# 6. Re-use your benchmarks
-# 6. Use a mono repository 
+  val schema = """
+    |extend type Query {
+    |
+    |  # Builtin scalars
+    |
+    |  aString: String! @const(value: "MUCH STRING")
+    |  anInt: Int! @const(value: 1234)
+    |
+    |  # ... shortened
+    |}
+  """.stripMargin
+
+  val engine = createSchemaEngine(schema)
+
+  "successful conversions" >> {
+    "String!" >> {
+      val response = runQuery(engine, "query ConstTest { aString }")
+
+      response.statusCode must beEqualTo(StatusCodes.OK)
+
+      response.result must beJson("""
+         | {
+         |   "data" : {
+         |     "aString" : "MUCH STRING"
+         |   }
+         | }
+       """)
+    }
+
+    "Int!" >> {
+      val response = runQuery(engine, "query ConstTest { anInt }")
+
+      response.statusCode must beEqualTo(StatusCodes.OK)
+      response.result must beJson("""
+          | {
+          |   "data" : {
+          |     "anInt" : 1234
+          |   }
+          | }
+        """)
+    }
+  }
+```
+# 5. Use a mono repository 
