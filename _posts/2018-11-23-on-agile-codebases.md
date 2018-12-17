@@ -1,6 +1,6 @@
 I've participated in efforts to deliver software for more than 15 years now. The first five using the good old waterfall approach with infrequent, big releases; the last 10 years in teams that followed one of the flavors of the agile method. 
 
-Some of the teams I was working on were using `Scrum`. Others used `Kanban`. Some used a mixture of both. The worst application of the agile method I encountered in the last 10 years (and sadly the most prominent one) is what I would generally describe as `Agile without a soul`, or as Martin Fowler calls it [faux-agile](https://martinfowler.com/articles/agile-aus-2018.html). You know, the version that heavily focuses on the prescriptive process portions. Which sometimes has teams whose members don't meet on eye level because the Product Owner actually turns out to be a manager in disguise, othertimes has developers that don't care at all about business outcomes but celebrate technical discussions about `KISS`, `DRY` and friends to the death, often in places where it doesn't really matter. 
+Some of the teams I was working on were using `Scrum`. Others used `Kanban`. Some used a mixture of both. The worst application of the agile method I encountered in the last 10 years (and sadly the most prominent one) is what I would generally describe as `Agile without a soul`, or as Martin Fowler calls it [faux-agile](https://martinfowler.com/articles/agile-aus-2018.html). You know, the version that heavily focuses on the prescriptive process portions. Which sometimes has teams whose members don't meet on eye level because the Product Owner actually turns out to be a manager in disguise, other times has developers that don't care at all about business outcomes but celebrate technical discussions about `KISS`, `DRY` and friends to the death, often in places where it doesn't really matter. 
 
 > To be fair, I've been guilty of those discussions in the past as well :)
 
@@ -132,4 +132,17 @@ class ConstResolverSpec extends EngineSpecification {
     // Shortened
   }
 ```
-# 6. Use a mono repository 
+# 6. Get rid of cross repository coordination
+At my current company we favor very small repositories. Libraries have their own repository. Individual services have their own repository. It also often happens that integration tests are located in a different repository. That definitely has some advantages. You isolate the work from different people better, including having a clear, focused git commit history. You also don't spend a lot time cloning on that particular repository. You can pick only the few repositories that you need and then you're good (compared to cloning the world and then using just a small portion of it).
+
+But it also has a very clear disadvantage: Coordination. Say for instance your documentation is in one repository, your `GraphQL` server in another, integration tests are in a third repository and then maybe the client libraries are in a fourth one. Now things become slightly more complicated, because you can't change everything in a single pull request. You can't review all the changes that belong to each other as a whole. QA also becomes interesting since you now have to figure out how to temporary bring things together for validation (usually involving lots of branches). And last but not least, you now probably have an integration order. 
+
+At least for the first year of `XING One` everything was inside a single repository. This allowed us to get rid of a lot coordination ceremony. Especially the documentation benefited quite a lot from it, because we required it to be written or updated together with the actual code. We also changed the substructure of the source code quite a bit during the first year (when we pulled apart the `XING One` project into multiple `sbt` projects located in the same repository).
+
+I'm a believer in the mono repository approach and I certainly can see why companies like `Google` take the idea to the max. In our company it wasn't a free lunch though.  
+
+# Conclusion
+
+See you next time around!!!
+
+:wq
