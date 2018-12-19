@@ -147,10 +147,19 @@ As I outlined earlier, I would do it again. Overall the benefits of the mono rep
 
 # Conclusion
 
-Today I ranted a bit about agile and then talked in more depth about some more technical decisions and tweaks we did that allowed us to iterate fast and with confidence. After ~1.5 years in production, lots of refactoring and internal restructuring we haven't yet managed to introduce bugs through new features or refactorings. For me that's one core element that allows you to be actually agile as a development team.
+Today I ranted a bit about agile and then talked in more depth about some more technical decisions and tweaks we did that allowed us to iterate fast and with confidence. 
 
-TODO: Repeat
-TODO: Reference to interlude 
+To recap:
+
+1. It helps to accept that change is inevitable and part of the game and prepare for that
+2. Choosing a refactoring friendly language stack and staying away from language features that make refactorings more difficult is one of those possible preparations that at least for us payed off big time
+3. Using automated tests and decoupling them good enough from the actual implementation so that they're fast, stable and a reliable safety-net is an often overlooked part of project setup. Don't cargo cult. Find the level of tests that actually drive your project. In our case these are the in-memory, integration-like tests of the `GraphQLEngine`.
+4. Don't waste time on code format or style discussions, nowadays there are tools that automate these things away. Make good use of them
+5. If you can, favor fewer bigger repositories over many smaller repositories: to spare yourself coordination cost, as well as to be able to change and review all touchpoints in one go
+
+After ~1.5 years in production and a lot refactorings of different scope, we haven't yet managed to introduce regressions through new features or refactorings. For me that's one core element that allows you to be actually agile as a development team.
+
+The next time, I'm going to take an interlude and will share our `GraphQL` learnings of the first year.
 
 See you next time around!!!
 
