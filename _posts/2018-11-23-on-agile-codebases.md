@@ -137,11 +137,20 @@ At my current company we favor very small repositories. Libraries have their own
 
 But it also has a very clear disadvantage: Coordination. Say for instance your documentation is in one repository, your `GraphQL` server in another, integration tests are in a third repository and then maybe the client libraries are in a fourth one. Now things become slightly more complicated, because you can't change everything in a single pull request. You can't review all the changes that belong to each other as a whole. QA also becomes interesting since you now have to figure out how to temporary bring things together for validation (usually involving lots of branches). And last but not least, you now probably have an integration order. 
 
-At least for the first year of `XING One` everything was inside a single repository. This allowed us to get rid of a lot coordination ceremony. Especially the documentation benefited quite a lot from it, because we required it to be written or updated together with the actual code. We also changed the substructure of the source code quite a bit during the first year (when we pulled apart the `XING One` project into multiple `sbt` projects located in the same repository).
+We made the conscious decision to put everything related to `XING One` into a single repository. The code, benchmarks, load tests, documentation, integration tests, utilities, you name it. This allowed us to get rid of a lot coordination ceremony. Especially the documentation benefited quite a lot from it, because we required it to be written or updated together with the actual code. We also changed the substructure of the source code quite a bit during the first year (when we pulled apart the `XING One` project into multiple `sbt` projects located in the same repository).
 
-I'm a believer in the mono repository approach and I certainly can see why companies like `Google` take the idea to the max. In our company it wasn't a free lunch though.  
+I found it tremendously helpful to look at all aspects of a change as a whole (code, unit tests, integration level tests, documentation, deployment, ...) and I certainly can see why companies like `Google` take the idea to the max, by having everything inside a single repository. 
+
+In our company it wasn't always a free lunch though. The small repository approach and assumptions about the root repository structure were hardcoded in different custom `Docker` and `Kubernetes` tools we're using at the company, that we needed to patch in order to get everything we wanted to have properly working. We were willing to do that and pull through with it, but there definitely needed some extra work here and there to make our way work. 
+
+As I outlined earlier, I would do it again. Overall the benefits of the mono repository outweigh the costs for me.
 
 # Conclusion
+
+Today I ranted a bit about agile and then talked in more depth about some more technical decisions and tweaks we did that allowed us to iterate fast and with confidence. After ~1.5 years in production, lots of refactoring and internal restructuring we haven't yet managed to introduce bugs through new features or refactorings. For me that's one core element that allows you to be actually agile as a development team.
+
+TODO: Repeat
+TODO: Reference to interlude 
 
 See you next time around!!!
 
