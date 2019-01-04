@@ -37,33 +37,34 @@ Björn
 3. [Choosing the right technology](/choosing-the-right-technology/)
 4. [The initial game plan](/the-game-plan)
 5. [On agile codebases](/on-agile-codebases/)
-6. Curating an adaptive team culture
-7. GraphQL meet lighthouse project, lighthouse project meet GraphQL
-8. Wait, are you saying I can't use the status code anymore for checking for errors?
-9. Set it on fire
-10. GraphQL in a traditional application performance monitoring tool
-11. Context aware scalars
-12. Don't ever, ever, ever use the JSON scalar
-13. Who the f**k put 150k metrics in the last minutes into my Graphite?
-14. Resilience in a distributed environment
-15. Help, we need to upload some images
-16. Documentation first, instead of an afterthought
-17. Getting crazy with SDL
-18. The first GraphQL workshops
-19. Federated team structures aka building a community
-20. First field test for pure SDL schemas
-21. Managing WIP and variability
-22. Doing an internal private beta
-23. On managing risk, part 2
-24. Supercharging SDL
-25. Fixing the SDL development workflow
-26. Cashing with Varnish
-27. Team, this is Apollo!
-28. Our mutation semantics suck
-29. Delegating epic level priority to the organisation
-30. Metrics and alerts, part 2
-31. Limitations of federated structures
-32. Improving image uploads
-33. Beyond the private beta
+6. [Interlude: GraphQL learnings, Year-1 edition](/graphql-year-one-retro/)
+7. Curating an adaptive team culture
+8. GraphQL meet lighthouse project, lighthouse project meet GraphQL
+9. Wait, are you saying I can't use the status code anymore for checking for errors?
+10. Set it on fire
+11. GraphQL in a traditional application performance monitoring tool
+12. Context aware scalars
+13. Don't ever, ever, ever use the JSON scalar
+14. Who the f**k put 150k metrics in the last minutes into my Graphite?
+15. Resilience in a distributed environment
+16. Help, we need to upload some images
+17. Documentation first, instead of an afterthought
+18. Getting crazy with SDL
+19. The first GraphQL workshops
+20. Federated team structures aka building a community
+21. First field test for pure SDL schemas
+22. Managing WIP and variability
+23. Doing an internal private beta
+24. On managing risk, part 2
+25. Supercharging SDL
+26. Fixing the SDL development workflow
+27. Cashing with Varnish
+28. Team, this is Apollo!
+29. Our mutation semantics suck
+30. Delegating epic level priority to the organisation
+31. Metrics and alerts, part 2
+32. Limitations of federated structures
+33. Improving image uploads
+34. Beyond the private beta
 
 ... and probably some other topics
