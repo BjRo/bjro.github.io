@@ -6,20 +6,26 @@ But it's not all roses. In 2018 you can find an ocean full of resources about wh
 
 To give you some context about the company I'm working in (and that is worth understanding before going into the individual points): 
 
-* XING has roughly __1,5k employees__ of which __~300 are developers__ 
+* XING has roughly __1,3k employees__ of which __~300 are developers__ 
 * Of these to my knowledge roughly __70 are native mobile developers__ 
 * For the rest I don't have concrete numbers, but my feeling is that it's roughly __2/3 backend developers__ and __1/3 web frontend developers__. 
 * Most of the engineering teams at XING are setup to build __all representations of their product__ (backend, ios, android & web)
 * In comparison the teams that are dealing with cross cutting concerns like "the platform" are fairly small. 
-  * The system architecture team (which primarly is concerned with running our `PAAS` platform based on `Kubernetes` these days) is __~10 people__. 
-  * My team that was pushing the `GraphQL` initiative were __4 people in 2017 and 2018__ (and we also had to maintain our OAuth gateway on the sidelines).
-* In general, XINGs engineering organization tries to give a lot of freedom and autonomy to the individual teams
-* As a consequence there's always the lingering pressure for infrastructure related teams to [find ways to do their work without interrupting or even blocking development teams
-* As a consequence a lot of the larger technology initiatives by their nature need to be incremental and non-blocking in how they're rolled out
+  * The system architecture team (which primarily is concerned with running our `PAAS` platform based on `Kubernetes` these days) is __~10 people__. 
+  * My team that was pushing the `GraphQL` initiative used to be __4 people in 2017 and 2018__ (and we also had to maintain our OAuth gateway on the sidelines).
+* In general, XINGs engineering organization tries to give a lot of freedom and autonomy to the individual teams. As a consequence there's always the lingering pressure for infrastructure related teams to [find ways to do their work without interrupting or even blocking product teams](TODO: LINK) and as a consequence a lot of the larger technology initiatives by their nature need to be incremental and non-blocking in how they're rolled out.
 
 That being out of the way, let's dive into our findings from year one (2017):
 
 # 1. Expectations on GraphQL vary dramatically between web and native mobile developers
+If you trace back the `GraphQL` story back to its beginning within `Facebook` you realize that it originated from a mobile background and then expanded further into the company. Basically what happened is that some pretty clever people build the first version of the concept for the new, native mobile newsfeed. That was when `Facebook` was still primarily following their `HTML5` approach within their mobile applications. When the decision was made to switch the strategy to go all in on native development instead of web technology, it was a combination of "having a great, working concept" and "being at the right spot, at the right time". They pretty much created the blueprint for things to come. `GraphQL` didn't start out on the web or even `Javascript` side. I believe the original `GraphQL` server was and is still written in `Hack`. Only when they came to the conclusion that "this could really be a thing", they created the spec and the reference implementation in `Javascript`. But this happened at a later point. 
+
+> In case you wondering: In 2017 I sat next to [Dan Schaefer](https://twitter.com/dlschafer) in the cab on the way to the speakers dinner for the `GraphQL EU` conference and had the chance to pester him with all sorts of questions. Dan is one of the original `GraphQL` creators (besides [Nick Schrock](https://twitter.com/schrockn) and [Lee Byron](https://twitter.com/leeb)).
+
+Now fast forward to `2017`. The `GraphQL` buzz primarily happened on the web side and in the `Javascript` world. The rise of `React` coupled with the fact that the company behind [`Meteor`](https://www.meteor.com/) joined-in and heavily invested into the `GraphQL` ecosystem might have played a part in that. Now they're more well known as [`Apollo`](https://www.apollographql.com/). What was mostly absent in the buzz interestingly was mobile.
+
+I can only deduct that this is one of the reasons for why mobile and web developers at our company had (and to this day have) a distinctively different stance towards `GraphQL`. That our initiative was mostly driven (at least in the start) by backend people might also have played into it.
+
   - all-in or nothing mentality for the web
   - drop in replacement for BFFs on mobile
 
