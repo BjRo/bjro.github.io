@@ -159,7 +159,7 @@ To recap:
 
 After ~1.5 years in production and a lot refactorings of different scope, we haven't yet managed to introduce regressions through new features or refactorings. For me that's one core element that allows you to be actually agile as a development team.
 
-The next time, I'm going to take an interlude and will share our `GraphQL` learnings of the first year.
+The next time, I'm going to take an interlude and will share our `GraphQL` learnings and observations.
 
 See you next time around!!!
 
