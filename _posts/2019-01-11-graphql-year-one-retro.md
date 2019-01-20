@@ -94,6 +94,17 @@ It's not like there isn't a fitting spec available. The [`Relay Cursor Connectio
 Not having a default pagination abstraction obviously gives some flexibility and adaptability for `GraphQL` itself, but I can't help to think that `GraphQL` could benefit from having a default abstraction for this out of the box. If there was an explicit concept, tooling could make better use of this and also frontend components would have a more standardized notion of pages of data. 
 
 # 7. Don't be naive with file uploads
+Somewhere in the middle of 2017 the topic of file uploads came up. We did the simplest possible solution: Tunneling the binary file as a `Base64` encoded blob though our `GraphQL` mutation. That works, but is in general a very bad idea. You could even call it naive.
+
+Take a look at the following dashboard. Guess where the `P999` and `MAX` numbers are coming from :-(
+
+{% include figure image_path="/assets/images/file-uploads.png" %}
+
+Needless to say, this clogs throughput on the gateway side. Even worse, you run into situations where the frontend times out, but the upload has reached our servers and is actually being processed (only very slowly).  
+
+We're in the process of removing this quick-fix though a separate upload service based on [`tus`](https://tus.io/) where the `GraphQL` schema only provides the means to secure an upload slot and the upload is living completely outside of `GraphQL`. 
+
+I can only advice you not repeat this mistake and keep uploads separately when possible.
 
 # 8. We changed our mutation design at least twice (and still struggle with it)
 
