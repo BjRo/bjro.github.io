@@ -1,3 +1,6 @@
+---
+title: GraphQL learnings, Year-1 edition
+---
 A belated happy new year everyone! I hope everyone of you had a good start into the new year. Todays post is going to be of a different kind compared to the [rest of the the series so far](/per-aspera-ad-astra/). In the last posts I talked in depth about the "why?", the initial project decisions and the preparations we took to ensure that we'd be able to deliver on our promise. But I haven't yet talked about our actual experience of introducing `GraphQL` into our organization. 
 
 At the end of the first year (2017) our initiative was already seen as a success and it continued to thrive in 2018 (though slower than in 2017, mostly for reasons that were outside of our control). Most of the benefits we expected from `GraphQL` turned out to be true. It's quite eye opening to see colleagues play with `GraphiQL` (or later `GraphQL Playground`) for the first time. Pretty much all of them instantly realize the (positive) impact this could have one their work. Some also instantly get that `GraphQL` has an impact on collaboration between the various disciplines.
@@ -96,13 +99,13 @@ Not having a default pagination abstraction obviously gives some flexibility and
 # 7. Don't be naive with file uploads
 Somewhere in the middle of 2017 the topic of file uploads came up. We did the simplest possible solution: Tunneling the binary file as a `Base64` encoded blob though our `GraphQL` mutation. That works, but is in general a very bad idea. You could even call it naive.
 
-Take a look at the following dashboard. Guess where the `P999` and `MAX` numbers are coming from :-(
+Take a look at the following dashboard. Guess where most of the `P999` and `MAX` numbers are coming from :-(
 
 {% include figure image_path="/assets/images/file-uploads.png" %}
 
-Needless to say, this clogs throughput on the gateway side. Even worse, you run into situations where the frontend times out, but the upload has reached our servers and is actually being processed (only very slowly).  
+Needless to say, this clogs throughput on the gateway side. Decreases your capability to properly monitor your system. Even worse, you run into situations where the frontend times out, but the upload has reached our servers and is actually being processed (only very slowly).  
 
-We're in the process of removing this quick-fix though a separate upload service based on [`tus`](https://tus.io/) where the `GraphQL` schema only provides the means to secure an upload slot and the upload is living completely outside of `GraphQL`. 
+We're in the process of migrating away from this quick-fix to a separate upload service based on [`tus`](https://tus.io/). In the new setup the `GraphQL` schema only provides the means to secure an upload slot and the upload is living completely outside of `GraphQL`. 
 
 I can only advice you not repeat this mistake and keep uploads separately when possible.
 
