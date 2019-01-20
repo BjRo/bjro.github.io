@@ -109,7 +109,30 @@ We're in the process of migrating away from this quick-fix to a separate upload 
 
 I can only advice you not repeat this mistake and keep uploads separately when possible.
 
-# 8. We changed our mutation design at least twice (and still struggle with it)
+# 8. We struggled with our mutation design
+Oh mutations another unexpected headache. You see `GraphQL` servers execute hierarchically and sub-selections only apply when the parent resolver was successful.
+
+The first version of mutations was pretty simple in that sense that for successful `REST` calls underneath, we expanded the selection and where they failed, we added an entry for them as error extensions into the global `errors` collection. Straight forward, or so we thought. 
+
+Turns out that the first wave of mobile developers hated the extra effort that they needed to do when they wanted to access this error information. And we changed the implementation to please them. 
+
+Our second version of mutations basically contained an explicit model of the error response in the schema. Mutations pretty much nowadays look like this:
+
+```graphql
+type ContentArticleMutationResult @mutationResult {
+  success: ContentArticleInterface
+  error: ContentError
+}
+```
+
+The extra `@mutationResult` directive is necessary to enable an exclusive-or behavior. So it's always one of the fields filled but never all of them. There's good about this design, since it also enables you to model your errors explicitly and you can also see errors in your schema now.
+
+On the other hand, we broke two basic things that are worth mentioning: 
+
+1. It doesn't follow the normal hierarchical execution model of `GraphQL`
+2. It also is not symmetric to queries anymore 
+
+We have some few noteworthy occurrences where for queries, the same team that heavily objected our first mutation design is now more or less perfectly fine with reading out the `errors` collection in case a query failed. You only realize this in retrospect, but to me this indicates that we as an `API` team maybe gave in to early in order in this area of `GraphQL` to please our customers. 
 
 # 9. Consider caching early 
 
