@@ -39,13 +39,18 @@ The point to take away from this is that you should plan and setup your `GraphQL
 > In case you wondering: In 2017 I sat next to [Dan Schaefer](https://twitter.com/dlschafer) in the cab on the way to the speakers dinner for the `GraphQL EU` conference and had the chance to pester him with all sorts of questions. Dan is one of the original `GraphQL` creators (besides [Nick Schrock](https://twitter.com/schrockn) and [Lee Byron](https://twitter.com/leeb)).
 
 # 2. Client libraries weren't on par when we started
-  - different clients developed different strategies
-  - ios/android -> hand-rolled their client
-  - web -> started with fetch but soon went changed to apollo client  
+I hinted it in the first point, if you're going to build not only for web but also for the native platforms, you have to be aware that there is quite a difference in breadth and depth of available documentation for those different platforms. When we started in early 2017 documentation for the native client libraries was basically not existent. The android library was in a very early alpha state, the `iOS` version was a bit (but not much) ahead. 
+
+Both of our mobile teams looked at them in `2017` and eventually decided to roll their own tooling. This made the integration into our `OAuth 2.0` flow and the rest of the existing application easier, but obviously also comes with a cost associated. Many of cooler later additions on the client side libraries can't be found in our native apps. 
+
+I guess it's one of the prices you often need to pay as an early adopter. Just looking at Github today, it looks like the libraries have nicely developed in the meantime. If faced with a similar choice today, the result would probably be different.
 
 # 3. All client developers struggled with error-handling and partial results
+In November `2017` I gave a talk about our `GraphQL` experience in Munich while visiting `Autoscout 24`. One thing that stuck with me from the following Q&A is that one of their Lead Engineers was noticeably taken aback by my assessment that client engineers struggle with error handling and partial responses more than expected. From his point of view the partial responses were one of the reasons to use `GraphQL` and he was heavily advocating that on their sided. And now I came along and talked about how our frontend colleagues struggle to make the shift there.
 
-- The first web frontends didn't properly shift away from the REST mindset
+The interesting thing here is that I don't even have a very different personal opinion. I think partial errors are great. That the server is able to give you something back in case he can't resolve all of the data is actually a great premise to me. Especially if your `GraphQL` server (like ours) is a gateway that is remotely talking to other services and the [fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing) come into play. Partial results reflect the reality of a distributed platform much better than the normal binary "worked" or "didn't work" approach (when in the latter case maybe just a tiny portion of the data couldn't be resolved). 
+
+But at least in our company I made the observation that frontend developers aren't so fond of this changed behavior initially and for some of them it takes quite a while to accept and wrap their head around this. Just to give you one example: I've seen a mobile developers that were already working for more than a year with `GraphQL` and tried to talk their backend colleagues into making the schema super strict with mandatory fields for fields that might fail everywhere. The intent being that constraint violations would bubble up and they got their beloved binary behavior again. In the end we talked them out of that and we're still consulting teams to think about how to model their schema in a way so that it's usable in the presence of partial errors.
 
 # 4. Even though GraphQL documentation is great, onboard carefully
   - don't assume people will read the existing documentation 
