@@ -139,7 +139,14 @@ On the other hand, we broke two basic things that are worth mentioning:
 
 We have some few noteworthy occurrences where for queries, the same team that heavily objected our first mutation design is now more or less perfectly fine with reading out of the `errors` collection in case a query failed. You only realize this in retrospect, but to me this indicates that we as an `API` team maybe gave in to early in order in this area of `GraphQL` to please our customers. 
 
-# 09. Schema-first is only half of the story
+# 09. Be prepared to invest into your APM solution
+- application performance monitoring
+- field tracking
+- adding usable GraphQL diagnostics to APM solutions that don't natively support it
+- https://www.apollographql.com/platform/
+- https://github.com/skaes/logjam_app
+
+# 10. Schema-first is only half of the story
 When I saw the first bits of [SDL](https://alligator.io/graphql/graphql-sdl/) I immediately liked the idea. We had the challenge at our company that we operate in a polyglot environment and we specifically didn't want to teach the programming language the `GraphQL` server was written in to everyone who contributing to it. On top of that we were searching for a way to have a meaningful discussion about the schema without going too much into the mechanics of it, a good abstraction so to speak. SDL looked like the perfect fit.
 
 And to a certain degree it is. Almost everyone we worked with, be it backend engineer or frontend-engineer, native or web focused, all of them were able to pick up SDL in very short time. However in all of the available `GraphQL` servers I know, the declarative part ends once you hit the resolvers and you're forced to learn the programming language the server is implemented in again. 
@@ -149,12 +156,5 @@ If you want to have a fully declarative approach, you need to fill in the resolv
 Too be clear we're pretty happy with our results. With our system, we're able to push an executable schema into the server within seconds, making it super smooth to work with. But we've also diverged from the typical `GraphQL` approach quite a bit. The end of this is not foreseeable and the future will tell how good we'll fare with our approach (compared to the alternatives).
 
 > In case you're curious: My co-worker David gave an excellent talk about our SDL approach at last [years `GraphQL EU` conference](https://www.youtube.com/watch?v=kMOq3nf8vKY).
-
-# 10. Be prepared to invest into your APM solution
-
-- application performance monitoring
-- field tracking
-- adding usable GraphQL diagnostics to APM solutions that don't natively support it
-- https://www.apollographql.com/platform/
 
  # Conclusion
