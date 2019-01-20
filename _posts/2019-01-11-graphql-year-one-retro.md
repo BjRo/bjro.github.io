@@ -52,14 +52,37 @@ The interesting thing here is that I don't even have a very different personal o
 
 But at least in our company I made the observation that frontend developers aren't so fond of this changed behavior initially and for some of them it takes quite a while to accept and wrap their head around this. Just to give you one example: I've seen a mobile developers that were already working for more than a year with `GraphQL` and tried to talk their backend colleagues into making the schema super strict with mandatory fields for fields that might fail everywhere. The intent being that constraint violations would bubble up and they got their beloved binary behavior again. In the end we talked them out of that and we're still consulting teams to think about how to model their schema in a way so that it's usable in the presence of partial errors.
 
+Especially if you're coming from a `REST` setup and your work affects many people, I would try to clarify this aspect as one of the earlier topics.
+
 # 4. Even though GraphQL documentation is great, onboard carefully
-  - don't assume people will read the existing documentation 
-  - Make sure that everyone understands how a GraphQL server works
-  - negative example: query deduplication, apollo batching
+At the start of 2017, if you wanted to understand how `GraphQL` worked and what kind of assumptions it did, there were already great resources out there, especially [graphql.org](https://graphql.org/). And we pointed the first team we worked with towards these resources. Needless to say, it turned out that this wasn't enough. Otherwise I wouldn't be writing about this now :)
+
+Great documentation is awesome, for the case where people actually bother to read it. At least half of the people you typically meet also do this. The other side immediately goes into exploration mode and tries to build something, without going into the documentation. And out of that group from my experience one half reads the documentation when it encounters problems. The other quarter doesn't even do that. That group usually approached us in frustration about why this and that wasn't working as they expected.
+
+To give you again some examples:
+
+* I already talked about the mobile engineers and their desired behaviour for partial responses
+* We were approached by one backend engineer that worked under the assumption that you could send multiple queries simultaneously to the `GraphQL` server and the server would magically optimize these multiple `GraphQL` queries into a perfect execution scheme. Needless to say that our server only accepts one `GraphQL` query at the moment and the only reason why we accept an `Array` as an input is that we speculate that at some point [batch operations](https://blog.apollographql.com/new-features-in-graphql-batch-defer-stream-live-and-subscribe-7585d0c28b07) would land in the spec (which is a completely different thing and also hasn't happened yet)
+* Another frontend colleague who took query co-location to the maximum (with every `React` component having his own `GraphQL` query), apparently wasn't aware of the solution using fragments and was vividly arguing that our `GraphQL` server was frontend-unfriendly and unusable if we didn't support [`Apollos` batch handling](https://blog.apollographql.com/batching-client-graphql-queries-a685f5bcd41b).
+
+From this experience we changed our rollout scheme dramatically. We developed a full 2 day onboarding program that alternated between theoretical content and lots and lots of partical exercises. And we switched our initiative into a mode that resembles the typical, invite-only private beta you'd normally encounter on [producthunt](https://www.producthunt.com/). The assumption here being that you have to mange onboarding with a limit so that you can learn and adapt for the following teams.
+
+In one of the earlier parts of the series I talked about that we treated everything as an `MVP`: The implemented server, the process and the documentation. Onboarding was a logical addition to this and we continue to do these workshops even in 2019.
 
 # 5. GraphQL type system feels (sometimes) too basic
-  - Lack of namespaces
-  - Lack of tags / annotations
+When working with a large group of people on a schema, I think `GraphQL` is lacking some basic things in the schema. I think this is independent of whether you work with a single schema or use some form of schema-stitching. 
+
+The first one that comes to mind is the simple concept of `Namespaces`. A "profile" in one domain might be something completely different to a "profile" in another domain. As of now, if you want to have both of them in a schema, you need to make their names unique, usually by prefixing their name somehow. For instance having a `CompanyProfile` and a `MemberProfile`. I know the argument that existing tools do already a good job to identify conflicts, but I would prefer having an explicit concept of namespaces that also works without some form of extra tool or linter, so that we could also have `Members::Profile` and `Companies::Profile`.
+
+Another aspect that I find lacking in the type system of `GraphQL` is a way to express the behavior of fields somehow. If you have multiple fields coming from different sources, there's likely a different "cost" associated to them and I would like to express this also for tools and inside the documentation. [Sangria](https://sangria-graphql.org/learn/) already has this nice concept of `FieldTags` that you can attach to a `GraphQL` field. You can think of them similarly to `.NET` attributes or `Javas` annotations.
+
+For our system we've figured out a way to signify which `FieldTags` are documentation relevant and automatically show them inside `GraphQL` playground. The goal being that you have a higher value documentation of the behavior of a field. 
+
+Here's one example for this:
+
+{% include figure image_path="/assets/images/field-tags.png" %}
+
+This shows the documentation of a field that is backed by a `REST` request, but that is batched together with other requests of that kind (`@rest(batched)`) and that this is not requested from the backend as a field when the parent is resolved (`@virtual`).
 
 # 6. GraphQL spec lacks a pagination abstraction
 
