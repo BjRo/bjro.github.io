@@ -82,9 +82,16 @@ Here's one example for this:
 
 {% include figure image_path="/assets/images/field-tags.png" %}
 
-This shows the documentation of a field that is backed by a `REST` request, but that is batched together with other requests of that kind (`@rest(batched)`) and that this is not requested from the backend as a field when the parent is resolved (`@virtual`).
+This shows the documentation of a field that is backed by a `REST` request, but that is batched together with other requests of that kind (`@rest(batched)`) and that this is not requested from the backend as a field when the parent is resolved (`@virtual`). We "faked" this by prefixing the normal documentation and patching `GraphQL Playground` to show the tags in a way. 
+
+But this is a duck-tape solution and again I would prefer to have a real answer like this for `GraphQL`. I think the logical solution for this would be to make server side directives part of the exposed schema, but I'm not aware of any plans to add this. 
 
 # 6. GraphQL spec lacks a pagination abstraction
+Sooner or later as an application developer you will encounter the topic of pagination in your schema. The `GraphQL` spec is completely agnostic when it comes to the pagination topic. 
+
+It's not like there isn't a fitting spec available. The [`Relay Cursor Connection Specification`](https://facebook.github.io/relay/graphql/connections.htm) pretty much exists since the early days of `GraphQL`, but separately from the `GraphQL` spec. Prominent `GraphQL` APIs like [`Github`](https://developer.github.com/v4/guides/intro-to-graphql/) and [`Shopify`](https://help.shopify.com/en/api/custom-storefronts/storefront-api/graphql) do make use of it. We also use it more and more (both for real cursors and as an adapter around `limit` and `offset` based APIs).
+
+Not having a default pagination abstraction obviously gives some flexibility and adaptability for `GraphQL` itself, but I can't help to think that `GraphQL` could benefit from having a default abstraction for this out of the box. If there was an explicit concept, tooling could make better use of this and also frontend components would have a more standardized notion of pages of data. 
 
 # 7. Don't be naive with file uploads
 
