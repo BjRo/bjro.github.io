@@ -37,7 +37,7 @@ Björn
 3. [Choosing the right technology](/choosing-the-right-technology/)
 4. [The initial game plan](/the-game-plan)
 5. [On agile codebases](/on-agile-codebases/)
-6. [Interlude: GraphQL learnings, Year-1 edition](/graphql-year-one-retro/)
+6. [Interlude: Our GraphQL learnings and observations](/graphql-retro/)
 7. Curating an adaptive team culture
 8. GraphQL meet lighthouse project, lighthouse project meet GraphQL
 9. Wait, are you saying I can't use the status code anymore for checking for errors?
