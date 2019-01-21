@@ -177,7 +177,7 @@ Too be clear we're pretty happy with our results. With our system, we're able to
 
 > In case you're curious: My co-worker David gave an excellent talk about our SDL approach at last [years `GraphQL EU` conference](https://www.youtube.com/watch?v=kMOq3nf8vKY).
 
- # Conclusion
+# Conclusion
 This post started out as the summary of what we learned in the first year with `GraphQL`. Somewhere in the first half, it somehow reshaped into overall learnings so far. Things usually overlap a bit time-wise and I thought the post is probably more valuable if I share all of our learnings.
 
 I hope I could give you a bit "food for thought" when it comes to `GraphQL`. Like I said in the introduction, my feeling is that we already have enough success stories out there and need to get a more rounded picture.
