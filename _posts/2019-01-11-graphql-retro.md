@@ -18,7 +18,7 @@ Some of the things that I'm going to reflect about today are likely the result o
   * My team that was pushing the `GraphQL` initiative counts __4 people__ (including myself and we also had to maintain our OAuth gateway on the sidelines).
 * In general our engineering organization tries to give a lot of freedom and autonomy to individual product teams, but in general shields them from platform related work. As a consequence there's always the lingering pressure for platform related teams to [find ways to do their work without interrupting or even blocking product teams](https://www.youtube.com/watch?v=cIpBpGQ0XTI) and as a consequence a lot of the larger technology initiatives by their nature need to be incremental and non-blocking in how they're rolled out.
 
-That being out of the way, let's dive into our findings from year one (2017):
+That being out of the way, let's dive into our learnings and observations:
 
 # 1. Expectations on GraphQL vary dramatically between web and native mobile developers
 Have you ever called into a `GraphQL` service by hand, without some `GraphQL` specific tooling? Like with `curl` or `fetch`? If you've tried that and have understood the format that a `GraphQL` server expects, then you realize that everyone who is able to do a `REST` call is also able to interact with a `GraphQL` server. They are not too far apart. Sure, the error handling differs significantly, but the general mechanics of obtaining data a very close. 
@@ -178,3 +178,12 @@ Too be clear we're pretty happy with our results. With our system, we're able to
 > In case you're curious: My co-worker David gave an excellent talk about our SDL approach at last [years `GraphQL EU` conference](https://www.youtube.com/watch?v=kMOq3nf8vKY).
 
  # Conclusion
+This post started out as the summary of what we learned in the first year with `GraphQL`. Somewhere in the first half, it somehow reshaped into overall learnings so far. Things usually overlap a bit time-wise and I thought the post is probably more valuable if I share all of our learnings.
+
+I hope I could give you a bit "food for thought" when it comes to `GraphQL`. Like I said in the introduction, my feeling is that we already have enough success stories out there and need to get a more rounded picture.
+
+Don't get me wrong. `GraphQL` is an amazing technology and we enjoy working with it every day. But there's no free lunch, especially when you introduce `GraphQL` into an existing product organization without a large rewrite.
+
+See you next time around!
+
+:wq
