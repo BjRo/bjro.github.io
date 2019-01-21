@@ -139,12 +139,32 @@ On the other hand, we broke two basic things that are worth mentioning:
 
 We have some few noteworthy occurrences where for queries, the same team that heavily objected our first mutation design is now more or less perfectly fine with reading out of the `errors` collection in case a query failed. You only realize this in retrospect, but to me this indicates that we as an `API` team maybe gave in to early in order in this area of `GraphQL` to please our customers. 
 
-# 09. Be prepared to invest into your APM solution
-- application performance monitoring
-- field tracking
-- adding usable GraphQL diagnostics to APM solutions that don't natively support it
-- https://www.apollographql.com/platform/
-- https://github.com/skaes/logjam_app
+# 09. Retrofitting into an existing APM solution is easier than you think
+When the question comes up today how you would monitor performance and health of your `GraphQL` application, 
+you'll likely eventually end up with [`Apollos toolsuite`](https://www.apollographql.com/platform/). The company has done a good job capturing the momentum with their former `Apollo Engine` product which was recently superseded by the `Apollo Platform`.
+
+At the start of 2017, when we started. `Apollo` wasn't there yet though and a bit later we also didn't feel fully confident to put such a young product in front of our platform. So we rolled our own integration into the existing monitoring solutions used at my employer:
+
+- [`Logjam`](https://github.com/skaes/logjam_app) for application performance monitoring and request tracing
+- [`Grafana`](https://grafana.com/), [`Prometheus`](https://prometheus.io/) and [`Prometheus alertmanager`](https://prometheus.io/docs/alerting/alertmanager/) for filling in the blanks where we either wanted or needed more information that couldn't easily be expressed in `Logjam`
+
+The effort in making this happen was manageable. People that came into contact with our `GraphQL` gateway could continue to use the tools they were already familiar with. And of course, if were ever wanted to do something special, we could bend our tooling to our will. To give you some ideas how it looks:
+
+Here's a dashboard that shows the slowest `GraphQL` queries in `Logjam`
+
+{% include figure image_path="/assets/images/logjam.png" %}
+
+Here's our golden dashboard that we use for system wide overviews
+
+{% include figure image_path="/assets/images/golden-dashboard.png" %}
+
+Here's another view into the dashboard we use for field usage tracking
+
+{% include figure image_path="/assets/images/field-usage.png" %}
+
+And we've got many more, for example for the internal `REST` client and also the `JVM` system metrics. 
+
+There's a lot of heated discussion about monitoring tools in our company at the moment and `Apollo` took the `GraphQL` APM space by storm in the last two years, but we found this way both feasible and practical. If there's a killer feature in `Apollo` that we direly want and aren't able to replicate, then we'd probably have a second look at the `Apollo Platform`, but based on the experience of the last two years, we don't feel like we need to.
 
 # 10. Schema-first is only half of the story
 When I saw the first bits of [SDL](https://alligator.io/graphql/graphql-sdl/) I immediately liked the idea. We had the challenge at our company that we operate in a polyglot environment and we specifically didn't want to teach the programming language the `GraphQL` server was written in to everyone who contributing to it. On top of that we were searching for a way to have a meaningful discussion about the schema without going too much into the mechanics of it, a good abstraction so to speak. SDL looked like the perfect fit.
