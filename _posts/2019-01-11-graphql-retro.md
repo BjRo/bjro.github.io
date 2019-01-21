@@ -32,7 +32,7 @@ Always assuming that we need to manage the risk of `GraphQL` turning out to be s
 
 Our mobile developers pretty did exactly that. It kinda seems logical now, looking back at the last two years, since a [lot of our motivation came from mobile challenges](what-made-us-interested-in-graphql). That group treated `GraphQL` as a drop-in replacement for `REST` that freed them from a lot of the request coordination logic. They had some gripes with error handling (more on that later) and the available native libraries (both mobile teams opted against using the available `Apollo` library, because they deemed them not ready yet), but all I think they were pretty happy with our proposition.
 
-On the web side, things became slightly interesting though. [`React`](https://reactjs.org/) had already been in place for quite a while as the default client side library, together with [`Redux`](https://redux.js.org/) as the client side state management solution. [`BFFs`](https://samnewman.io/patterns/architectural/bff/) were the norm and supplied the frontend with data. Our `GraphQL` gateway would make these `BFFs` obsolete. Not so different to the mobile side, or so we assumed.
+On the web side, things became slightly interesting though. [React](https://reactjs.org/) had already been in place for quite a while as the default client side library, together with [Redux](https://redux.js.org/) as the client side state management solution. [BFFs](https://samnewman.io/patterns/architectural/bff/) were the norm and supplied the frontend with data. Our `GraphQL` gateway would make these `BFFs` obsolete. Not so different to the mobile side, or so we assumed.
 
 In retrospect this assumption is one of the larger mistakes that I personally made. 
 
@@ -71,7 +71,7 @@ To give you again some examples:
 
 * I already talked about the mobile engineers and their desired behavior for partial responses
 * We were approached by one backend engineer that worked under the assumption that you could send multiple queries simultaneously to the `GraphQL` server and the server would magically optimize these multiple `GraphQL` queries into a perfect execution scheme. Needless to say that our server only accepts one `GraphQL` query at the moment and the only reason why we accept an `Array` as an input is that we speculated that at some point [batch operations](https://blog.apollographql.com/new-features-in-graphql-batch-defer-stream-live-and-subscribe-7585d0c28b07) would land in the spec (which is a completely different thing and also hasn't happened yet)
-* Another frontend colleague who took query co-location to the maximum with every `React` component having his own `GraphQL` query, apparently wasn't aware of the solution using fragments and was vividly arguing that our `GraphQL` server was frontend-unfriendly and unusable if we didn't support [`Apollos` batch handling](https://blog.apollographql.com/batching-client-graphql-queries-a685f5bcd41b).
+* Another frontend colleague who took query co-location to the maximum with every `React` component having his own `GraphQL` query, apparently wasn't aware of the solution using fragments and was vividly arguing that our `GraphQL` server was frontend-unfriendly and unusable if we didn't support [Apollos batch handling](https://blog.apollographql.com/batching-client-graphql-queries-a685f5bcd41b).
 
 From this experience we changed our rollout scheme dramatically. We developed a full 2 day onboarding program that alternated between theoretical content and lots and lots of practical exercises, that are close to what engineers have to build in the final product. And we switched our initiative into a mode that resembles the typical, invite-only private beta you'd normally encounter on [producthunt](https://www.producthunt.com/). The assumption here being that you have to mange onboarding with a limit so that you can learn with a limited surface for errors and adapt for the following teams.
 
@@ -97,7 +97,7 @@ But this is a duck-tape solution and again I would prefer to have a real answer 
 # 6. GraphQL spec lacks a pagination abstraction
 Sooner or later as an application developer you will encounter the topic of pagination in your schema. The `GraphQL` spec is completely agnostic when it comes to the pagination topic. 
 
-It's not like there isn't a fitting spec available. The [`Relay Cursor Connection Specification`](https://facebook.github.io/relay/graphql/connections.htm) pretty much exists since the early days of `GraphQL`, but separately from the `GraphQL` spec. Prominent `GraphQL` APIs like [`Github`](https://developer.github.com/v4/guides/intro-to-graphql/) and [`Shopify`](https://help.shopify.com/en/api/custom-storefronts/storefront-api/graphql) do make use of it. We also use it more and more (both for real cursors and as an adapter around `limit` and `offset` based APIs).
+It's not like there isn't a fitting spec available. The [Relay Cursor Connection Specification](https://facebook.github.io/relay/graphql/connections.htm) pretty much exists since the early days of `GraphQL`, but separately from the `GraphQL` spec. Prominent `GraphQL` APIs like [Github](https://developer.github.com/v4/guides/intro-to-graphql/) and [Shopify](https://help.shopify.com/en/api/custom-storefronts/storefront-api/graphql) do make use of it. We also use it more and more (both for real cursors and as an adapter around `limit` and `offset` based APIs).
 
 Not having a default pagination abstraction obviously gives some flexibility and adaptability for `GraphQL` itself, but I can't help to think that `GraphQL` could benefit from having a default abstraction for this out of the box. If there was an explicit concept, tooling could make better use of this and also frontend components would have a more standardized notion of pages of data. 
 
@@ -110,7 +110,7 @@ Take a look at the following dashboard. Guess where most of the `P999` and `MAX`
 
 Needless to say, this clogs throughput on the gateway side and decreases the capability to properly monitor the system. Even worse, you run into situations where the frontend times out, but the upload has reached the servers and is actually being processed (only very slowly).  
 
-We're in the process of migrating away from this quick-fix to a separate upload service based on [`tus`](https://tus.io/). In the new setup the `GraphQL` schema only provides the means to secure an upload slot and the upload is living completely outside of `GraphQL`. 
+We're in the process of migrating away from this quick-fix to a separate upload service based on [tus](https://tus.io/). In the new setup the `GraphQL` schema only provides the means to secure an upload slot and the upload is living completely outside of `GraphQL`. 
 
 I can only advice you not repeat this mistake and keep uploads separately where possible.
 
@@ -141,12 +141,12 @@ We have some few noteworthy occurrences where for queries, the same team that he
 
 # 09. Retrofitting into an existing APM solution is easier than you think
 When the question comes up today how you would monitor performance and health of your `GraphQL` application, 
-you'll likely eventually end up with [`Apollos toolsuite`](https://www.apollographql.com/platform/). The company has done a good job capturing the momentum with their former `Apollo Engine` product which was recently superseded by the `Apollo Platform`.
+you'll likely eventually end up with [Apollos toolsuite](https://www.apollographql.com/platform/). The company has done a good job capturing the momentum with their former `Apollo Engine` product which was recently superseded by the `Apollo Platform`.
 
 At the start of 2017, when we started. `Apollo` wasn't there yet though and a bit later we also didn't feel fully confident to put such a young product in front of our platform. So we rolled our own integration into the existing monitoring solutions used at my employer:
 
-- [`Logjam`](https://github.com/skaes/logjam_app) for application performance monitoring and request tracing
-- [`Grafana`](https://grafana.com/), [`Prometheus`](https://prometheus.io/) and [`Prometheus alertmanager`](https://prometheus.io/docs/alerting/alertmanager/) for filling in the blanks where we either wanted or needed more information that couldn't easily be expressed in `Logjam`
+- [Logjam](https://github.com/skaes/logjam_app) for application performance monitoring and request tracing
+- [Grafana](https://grafana.com/), [Prometheus](https://prometheus.io/) and [Prometheus alertmanager](https://prometheus.io/docs/alerting/alertmanager/) for filling in the blanks where we either wanted or needed more information that couldn't easily be expressed in `Logjam`
 
 The effort in making this happen was manageable. People that came into contact with our `GraphQL` gateway could continue to use the tools they were already familiar with. And of course, if were ever wanted to do something special, we could bend our tooling to our will. To give you some ideas how it looks:
 
@@ -175,7 +175,7 @@ If you want to have a fully declarative approach, you need to fill in the resolv
 
 Too be clear we're pretty happy with our results. With our system, we're able to push an executable schema into the server within seconds, making it super smooth to work with. But we've also diverged from the typical `GraphQL` approach quite a bit. The end of this is not foreseeable and the future will tell how good we'll fare with our approach (compared to the alternatives).
 
-> In case you're curious: My co-worker David gave an excellent talk about our SDL approach at last [years `GraphQL EU` conference](https://www.youtube.com/watch?v=kMOq3nf8vKY).
+> In case you're curious: My co-worker David gave an excellent talk about our SDL approach at last [years GraphQL EU conference](https://www.youtube.com/watch?v=kMOq3nf8vKY).
 
 # Conclusion
 This post started out as the summary of what we learned in the first year with `GraphQL`. Somewhere in the first half, it somehow reshaped into overall learnings so far. Things usually overlap a bit time-wise and I thought the post is probably more valuable if I share all of our learnings.
