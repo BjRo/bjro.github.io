@@ -109,7 +109,7 @@ class ConstResolverSpec extends EngineSpecification {
       response.result must beJson("""
           | {
           |   "data" : {
-          |     "anInt" : 1234
+          |     "aString" : "MUCH STRING"
           |   }
           | }
         """)
