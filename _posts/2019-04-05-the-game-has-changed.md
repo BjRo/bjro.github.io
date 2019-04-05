@@ -91,6 +91,15 @@ For IT professionals that like to argue about technical excellence, code quality
 
 Similarly, and that's even harder for someone like me to swallow, it doesn't matter what good, productive atmosphere you created, how adaptable your team is, how fast it makes it makes informed decisions, if you're not delivering on results, you're likely not positively remembered.
 
+## Realize that your expertness from yesterday can soon be over
+Remember when Jose Mourinho still called himself "the special one"? That was before he was fired three times from Real Madrid, Chelsea London and Manchester United.
+
+For me he seems to be a pretty good example of someone that used to be successful, but wasn't able to adjust his skills while the football was changing around him. And now most opponents have understood the defensive style he's playing. Without re-inventing himself, he won't be able to get back to his glorious days.
+
+In a similar vain, as a technical person you direly need to continue learning. Either that or things might become very frustrating on the job market. Engineering managers have also the tendency to be an endangered species, at least the ones that want to be involved in technical solutions to a certain degree. Very often their day 2 day duties don't involve coding and knowingly or unknowingly their former knowledge slowly but continuously gets outdated to the point where they're maybe making decisions about things they've never used or touched. Usually a recipe for disaster.
+
+I'm personally trying to spend more than 25% time per week on operational topics (such as coding, documentation, technical support, etc.) with my team so that I don't loose touch with them. 
+
 ## Embrace that we're all on a way to somewhere
 Like players in the pitch, there's high demand for really great IT professionals on the market. You can try to fight that, but you can also choose to embrace that. Allow your team to be in the spotlight wherever possible. Give the thing you're working on actual faces that people can relate too. Increase their marked value. Aim for having a good and successful time together. Because eventually like all good times in life, things will come to an end. One or more of you are going to leave. That's normal and fine. But the relationships stick and your team culture and spirit might also be preserved even when you're not part of it any more.
 
