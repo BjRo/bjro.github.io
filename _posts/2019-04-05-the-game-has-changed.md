@@ -11,7 +11,7 @@ If you compare modern football teams to their predecessors 20-30 years ago, I th
   
 In a nutshell teams were composed of highly specialized people focusing on their respective duties. If memory serves me right, I also remember much more independent actions in the past and the system that squads were playing back in the days was pretty static compared to today.
 
-One thing seem to have changed in the last decades: The game has become [much faster](https://90soccer.com/how-the-sport-of-soccer-has-changed-over-the-years/)and [more intense](http://sciencenordic.com/scientists-football-has-changed-dramatically), requiring much [more fitness](https://www.grassrootscoaching.com/how-the-game-of-football-has-evolved-over-the-last-20-years-part-one/), [more collaboration and faster reaction times](https://www.grassrootscoaching.com/how-the-game-of-football-has-evolved-over-the-last-20-years-part-two/).
+One thing seem to have changed in the last decades: The game has become [much faster](https://90soccer.com/how-the-sport-of-soccer-has-changed-over-the-years/) and [more intense](http://sciencenordic.com/scientists-football-has-changed-dramatically), requiring [much   more fitness](https://www.grassrootscoaching.com/how-the-game-of-football-has-evolved-over-the-last-20-years-part-one/), [more collaboration and faster reaction times](https://www.grassrootscoaching.com/how-the-game-of-football-has-evolved-over-the-last-20-years-part-two/).
 
 Just to name a few stats I dug up via Google
 
