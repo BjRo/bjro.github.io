@@ -67,13 +67,32 @@ Funny side effect of this, is that they seem to support each better than any spe
 An in the face of a more fast paced world around us, I believe we need exactly that. Teams that are able to adapt and change gears quickly, that are not afraid of loosing their past investments when going into an area where are they're not the expert anymore. For me that's true agility.
 
 ## Constant inspection, feedback and tinkering creates highly performing teams
-## Start with frameworks (if you have to), but in the end following principles is more beneficial
-## Prepare similarly for expected as also unexpected situations 
+The intuitively looking collaboration you see in successful squads on the pitch, is actually the result of many, many months and years of training. Successful teams train different game situations over and over again, stopping them, discussing them, correcting them. Both as a group, but also at an individual level. It's tinkering in its pure form. But because of this inspect and repeat loop, when the situation requires it, most of the action happens on autopilot and the mental capacity can be used for other things such as creatively resolving whatever situation is in front of you.
+
+What you can take from this is that there's value to standardize, codify and/or document how your doing things and iterate on that. To capture tacit knowledge and to make it visible and available to everyone. 
+
+In my team we went to the extreme and defined everything as an MVP (Most Valuable Product, in the lean sense), so that the way we work and the software we produce is constantly inspected and refined based on hypothesis. It has served us well and is I believe one of the reasons why we were successful in the last 2 years.
+
 ## You can sprint, but not forever
+Football as a game has become much more intense as described earlier. Interesting side effect from this is that we don't have a constant level of intensity, but more like alternating phases of rushing and slower phases in the game where it's usually less pleasurable to watch. 
+
+Similarly in software engineering or IT teams, no matter how many Scrum enthusiasts are saying it out there, you can't always sprint. It's just not sustainable. You need these less productive phases to recover, if you sprint. 
+
+Even more controversial to some probably, the more sustainable and at the same time more predictable way is actually not to sprint at all, but working at a constant throughput and slightly below 70% utilization. 
+
+Totally boring, but effective. And a topics full books have been written about, so I leave it at that here.
+
 ## Realize that you're measured by results only
+There's an ugly truth to competitive sports: No matter how ugly you play, nobody will probably bother as long as you deliver the expected results (or even go beyond that). 
+
+On the other hand, how many trainers do you know of that are still in their seat, whose teams played beautifully but weren't really successful?
+
+For IT professionals that like to argue about technical excellence, code quality, testability etc. this is sometimes hard to swallow, but a product that has 100% test coverage but fails to deliver value to the end user, will go down as a failure in the history of the organization no matter how good the technical bits were.
+
+Similarly, and that's even harder for someone like me to swallow, it doesn't matter what good, productive atmosphere you created, how adaptable your team is, how fast it makes it makes informed decisions, if you're not delivering on results, you're likely not positively remembered.
+
 ## Embrace that we're all on a way to somewhere
 Like players in the pitch, there's high demand for really great IT professionals on the market. You can try to fight that, but you can also choose to embrace that. Allow your team to be in the spotlight wherever possible. Give the thing you're working on actual faces that people can relate too. Increase their marked value. Aim for having a good and successful time together. Because eventually like all good times in life, things will come to an end. One or more of you are going to leave. That's normal and fine. But the relationships stick and your team culture and spirit might also be preserved even when you're not part of it any more.
-
 
 # Closing thoughts
 
