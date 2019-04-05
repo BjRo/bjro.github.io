@@ -41,17 +41,39 @@ I think that you can derive some broader principles and deeper understanding abo
 
 >A lot of the insights I'm going to touch on next are probably worth their own detailed look. I'm leaving this for other posts though to see if there's enough interest and effort of jotting them down is justified.
 
-## 1. As somebody leading a team, you're the one responsible for laying the groundwork for the speed of decisions
-## 2. There is not such thing as enough transparency
-## 3. Explicit almost always wins over implicit
-## 4. Generalists over specialists
-## 5. Your team should be the ones in the spotlight, not the manager/coach
-## 6. Embrace that we're all on a way to somewhere
-## 7. Constant inspection, feedback and tinkering creates highly performing teams
-## 8. Start with frameworks (if you have to), but in the end following principles is more beneficial
-## 9. Prepare similarly for expected as also unexpected situations 
-## 10. You can sprint, but not forever
-## 11. Realize that you're measured by results only
+## There is no such thing as "enough transparency"
+A lot about what is perceived as performance often (but not always) boils down to speed of making decisions. In order to be able to make the adequate ones, I think you need proper context. You need to have a thorough understanding of the "Why?" in order to derive the "What?" and the "How?". And usually there are plenty of "What?"s and "How?"s.
+
+Some managers work with information, but wherever I can I try to make as much information available to my team as possible, the good ones and the bad ones, so that the proper decisions have a chance to be formed within the team. I also learned that there's quite a bit of loyalty involved when you're open about the negative and not working things from the start. Some applicants thought I was trying to talk them out of an open position when in fact I was being transparent about what working in my team compared to working to what he/she was used to. But the ones that took it on are still with me, even if it has been stressful sometimes.
+
+## Explicit almost always wins over implicit
+Some people do get pleasure from being the sole point for authority of their area and that all important decisions have to be acknowledged by them. I'm not one of those people. On the contrary I think it hinders day to day team performance when someone when an engineering lead or manager is asked for permission on all sorts of things. 
+
+As the enemies of Admiral Nelson in the [battle of Trafalgar](https://en.wikipedia.org/wiki/Battle_of_Trafalgar) found out, things get slightly messy when you're relying on a central authority which is not available and the rest of the gang is suddenly without direction.
+
+Similarly in the pitch as a player, you can't wait for someone else to make decisions for you, you're forced to make the decisions yourself under time pressure. 
+
+The point here is that the more information you've got available and the clearer your picture is on what your responsibility and authority is, the faster the decisions will likely happen.
+
+I've used [Delegation Poker and Delegation Boards](https://management30.com/practice/delegation-poker/) to sort out and clarify decision making with success in the last 2 years and it feels right and natural to me. 
+
+## Generalists over specialists
+The engineers in my team are jotting and discussing requirements, implement features in multiple programing languages (we've used `Scala`, `Ruby` and a bit of `Go` in the last 2 years), doing QA, giving workshops and internal trainings, organizing all major agile-ish meetings (like groomings, retros), talking to customer teams (we're building an internal developer oriented product) and many other things. 
+
+There's no `Product Owner` in my team, no `Project Manager`, no `Agile Coach` or `Scrum Master`. They simply do everything themselves. 
+
+Funny side effect of this, is that they seem to support each better than any specialist team I've worked with in the past. Does it mean that everybody is awesome in everything? No, but we're all improving in multiple dimensions and it's a pleasure to see how this group adapts to new situations as a group.
+
+An in the face of a more fast paced world around us, I believe we need exactly that. Teams that are able to adapt and change gears quickly, that are not afraid of loosing their past investments when going into an area where are they're not the expert anymore. For me that's true agility.
+
+## Constant inspection, feedback and tinkering creates highly performing teams
+## Start with frameworks (if you have to), but in the end following principles is more beneficial
+## Prepare similarly for expected as also unexpected situations 
+## You can sprint, but not forever
+## Realize that you're measured by results only
+## Embrace that we're all on a way to somewhere
+Like players in the pitch, there's high demand for really great IT professionals on the market. You can try to fight that, but you can also choose to embrace that. Allow your team to be in the spotlight wherever possible. Give the thing you're working on actual faces that people can relate too. Increase their marked value. Aim for having a good and successful time together. Because eventually like all good times in life, things will come to an end. One or more of you are going to leave. That's normal and fine. But the relationships stick and your team culture and spirit might also be preserved even when you're not part of it any more.
+
 
 # Closing thoughts
 
