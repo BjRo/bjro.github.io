@@ -33,6 +33,13 @@ If you ever watched a top squad from the higher ranks of a stadium, you'd also p
 
 # So why am I writing about this?
 
-I find that fascinating and beautiful. When I was looking for inspiration on how I wanted to lead an engineering team, I was looking into all sorts of places. Besides the typical management literature two areas that you often end up at are competitive, squad based sports and the military. And I usually prefer the former. 
+I find that fascinating and beautiful. When I was looking for inspiration on how I wanted to lead an engineering team, I peeked into all sorts of disciplines and professions. Besides the typical management literature two areas that you often end up at are competitive, squad based sports and the military. And I usually prefer the former. 
 
-I see a lot of similarities between the increased need for delivering faster to customers while maintaining or even increasing the quality of the delivered product in the IT world and what I described earlier about sports.
+I see a lot of similarities between the increased need for delivering faster to customers, iterating faster on our product while maintaining or even increasing the quality of the delivered product in the IT world and the development I described earlier about football. I think that you can derive some broader principles and deeper understanding about teams and on how to lead a team from this that can have a dramatic impact on the perceived performance of the team. At least it had a dramatic insight for me. 
+
+>A lot of the insights I'm going to touch on next are probably worth their own detailed look. I'm leaving this for other posts though to see if there's enough interest and justified.
+
+
+
+# English football example
+You can't always sprint
