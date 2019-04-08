@@ -41,7 +41,7 @@ I think that you can derive some broader principles and deeper understanding abo
 
 >A lot of the insights I'm going to touch on next are probably worth their own detailed look. I'm leaving this for other posts though to see if there's enough interest and effort of jotting them down is justified.
 
-## There is no such thing as "enough transparency"
+## There is no such thing as too much transparency
 A lot about what is perceived as performance often (but not always) boils down to speed of making decisions. In order to be able to make the adequate ones, I think you need proper context. You need to have a thorough understanding of the "Why?" in order to derive the "What?" and the "How?". And usually there are plenty of "What?"s and "How?"s.
 
 Some managers work with information, but wherever I can I try to make as much information available to my team as possible, the good ones and the bad ones, so that the proper decisions have a chance to be formed within the team. I also learned that there's quite a bit of loyalty involved when you're open about the negative and not working things from the start. Some applicants thought I was trying to talk them out of an open position when in fact I was being transparent about what working in my team compared to working to what he/she was used to. But the ones that took it on are still with me, even if it has been stressful sometimes.
@@ -91,7 +91,7 @@ For IT professionals that like to argue about technical excellence, code quality
 
 Similarly, and that's even harder for someone like me to swallow, it doesn't matter what good, productive atmosphere you created, how adaptable your team is, how fast it makes it makes informed decisions, if you're not delivering on results, you're likely not positively remembered.
 
-## Realize that your expertness from yesterday can soon be over
+## Realize that your expertise from yesterday is slowly but silently depleting
 Remember when Jose Mourinho still called himself "the special one"? That was before he was fired three times from Real Madrid, Chelsea London and Manchester United.
 
 For me he seems to be a pretty good example of someone that used to be successful, but wasn't able to adjust his skills while the football was changing around him. And now most opponents have understood the defensive style he's playing. Without re-inventing himself, he won't be able to get back to his glorious days.
