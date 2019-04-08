@@ -37,32 +37,36 @@ I find that fascinating and beautiful. When I was looking for inspiration on how
 
 I see a lot of similarities between the increased need for delivering faster to customers, iterating faster on our product while maintaining or even increasing the quality of the delivered product in the IT world and the development I described earlier about football. 
 
-I think that you can derive some broader principles and deeper understanding about teams and on how to lead a team from this that can have a dramatic impact on the performance of the team. At least it had dramatic insights for me and shaped how I'm running my team for the last 2 years. 
+I also think from that you can derive some broader principles and deeper understanding about teams and on how to lead in such environments. At least it had a dramatic impact on me and shaped how I'm running my team for the last 2 years. 
 
->A lot of the insights I'm going to touch on next are probably worth their own detailed look. I'm leaving this for other posts though to see if there's enough interest and effort of jotting them down is justified.
+> A lot of the insights I'm going to touch on next are probably worth their own detailed look. I'm leaving this for other posts though to see if there's enough interest and effort of jotting them down is justified.
+>
+> Please also note that these are my conclusions. There's a chance that they're wrong in the broader context and not applicable for everyone. I'm just a flawed human being as everyone else. But I've seen these things working and producing tangible results. 
+>
+>So let's dive right to it
 
 ## There is no such thing as too much transparency
 A lot about what is perceived as performance often (but not always) boils down to speed of making decisions. In order to be able to make the adequate ones, I think you need proper context. You need to have a thorough understanding of the "Why?" in order to derive the "What?" and the "How?". And usually there are plenty of "What?"s and "How?"s.
 
 Some managers work with information, but wherever I can I try to make as much information available to my team as possible, the good ones and the bad ones, so that the proper decisions have a chance to be formed within the team. I also learned that there's quite a bit of loyalty involved when you're open about the negative and not working things from the start. Some applicants thought I was trying to talk them out of an open position when in fact I was being transparent about what working in my team compared to working to what he/she was used to. But the ones that took it on are still with me, even if it has been stressful sometimes.
 
-## Explicit almost always wins over implicit
-Some people do get pleasure from being the sole point for authority of their area and that all important decisions have to be acknowledged by them. I'm not one of those people. On the contrary I think it hinders day to day team performance when someone when an engineering lead or manager is asked for permission on all sorts of things. 
+## Explicit more often than not wins over implicit
+Some people do get pleasure from being the sole point for authority of their area and that all important decisions have to be acknowledged by them. I'm not one of those people. On the contrary I think it hinders day to day team performance when an engineering lead or manager is asked for permission on all sorts of things. 
 
 As the enemies of Admiral Nelson in the [battle of Trafalgar](https://en.wikipedia.org/wiki/Battle_of_Trafalgar) found out, things get slightly messy when you're relying on a central authority which is not available and the rest of the gang is suddenly without direction.
 
 Similarly in the pitch as a player, you can't wait for someone else to make decisions for you, you're forced to make the decisions yourself under time pressure. 
 
-The point here is that the more information you've got available and the clearer your picture is on what your responsibility and authority is, the faster the decisions will likely happen.
+The point here is that the more information you've got available and the clearer your picture is on what your responsibility and authority is, the faster the decisions will likely happen. You simply have more mental capacity available for the job at hand.
 
 I've used [Delegation Poker and Delegation Boards](https://management30.com/practice/delegation-poker/) to sort out and clarify decision making with success in the last 2 years and it feels right and natural to me. 
 
 ## Generalists over specialists
-The engineers in my team are jotting and discussing requirements, implement features in multiple programing languages (we've used `Scala`, `Ruby` and a bit of `Go` in the last 2 years), doing QA, giving workshops and internal trainings, organizing all major agile-ish meetings (like groomings, retros), talking to customer teams (we're building an internal developer oriented product) and many other things. 
+The engineers in my team are jotting down and discussing requirements, implement features in multiple programing languages (we've used `Scala`, `Ruby` and a bit of `Go` in the last 2 years), doing QA, giving workshops and internal trainings, organizing all major agile-ish meetings (like groomings, retros), talking to customer teams (we're building an internal developer oriented product) and many other things. 
 
 There's no `Product Owner` in my team, no `Project Manager`, no `Agile Coach` or `Scrum Master`. They simply do everything themselves. 
 
-Funny side effect of this, is that they seem to support each better than any specialist team I've worked with in the past. Does it mean that everybody is awesome in everything? No, but we're all improving in multiple dimensions and it's a pleasure to see how this group adapts to new situations as a group.
+Funny side effect of this, is that they seem to support each better than any specialist team I've worked with in the past. Does it mean that everybody is awesome in everything? No, but we're all improving in multiple dimensions and it's a pleasure to see how this group adapts to new situations.
 
 An in the face of a more fast paced world around us, I believe we need exactly that. Teams that are able to adapt and change gears quickly, that are not afraid of loosing their past investments when going into an area where are they're not the expert anymore. For me that's true agility.
 
@@ -82,16 +86,16 @@ Even more controversial to some probably, the more sustainable and at the same t
 
 Totally boring, but effective. And a topics full books have been written about, so I leave it at that here.
 
-## Realize that you're measured by results only
+## You're measured by results only
 There's an ugly truth to competitive sports: No matter how ugly you play, nobody will probably bother as long as you deliver the expected results (or even go beyond that). 
 
 On the other hand, how many trainers do you know of that are still in their seat, whose teams played beautifully but weren't really successful?
 
 For IT professionals that like to argue about technical excellence, code quality, testability etc. this is sometimes hard to swallow, but a product that has 100% test coverage but fails to deliver value to the end user, will go down as a failure in the history of the organization no matter how good the technical bits were.
 
-Similarly, and that's even harder for someone like me to swallow, it doesn't matter what good, productive atmosphere you created, how adaptable your team is, how fast it makes it makes informed decisions, if you're not delivering on results, you're likely not positively remembered.
+Similarly, and that's even harder for someone like me to swallow, it doesn't matter what good, productive atmosphere you created, how adaptable your team is, how fast it makes informed decisions, if you're not delivering on results, you're likely not positively remembered.
 
-## Realize that your expertise from yesterday is slowly but silently depleting
+## Your expertise from yesterday is slowly but silently depleting
 Remember when Jose Mourinho still called himself "the special one"? That was before he was fired three times from Real Madrid, Chelsea London and Manchester United.
 
 For me he seems to be a pretty good example of someone that used to be successful, but wasn't able to adjust his skills while the football was changing around him. And now most opponents have understood the defensive style he's playing. Without re-inventing himself, he won't be able to get back to his glorious days.
