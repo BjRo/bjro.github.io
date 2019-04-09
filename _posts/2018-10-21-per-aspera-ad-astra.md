@@ -38,7 +38,7 @@ Björn
 4. [The initial game plan](/the-game-plan)
 5. [On agile codebases](/on-agile-codebases/)
 6. [Interlude: Our GraphQL learnings and observations](/graphql-retro/)
-7. Curating an adaptive team culture
+7. [The game has changed](/the-game-has-changed/)
 8. GraphQL meet lighthouse project, lighthouse project meet GraphQL
 9. Wait, are you saying I can't use the status code anymore for checking for errors?
 10. Set it on fire
