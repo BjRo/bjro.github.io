@@ -3,9 +3,9 @@ title: The game has changed
 ---
 If you compare modern football teams to their predecessors 20-30 years ago, I think you can spot some interesting differences. Taking a look at the typical players for instance it seems to me that they were much more stereotypical than today. 
 
-* Goalies prevented the goals, but everyone got nervous when they had the ball at their foot. 
+* Goalies prevented the goals, but everyone got nervous when they had the ball at their foot 
 
-* Defenders were mostly about destroying the opponents game, participating in the game with the ball itself came second. Think of Jürgen Kohler for example.
+* Defenders were mostly about destroying the opponents game, participating in the game with the ball itself came second. Think of Jürgen Kohler for example
 
 * Creative mid-fielders and strikers were often completely freed of any defensive responsibilities. And we often had single players that dominated the games. (We still have Messi and Ronaldo, but they're probably the exception). Some famous midf-fielders or strikers were even smokers (Mario Basler anyone?)
   
@@ -21,9 +21,9 @@ Just to name a few stats I dug up via Google
 
 As a consequence the squads we're seeing today play the game radically different to what I was used seeing in my youth. Gone are the high specializations of the past. 
 
-* Goalies need to be good with the ball, 
-* Defenders are often the ones who open up a counter attack either over the wings or through the center. 
-* The offensive that's freed from all defensive duties is pretty much gone. Defensive is now starting at the frontline. Mid-fielders and strikers do have to play their role in it.
+* Goalies need to be good with the ball 
+* Defenders are often the ones who open up a counter attack either over the wings or through the center 
+* The offensive that's freed from all defensive duties is pretty much gone. Defensive is now starting at the frontline. Mid-fielders and strikers do have to play their role in it
 
 All of them need to be highly trained athletes in order to be able to compete at highest level. Gone are the smokers of the past. And another fascinating thing seems to have changed: The dynamics between the coach at the sidelines, the system and the players on the field.
 
@@ -41,14 +41,16 @@ I also think from that you can derive some broader principles and deeper underst
 
 > A lot of the insights I'm going to touch on next are probably worth their own detailed look. I'm leaving this for other posts though to see if there's enough interest and effort of jotting them down is justified.
 >
-> Please also note that these are my conclusions. There's a chance that they're wrong in the broader context and not applicable for everyone. I'm just a flawed human being as everyone else. But I've seen these things working and producing tangible results. 
+> Please also note that these are my conclusions. There's a chance that they're wrong in the broader context and not applicable for everyone. I'm just a flawed human being like everyone else. But I've seen these things working and producing tangible results. 
 >
 >So let's dive right to it
 
 ## There is no such thing as too much transparency
 A lot about what is perceived as performance often (but not always) boils down to speed of making decisions. In order to be able to make the adequate ones, I think you need proper context. You need to have a thorough understanding of the "Why?" in order to derive the "What?" and the "How?". And usually there are plenty of "What?"s and "How?"s.
 
-Some managers work with information, but wherever I can I try to make as much information available to my team as possible, the good ones and the bad ones, so that the proper decisions have a chance to be formed within the team. I also learned that there's quite a bit of loyalty involved when you're open about the negative and not working things from the start. Some applicants thought I was trying to talk them out of an open position when in fact I was being transparent about what working in my team compared to working to what he/she was used to. But the ones that took it on are still with me, even if it has been stressful sometimes.
+Some managers work with information, but wherever I can I try to make as much information available to my team as possible, the good ones and the bad ones, so that the proper decisions have a chance to be formed within the team. 
+
+I also learned that there's quite a bit of loyalty involved when you're open about the negative and not working things from the start. Some applicants thought I was trying to talk them out of an open position when in fact I was being transparent about what working in my team compared to working to what he/she was used to. But the ones that took it on are still with me, even if it has been stressful sometimes.
 
 ## Explicit more often than not wins over implicit
 Some people do get pleasure from being the sole point for authority of their area and that all important decisions have to be acknowledged by them. I'm not one of those people. On the contrary I think it hinders day to day team performance when an engineering lead or manager is asked for permission on all sorts of things. 
@@ -66,7 +68,7 @@ The engineers in my team are jotting down and discussing requirements, implement
 
 There's no `Product Owner` in my team, no `Project Manager`, no `Agile Coach` or `Scrum Master`. They simply do everything themselves. 
 
-Funny side effect of this, is that they seem to support each better than any specialist team I've worked with in the past. Does it mean that everybody is awesome in everything? No, but we're all improving in multiple dimensions and it's a pleasure to see how this group adapts to new situations.
+Funny side effect of this, is that they seem to support each better than any specialist team I've worked with in the past. Does it mean that everybody is awesome in everything? No, but we're all improving in multiple dimensions and it's a pleasure to see how this group adapts to new situations. Because there's nobody in my team that pushes back on things that need to be done with "That's not my job".
 
 An in the face of a more fast paced world around us, I believe we need exactly that. Teams that are able to adapt and change gears quickly, that are not afraid of loosing their past investments when going into an area where are they're not the expert anymore. For me that's true agility.
 
@@ -84,34 +86,34 @@ Similarly in software engineering or IT teams, no matter how many Scrum enthusia
 
 Even more controversial to some probably, the more sustainable and at the same time more predictable way is actually not to sprint at all, but working at a constant throughput and slightly below 70% utilization. 
 
-Totally boring, but effective. And a topics full books have been written about, so I leave it at that here.
+Totally boring, but effective. And a topic full books have been written about, so I leave it at that here.
 
 ## You're measured by results only
-There's an ugly truth to competitive sports: No matter how ugly you play, nobody will probably bother as long as you deliver the expected results (or even go beyond that). 
+There's an ugly truth to competitive sports: No matter how ugly you play, nobody will probably bother as long as you get the job done and deliver the expected results. 
 
 On the other hand, how many trainers do you know of that are still in their seat, whose teams played beautifully but weren't really successful?
 
 For IT professionals that like to argue about technical excellence, code quality, testability etc. this is sometimes hard to swallow, but a product that has 100% test coverage but fails to deliver value to the end user, will go down as a failure in the history of the organization no matter how good the technical bits were.
 
-Similarly, and that's even harder for someone like me to swallow, it doesn't matter what good, productive atmosphere you created, how adaptable your team is, how fast it makes informed decisions, if you're not delivering on results, you're likely not positively remembered.
+Similarly, and that's even harder for someone like me to swallow, it doesn't matter what good, productive atmosphere you created, how adaptable your team is, how fast it makes informed decisions, if you're not delivering on results, you're likely not positively remembered. Even worse, you might be replaced by an old school, top down guy that ensures in his own ways that the job gets somehow done.
 
 ## Your expertise from yesterday is slowly but silently depleting
 Remember when Jose Mourinho still called himself "the special one"? That was before he was fired three times from Real Madrid, Chelsea London and Manchester United.
 
-For me he seems to be a pretty good example of someone that used to be successful, but wasn't able to adjust his skills while the football was changing around him. And now most opponents have understood the defensive style he's playing. Without re-inventing himself, he won't be able to get back to his glorious days.
+For me he seems to be a pretty good example of someone that used to be successful, but wasn't able to adjust his skills while the football was changing around him. And now most opponents have understood the defensive style he's playing. My guess is that without re-inventing himself, he won't be able to get back to his glorious days.
 
-In a similar vain, as a technical person you direly need to continue learning. Either that or things might become very frustrating on the job market. Engineering managers have also the tendency to be an endangered species, at least the ones that want to be involved in technical solutions to a certain degree. Very often their day 2 day duties don't involve coding and knowingly or unknowingly their former knowledge slowly but continuously gets outdated to the point where they're maybe making decisions about things they've never used or touched. Usually a recipe for disaster.
+In a similar vain, as a technical person you direly need to continue learning. Either that or things might become very frustrating on the job market. Engineering managers have also the tendency to be an endangered species, at least the ones that want to be involved in technical solutions to a certain degree. Very often their day-2-day duties don't involve coding and knowingly or unknowingly their former knowledge slowly but continuously gets outdated to the point where they're maybe making decisions about things they've never used or touched. Usually a recipe for disaster.
 
-I'm personally trying to spend more than 25% time per week on operational topics (such as coding, documentation, technical support, etc.) with my team so that I don't loose touch with them. 
+I'm personally trying to spend more at least 20-25% of my time per week on operational topics (such as coding, documentation, technical support, etc.) with my team so that I don't loose touch with them. 
 
 ## Embrace that we're all on a way to somewhere
-Like players in the pitch, there's high demand for really great IT professionals on the market. You can try to fight that, but you can also choose to embrace that. Allow your team to be in the spotlight wherever possible. Give the thing you're working on actual faces that people can relate too. Increase their marked value. Aim for having a good and successful time together. Because eventually like all good times in life, things will come to an end. One or more of you are going to leave. That's normal and fine. But the relationships stick and your team culture and spirit might also be preserved even when you're not part of it any more.
+Like players in the pitch, there's high demand for really great IT professionals on the market. You can try to fight that, but you can also choose to embrace that. Allow your team to be in the spotlight wherever possible. Give the thing you're working on actual faces that people can relate too. Increase their marked value. Aim for having a good and successful time together. Cherish it, because eventually like all good times in life, things will come to an end. One or more of you are going to leave. That's normal and fine. But the relationships stick and your team culture and spirit might also be preserved even when you're not part of it any more.
 
 # Closing thoughts
 
-Things have become noticeably faster and ever changing compared to 10 or 20 years ago in our profession. Decide for yourself what this means for knowledge work and collaboration. If you're trying to fight this with yesterdays management strategies, I believe you're not that far away from a loosing streak.
+Things have become noticeably faster and ever changing compared to 10 or 20 years ago in our profession. Decide for yourself what this means for knowledge work and collaboration. I gave you a brief overview about the conclusions that I derived from this by looking outside of our profession, namely professional football.
 
-In the end of course all metaphors and analogies break down, but that doesn't mean they're completely useless. I use them as guiding principles that drive the way I make decisions and approach work together with my team. Am I perfectly following all of them? No, that would be cocky and full of hubris. But I try to follow them wherever I can. 
+In the end of course all metaphors and analogies break down, but that doesn't mean they're completely useless. I use them as guiding principles that drive the way I make decisions and approach work together with my team. Am I perfectly following all of them? Nope, I struggle every now and then. Because things are usually neither black nor white, but gray. But I try to follow them wherever I can. 
 
 If you've got questions on this, feel free to connect with me on Twitter. My handle is [@bjoernrochel](https://twitter.com/bjoernrochel). I hoped this was somewhat useful to read. At the very least it was for me for structuring my thoughts regarding this.
 
