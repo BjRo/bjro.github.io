@@ -7,7 +7,7 @@ If you compare modern football teams to their predecessors 20-30 years ago, I th
 
 * Defenders were mostly about destroying the opponents game, participating in the game with the ball itself came second. Think of Jürgen Kohler for example
 
-* Creative mid-fielders and strikers were often completely freed of any defensive responsibilities. And we often had single players that dominated the games. (We still have Messi and Ronaldo, but they're probably the exception). Some famous midf-fielders or strikers were even smokers (Mario Basler anyone?)
+* Creative mid-fielders and strikers were often completely freed of any defensive responsibilities. And we often had single players that dominated the games. (We still have Messi and Ronaldo, but they're probably the exception). Some famous mid-fielders or strikers were even smokers (Mario Basler anyone?)
   
 In a nutshell teams were composed of highly specialized people focusing on their respective duties. If memory serves me right, I also remember much more independent actions in the past and the system that squads were playing back in the days was pretty static compared to today.
 
