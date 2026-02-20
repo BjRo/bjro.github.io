@@ -6,6 +6,8 @@ Let me tell you about the dumbest smart thing I've recently done.
 
 I needed to update my CV. A normal person would spend an afternoon reformatting bullet points and adding their latest role. Instead, I spent multiple weeks deep-diving into Claude Code to build a full application that ingests reference letters, extracts testimonials using LLMs, and produces a credible CV complete with quotes and skill validations.
 
+![The CV that came out of weeks of engineering instead of an afternoon of formatting](/assets/images/credfolio-cv.png)
+
 An afternoon task turned into weeks of engineering. And I regret nothing — because the CV was never the point. The point was understanding what this technology can actually do when you push it, and what it can't.
 
 That experience, combined with 2+ years of working with AI coding tools professionally, has left me with a perspective on where software engineering is headed that I think is worth sharing. Not because I have all the answers — none of us do — but because I've been through enough of the hype cycle to have some battle scars.
@@ -16,9 +18,13 @@ A bit of context. I've spent the last four years working remotely for a US-based
 
 As a result, my organisation went through the full progression: Copilot, then Cursor, then Devin, then Claude and Codex. I watched this evolution happen in real-time — and I watched my own role evolve with it. As an Engineering Manager, I found myself becoming dramatically more hands-on, shipping code on top of my normal leadership responsibilities. My GitHub commit graph tells a story that would have been impossible five years ago.
 
+![My GitHub contribution graph](/assets/images/github-timeline.png)
+
 I've been on every stage of the hype cycle with this technology. The initial wonder. The inflated expectations. The disillusionment when it generates confident nonsense. The quiet realisation that it's genuinely useful when you know how to wield it. I've even had the existential crisis — the 3 AM thought of *"is my career about to become irrelevant?"*
 
 So when Dario Amodei predicted that 90-100% of code would be written by AI by the end of 2025, my initial reaction was unambiguous: *full of shit.*
+
+![Dario Amodei, CEO of Anthropic](/assets/images/amodei.jpg)
 
 ## The Amodei Prediction, Revisited
 
@@ -54,6 +60,8 @@ And here's what they haven't seen much of: *your specific system.* Your org's pr
 
 ## The Dark Side: Where Expertise Actually Lives
 
+![The 2 AM incident — where real engineering expertise lives](/assets/images/dark-side-ops.png)
+
 This brings me to what I think is the most underappreciated argument in this entire debate.
 
 **The hard part of software engineering has never been writing code on the happy path.**
@@ -75,6 +83,8 @@ Now, I want to be honest here: AI *is* starting to enter these domains. There ar
 AI needs an operator.
 
 ## So Is It Just a Fad? Can We Lean Back?
+
+![The hype cycle roller coaster](/assets/images/hype-cycle.png){: style="max-width: 55%; display: block; margin: 0 auto;"}
 
 Absolutely not.
 
@@ -108,7 +118,10 @@ I want to close with a framing that I think cuts through both the hype and the d
 
 Grady Booch — one of the foundational thinkers in software engineering, co-creator of UML, and someone who has been thinking about this field longer than most of us have been alive — has described where we are as the **third golden age of software engineering.**
 
-As Gergely Orosz explored in [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/the-third-golden-age-of-software), Booch's framework goes like this:
+![Grady Booch on the third golden age of software engineering — Image from The Pragmatic Engineer](/assets/images/grady-booch.jpg)
+*Image credit: [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/the-third-golden-age-of-software)*
+
+Gergely Orosz did an excellent deep-dive into Booch's thinking in [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/the-third-golden-age-of-software) — it's well worth your time if you want the full picture. Booch's framework goes like this:
 
 - **The first golden age** (1940s–1970s) was about algorithms and computational theory. We figured out *what* computers could do.
 - **The second golden age** (1970s–2000s) was about managing complexity — object-oriented programming, design patterns, software architecture. We figured out how to build *large* things.
