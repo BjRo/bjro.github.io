@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Neon skin (customized)
+   shadcn/ui dark theme applied to Minimal Mistakes
+   ========================================================================== */
+
+/* Colors — mapped from shadcn/ui dark theme oklch values */
+$background-color: #0a0a0a !default;           /* oklch(0.145 0 0) */
+$text-color: #fafafa !default;                  /* oklch(0.985 0 0) */
+$primary-color: #e84466 !default;               /* brighter warm pink-crimson */
+$border-color: rgba(255, 255, 255, 0.1) !default; /* oklch(1 0 0 / 10%) */
+$code-background-color: #171717 !default;       /* card */
+$code-background-color-dark: #0a0a0a !default;  /* background */
+$form-background-color: #171717 !default;       /* card */
+$footer-background-color: #0a0a0a !default;     /* background */
+$link-color: $primary-color !default;
+$link-color-hover: mix(#fff, $link-color, 25%) !default;
+$link-color-visited: mix(#000, $link-color, 15%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $primary-color !default;
+$navicon-link-color-hover: #262626 !default;    /* muted */
+
+/* notices */
+$notice-background-mix: 90% !default;
+$code-notice-background-mix: 95% !default;
+
+/* syntax highlighting (base16) */
+$base00: #ffffff !default;
+$base01: #e0e0e0 !default;
+$base02: #d0d0d0 !default;
+$base03: #b0b0b0 !default;
+$base04: #000000 !default;
+$base05: #101010 !default;
+$base06: #151515 !default;
+$base07: #202020 !default;
+$base08: #ff0086 !default;
+$base09: #fd8900 !default;
+$base0a: #aba800 !default;
+$base0b: #00c918 !default;
+$base0c: #1faaaa !default;
+$base0d: #3777e6 !default;
+$base0e: #ad00a1 !default;
+$base0f: #cc6633 !default;
+
+/* Light masthead */
+.masthead {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+
+  a {
+    color: #0a0a0a;
+  }
+
+  .site-title {
+    color: #0a0a0a;
+  }
+
+  .greedy-nav {
+    background: #f5f5f5;
+
+    a {
+      color: #0a0a0a;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+$masthead-link-color: #0a0a0a;
+
+/* Content card — shadcn card color */
+.page__inner-wrap {
+  background-color: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 1.5em 2em;
+  font-weight: 300;
+
+  @media (max-width: 600px) {
+    padding: 1em 1.25em;
+    border-radius: 10px;
+  }
+}
+
+/* Author sidebar */
+.sidebar {
+  .author__avatar {
+    img {
+      border: 2px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .author__urls .svg-inline--fa,
+  .author__urls .fa,
+  .author__urls .fab,
+  .author__urls .fas {
+    color: $text-color;
+  }
+}
