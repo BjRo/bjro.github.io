@@ -83,6 +83,14 @@ $masthead-link-color: #0a0a0a;
   }
 }
 
+/* Post meta — muted gray for date and read time */
+.page__meta,
+.page__meta .page__meta-date,
+.page__meta .page__meta-readtime,
+.page__meta .page__meta-sep {
+  color: #a1a1a1 !important;  /* shadcn muted-foreground oklch(0.708 0 0) */
+}
+
 /* Author sidebar */
 .sidebar {
   .author__avatar {
