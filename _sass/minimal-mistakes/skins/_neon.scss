@@ -83,6 +83,12 @@ $masthead-link-color: #0a0a0a;
   }
 }
 
+/* Post title in accent color */
+.page__title,
+.page__title a {
+  color: $primary-color !important;
+}
+
 /* Post meta — muted gray for date and read time */
 .page__meta,
 .page__meta .page__meta-date,
