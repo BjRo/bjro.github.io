@@ -105,12 +105,6 @@ author:
   location         : "Hamburg, Germany"
   email            :
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/bjoernrochel"
-    - label: "Xing"
-      icon: "fab fa-fw fa-xing"
-      url: "https://www.xing.com/profile/Bjoern_Rochel/cv"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/bj%C3%B6rn-rochel-51958a58/"
