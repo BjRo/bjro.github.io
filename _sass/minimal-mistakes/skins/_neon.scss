@@ -83,6 +83,20 @@ $masthead-link-color: #0a0a0a;
   }
 }
 
+/* Layout — sidebar closer to content card, wider content */
+.sidebar {
+  text-align: right;
+
+  .author__avatar {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.page {
+  padding-right: 100px !important;
+}
+
 /* Post title in accent color */
 .page__title,
 .page__title a {
