@@ -83,18 +83,51 @@ $masthead-link-color: #0a0a0a;
   }
 }
 
-/* Layout — sidebar closer to content card, wider content */
-.sidebar {
-  text-align: right;
+/* Desktop layout — sidebar closer to content, centered balance */
+@media (min-width: 64em) {
+  .sidebar {
+    text-align: right;
 
-  .author__avatar {
-    display: flex;
-    justify-content: flex-end;
+    .author__avatar {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .page {
+    padding-right: 100px !important;
   }
 }
 
-.page {
-  padding-right: 100px !important;
+/* Mobile layout */
+@media (max-width: 63.9375em) {
+  .page {
+    padding-right: 0 !important;
+  }
+
+  /* Avatar, name, follow button in one row */
+  .sidebar .h-card {
+    display: flex;
+    align-items: center;
+  }
+
+  .sidebar .author__avatar {
+    margin-right: 0.75em;
+    flex-shrink: 0;
+
+    img {
+      max-width: 50px !important;
+    }
+  }
+
+  .sidebar .author__content {
+    flex-shrink: 0;
+    margin-right: 0.75em;
+  }
+
+  .sidebar .author__urls-wrapper {
+    flex-shrink: 0;
+  }
 }
 
 /* Post title in accent color */
