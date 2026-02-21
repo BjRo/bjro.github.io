@@ -1,4 +1,5 @@
 ---
+excerpt: "The evolution of API challenges at XING from 2012 to 2016 that led us to adopt GraphQL as the foundation for a new platform."
 ---
 When I try to trace back why I think `GraphQL` is a good fit for us, I always end up somewhere in the years 2012, 2014 and 2016. Apologies upfront, this is going to be a long one.
 

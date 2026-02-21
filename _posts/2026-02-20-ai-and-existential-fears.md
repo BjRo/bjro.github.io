@@ -1,5 +1,6 @@
 ---
 title: On AI and Existential Fears
+excerpt: "An engineering manager's perspective on AI-assisted coding after 2+ years: where it genuinely helps, where it falls short, and why we're not obsolete."
 ---
 
 Let me tell you about the dumbest smart thing I've recently done.

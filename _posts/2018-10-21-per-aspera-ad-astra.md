@@ -1,4 +1,5 @@
 ---
+excerpt: "How a small team of four introduced GraphQL at XING, building a GraphQL-to-REST proxy that over 45 engineers contributed to."
 ---
 Since 2013 I've just written a single blog post on my [original blog](http://www.bjro.de). It's
 crazy how time flies, especially when you're past the 30 line. When I wrote the last post I just recently had become a dad and was still unaware on how all of this would change my life (for the better). Time was short, focus was somewhere else and honestly I also didn't think I had a good story or topic to talk about.

@@ -1,5 +1,6 @@
 ---
 title: The initial game plan
+excerpt: "Our approach to building a production GraphQL-to-REST gateway: reduce risk early, iterate fast, and set up for cheap course corrections."
 ---
 
 [Last time](/choosing-the-right-technology/) I talked about how we selected the target technology stack for our `GraphQL` project with an extensive risk analysis and prototype phase. I spent roughly 3m on the project preparation. In March 2017 my colleague Alexis and myself began actually working on the real thing, the infrastructure that's now called `XING One`. Todays post will be mostly about how we approached the implementation part of the project.

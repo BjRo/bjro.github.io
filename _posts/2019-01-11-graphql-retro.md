@@ -1,5 +1,6 @@
 ---
 title: Our GraphQL learnings and observations
+excerpt: "Honest reflections on introducing GraphQL at scale: what worked, what surprised us, and where the technology still has room to grow."
 ---
 A belated happy new year everyone! I hope everyone of you had a good start into the new year. Todays post is going to be of a different kind compared to the [rest of the the series so far](/per-aspera-ad-astra/). In the last posts I talked in depth about the "why?", the initial project decisions and the preparations we took to ensure that we'd be able to deliver on our promise. But I haven't yet talked about our actual experience of introducing `GraphQL` into our organization. 
 

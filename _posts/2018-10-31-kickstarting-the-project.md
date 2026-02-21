@@ -1,5 +1,6 @@
 ---
 title: Kickstarting the XING One project
+excerpt: "How we set up our GraphQL initiative for success through stakeholder alignment, mission clarity, and finding the right lighthouse project."
 ---
 The last time around I shed some light on why `GraphQL` was appealing to me for sorting out our API game. It would have been easy after the project was green lit just to directly dive into the technical challenges. 
 

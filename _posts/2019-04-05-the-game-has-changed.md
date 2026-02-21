@@ -1,5 +1,6 @@
 ---
 title: The game has changed
+excerpt: "What modern football can teach us about leading engineering teams in a faster, more demanding industry."
 ---
 If you compare modern football teams to their predecessors 20-30 years ago, I think you can spot some interesting differences. Taking a look at the typical players for instance it seems to me that they were much more stereotypical than today. 
 
