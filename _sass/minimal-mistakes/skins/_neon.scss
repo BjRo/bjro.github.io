@@ -65,6 +65,12 @@ $base0f: #cc6633 !default;
     border-bottom: 2px solid $primary-color;
     padding-bottom: 1px;
 
+    /* Right-align title with sidebar author info on desktop */
+    @media (min-width: 64em) {
+      flex: 0 0 278px;
+      text-align: right;
+    }
+
     strong {
       font-weight: 600;
     }
