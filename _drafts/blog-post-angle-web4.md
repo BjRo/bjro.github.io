@@ -25,9 +25,9 @@ The acquisition contains every thread of the Web 4 thesis in one event:
 
 OpenAI is now building: proprietary model (GPT) + open-source agent layer (OpenClaw) + skill marketplace (ClawHub) + messaging distribution (WhatsApp, Telegram, Signal). That's model + agent + app store + distribution. It's the full platform stack.
 
-### 2. The Android parallel is exact
+### 2. The Android parallel — structural, not strategic
 
-OpenClaw is open-source. OpenAI is packaging it into a consumer platform with curated services on top. This is Google acquiring Android (2005) and building the Play Store ecosystem around it. The open-source layer provides developer adoption and ecosystem breadth; the platform layer provides monetization and consumer UX.
+OpenClaw is open-source. OpenAI is packaging it into a consumer platform with curated services on top. The structural pattern echoes Google and Android: open-source innovation absorbed into a consumer platform with curated services on top. But the analogy has limits. Google acquired Android in 2005 *before* the smartphone market existed — Android became the platform from scratch. OpenAI is absorbing OpenClaw into an already competitive LLM landscape where multiple platforms (Claude, Gemini, their own ChatGPT) exist. This is closer to Google acquiring a popular Linux distribution than to the Android moment. The pattern — open source engine + proprietary platform layer — is the right structural read. The implication that this will be as decisive as Android was is a stretch.
 
 ### 3. The protocol convergence is real
 
@@ -35,7 +35,7 @@ OpenClaw uses mcporter to consume any MCP (Model Context Protocol) server. MCP i
 
 ### 4. The interaction model is validated
 
-OpenClaw proved something important: meeting users in messaging apps they already use (WhatsApp, Telegram) with voice and text delegation *works*. 150k+ stars in weeks is a demand signal, not just developer curiosity. People want an agent that handles things for them in channels they already live in.
+OpenClaw proved something important: meeting users in messaging apps they already use (WhatsApp, Telegram) with voice and text delegation *works*. 150k+ stars in weeks is a strong signal of developer enthusiasm and ecosystem momentum — though GitHub stars measure developer interest, not consumer demand. What it validates is the *interaction model* (delegation through existing channels), not the market size. The consumer demand question remains open.
 
 ### 5. VCs now have an investable thesis
 

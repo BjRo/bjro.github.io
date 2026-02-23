@@ -23,7 +23,7 @@ Analytical, not hype. Make the ambitious claim (Web 4.0) but earn it through pat
 - Most coverage treats this as a talent hire
 - Thesis: it's a platform play, and it signals something much larger
 
-**Historical anchor:** This is Google acquiring Android in 2005. At the time, it looked like a small mobile OS acquisition. In retrospect, it was the foundation of a platform that now runs on 4 billion devices.
+**Historical anchor:** The structural pattern echoes Google acquiring Android in 2005 — open-source innovation absorbed into a consumer platform. But the analogy has limits: Google acquired Android before the smartphone market existed; OpenAI is absorbing OpenClaw into an already competitive landscape. The pattern (open source engine + proprietary platform layer) is instructive. The implication that this will be as decisive is a stretch — and the post should be honest about that.
 
 ### 2. The Web 4.0 framing (~300 words)
 
@@ -113,7 +113,7 @@ ClawHub: the proto-app-store. Central marketplace for skills with security scann
 
 OpenAI bringing in Steinberger = packaging the open-source engine into a consumer platform. Model (GPT) + agent (OpenClaw) + marketplace (ClawHub) + messaging distribution. The full stack.
 
-**Historical anchor:** Android was Linux packaged with a consumer app store and UX on top. OpenClaw under OpenAI is the same move. Open-source innovation absorbed into the consumer platform.
+**Historical anchor:** Android was Linux packaged with a consumer app store and UX on top. OpenClaw under OpenAI follows the same structural pattern — open-source engine absorbed into a consumer platform — though in a more competitive landscape than Android faced in 2005.
 
 ### 7. The internet bifurcates — and the death of SaaS (~350 words)
 
@@ -155,7 +155,7 @@ Brief — detailed treatment in later posts. Enough to show the economics *could
 
 - The OpenClaw acquisition looks small. What it signals is large.
 - The early infrastructure of Web 4.0 is being assembled: open protocol (MCP), rich interactive UI (MCP Apps), agent layer (OpenClaw), marketplace (ClawHub), multi-client adoption
-- The question isn't whether delegation-based interaction is better for complex tasks — OpenClaw's viral adoption suggests it is
+- The question isn't whether delegation-based interaction is better for complex tasks — OpenClaw's developer traction suggests the interaction model resonates, even if GitHub stars don't prove consumer demand
 - The question is who builds the trust, payments, and discovery layer on top
 - And whether one company becomes the new Google — or the open protocol enables something more distributed
 
@@ -175,7 +175,7 @@ Every major claim is paired with a precedent:
 
 | Claim | Historical parallel |
 |-------|-------------------|
-| OpenClaw acquisition = platform play | Google acquiring Android (2005) |
+| OpenClaw acquisition = platform play | Google acquiring Android (2005) — structural pattern, not strategic equivalence |
 | Platform shifts create gatekeepers | Desktop → Web → Mobile |
 | Same vision attempted before | 2016 bot hype (Messenger, WeChat) |
 | MCP as open protocol | HTTP enabling the open web |
