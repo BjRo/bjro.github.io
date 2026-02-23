@@ -138,6 +138,20 @@ In this model, latency is reframed. 20 seconds for an agent to research, compare
 
 If the primary interaction is delegation + review, the UI requirements simplify radically. Developers don't need to design entire interactive flows — they need to expose well-typed tools and display templates for presenting results. Building for the LLM platform is closer to building an API than building an app. This lowers the developer barrier significantly.
 
+### Wearables make delegation necessary, not just preferable
+
+The thesis so far argues the delegation model is *better* than self-service for friction-heavy tasks. New device form factors make it *necessary* for all tasks.
+
+Smart glasses, earbuds, watches, and whatever Jony Ive is building at OpenAI — these devices are screen-constrained or screenless. You can't navigate Skyscanner's 14 filters on a watch face. You can't operate a comparison dashboard through smart glasses. Voice + intent + confirmation is the only viable UX on these devices. Every new form factor that moves away from a full screen is a device that can't support the self-service interaction model.
+
+The always-on, always-with-you nature of wearables also deepens the agent relationship. An agent you talk to through earbuds while walking, cooking, or driving — with persistent context from sensors (location, biometrics, time patterns) — is a richer version of the delegation model than sitting at a laptop. "Book me a restaurant near where I am, for when I usually eat" is only possible with the ambient context wearables provide. And the MCP protocol is already modality-agnostic — the same tool call works whether typed, spoken, or eventually triggered by gaze or gesture.
+
+**But wearables also shift where the power concentrates — and potentially away from the LLM platform.** The thesis positions the LLM as the new interaction layer and therefore the new distribution gatekeeper. But if the primary device shifts to glasses or earbuds, whoever controls the *device OS* controls which agent gets default access. Apple glasses with Apple's agent. Android glasses with Gemini. The device layer might be the real gatekeeper, not the LLM layer — and that's Apple and Google again. The LLM platform might be a component the device maker controls, not an independent gatekeeper. (See competitive dynamics section for how this shapes the three-way strategic bet.)
+
+Wearables also tip the centralized/decentralized balance. You're not running OpenClaw locally on smart glasses — compute and battery constraints mean the agent must run in the cloud. The self-hosted personal agent model narrows to phones and laptops. In a wearable-first world, the centralized platform model wins by default.
+
+And the "one entity sees everything" concern gets dramatically worse. An always-on wearable feeding data to an LLM platform means not just queries and transactions, but location, biometrics, gaze direction, ambient audio, physical context. The sovereignty and concentration-of-power arguments intensify with every new sensor.
+
 ## Why Consumers Should Care
 
 A thesis about platform economics and protocol architecture is irrelevant if there's no demand-side pull. The consumer value proposition is the foundation everything else rests on.
@@ -401,11 +415,34 @@ Google *could* leverage Android (~4 billion active devices) and Chrome (~66% bro
 
 ### Apple's position
 
-Potentially the most dangerous competitor. Controls iOS (the primary consumer device), already has payments infrastructure (Apple Pay), identity (Apple ID), and a developer ecosystem. If Apple's LLM becomes good enough that users never open Chrome/Google, Google loses both direct revenue and distribution.
+Potentially the most dangerous competitor — and wearables amplify the advantage. Apple already controls iOS (the primary consumer device), payments infrastructure (Apple Pay), identity (Apple ID), and a developer ecosystem. If the primary interaction shifts from phone screens to wearables (AirPods, Apple Watch, eventually glasses), Apple controls the hardware, the OS, and which agent gets default access on every new form factor. The device layer is the ultimate gatekeeper — and Apple owns it.
 
-### The insurgent path (Anthropic/OpenAI)
+Apple's bet is that the device controls the agent, not the other way around. Their LLM doesn't need to be the best. It just needs to be good enough as the default on every Apple device, the way Safari doesn't need to be the best browser when it's the default on a billion iPhones. If Apple's agent handles delegation adequately and comes pre-installed on glasses/earbuds/watch, most consumers never seek an alternative.
 
-Standalone LLM companies can move faster because they have no legacy revenue to protect. The risk is they lack existing distribution (no devices, no browser, no app store). The MCP Apps strategy — shipping across multiple clients — is a distribution play that sidesteps the device ownership problem.
+### The insurgent paths (Anthropic and OpenAI — different bets)
+
+Standalone LLM companies can move faster because they have no legacy revenue to protect. But they lack existing distribution (no devices, no browser, no app store) — and wearables make this problem worse by adding another hardware layer they don't control.
+
+**Anthropic and OpenAI are making fundamentally different bets on how to solve this:**
+
+**Anthropic's bet: the protocol is the platform.** MCP Apps ships across Claude, ChatGPT, VS Code, and Goose — deliberately multi-client. The strategy is to make the protocol layer ubiquitous and build platform services (discovery, payments, trust) on top. This sidesteps the device question entirely. If MCP becomes HTTP, it doesn't matter who makes the browser — Anthropic captures value at the protocol services layer. The risk: as the open protocol / discovery monopoly analysis shows, this only works if Anthropic can build a dominant services layer despite not controlling any device or distribution channel.
+
+**OpenAI's bet: own the device layer AND messaging distribution.** OpenAI is pursuing two distribution strategies simultaneously:
+
+1. **Software distribution via messaging** — OpenClaw meets users in WhatsApp, Telegram, Signal. This bypasses the device gatekeeper entirely by living inside apps Apple/Google can't control.
+2. **Hardware distribution via a dedicated device** — OpenAI hired Jony Ive, the designer who shaped the iPhone, iPod, and iMac, to build an AI-first device. This is OpenAI's admission that the device layer is the ultimate gatekeeper. If Apple controls glasses and earbuds, the way to escape that is to build your own hardware — designed from scratch for voice/ambient delegation, not retrofitted from a screen-first legacy.
+
+Previous AI-first hardware attempts (Humane AI Pin, Rabbit R1) failed. But those were startups without a frontier model. OpenAI + Jony Ive is a different combination: the model capability and the design capability together. Whether it produces a device that breaks Apple's hardware lock is genuinely uncertain — but the strategic intent is clear.
+
+**Three different bets on where the gatekeeper lives:**
+
+| | Strategy | Bet | Risk |
+|---|---|---|---|
+| **Apple** | Device controls the agent | Hardware is the gatekeeper | Model quality needs to be competitive |
+| **OpenAI** | Own device + messaging fallback | Hedge both layers | Hardware is unproven; messaging is limited |
+| **Anthropic** | Protocol is the platform | Services layer on open protocol | No distribution channel of their own |
+
+The wearable transition is the tiebreaker. If new form factors make the device the dominant interaction point, Apple's position strengthens and Anthropic's weakens. If the protocol layer achieves HTTP-level ubiquity and devices become interchangeable, Anthropic's bet pays off. OpenAI is hedging both outcomes.
 
 ## The Decentralized Alternative: OpenClaw and Personal Agents
 
@@ -577,6 +614,7 @@ This sequence is clean but US-centric. The global picture is messier. Sovereignt
 4. **Timeline:** Infrastructure is assembling faster than expected (MCP → MCP Apps in ~14 months). Is this a 2-3 year or 5-7 year build to full platform economics?
 5. **The discovery layer race:** On-demand schema loading is the critical missing piece between MCP and a viable platform. Who builds it — the LLM providers (Anthropic, OpenAI), the agent platforms (OpenClaw/ClawHub), or a new entrant? The open protocol makes the discovery layer *technically* contestable, but discovery has winner-take-most dynamics (more users → more providers → better ranking → more users). HTTP is open; Google has 90% of search. Will MCP-based discovery be any different, or does "open protocol + discovery monopoly" become the structural outcome?
 6. **Protocol evolution or replacement:** MCP's schema overhead is a real constraint for current context windows. Does MCP evolve (lazy loading, hierarchical discovery, capability negotiation) fast enough, or does a more efficient protocol emerge? If MCP becomes the Gopher of this era, does that delay the platform shift or just change which protocol wins?
+7. **The device layer as gatekeeper:** The thesis positions the LLM as the new interaction layer. But wearables (glasses, earbuds, watches) add a hardware layer underneath where the device maker controls which agent gets default access. Does the device layer become the real bottleneck — making this Apple's game to lose — or does the protocol achieve enough ubiquity that devices become interchangeable? OpenAI is hedging (Jony Ive device + messaging distribution). Anthropic is betting on protocol ubiquity. The wearable transition timeline determines which bet pays off.
 
 ### Consumer adoption
 7. **Latent demand or real demand?** Most consumers have normalized the friction of managing 30 apps and doing their own research. Will they actively switch to delegation-based interaction, or does the platform need a forcing function (e.g., a killer use case that makes the value undeniable)?

@@ -113,8 +113,8 @@ Key insight to land: "The builders who thrive are the ones who provide things th
 
 Covers:
 - Google's innovator's dilemma (75% of revenue from ads, can't cannibalize search)
-- Apple's hidden advantage (devices + payments + identity + developer ecosystem)
-- Anthropic vs. OpenAI: MCP Apps approach vs. OpenClaw/messaging distribution — two different bets
+- Apple's advantage amplified by wearables (devices + payments + identity + developer ecosystem — and if the primary interaction shifts to glasses/earbuds/watch, the device layer becomes the ultimate gatekeeper)
+- Three different bets on where the gatekeeper lives: Apple (device controls the agent), OpenAI (own the device via Jony Ive hire + messaging distribution via OpenClaw — hedging both layers), Anthropic (protocol is the platform via MCP Apps — no device layer, pure services bet). The wearable transition is the tiebreaker.
 - Centralized vs. decentralized: Claude/ChatGPT platforms vs. OpenClaw self-hosted agents — the hybrid future
 - Technology sovereignty: US weaponization precedent (SWIFT, Huawei, Cloud Act, TikTok), why an LLM platform is worse than Google dependency
 - Open protocol as escape hatch — necessary but not sufficient

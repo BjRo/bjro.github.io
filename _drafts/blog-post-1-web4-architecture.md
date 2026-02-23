@@ -100,6 +100,8 @@ Latency reframed: 20 seconds for an agent to research and curate 3 options is *e
 
 Implication for developers: UI requirements simplify radically. Building for Web 4.0 is closer to building an API than building an app. Expose well-typed tools and display templates. This lowers the developer barrier dramatically.
 
+Wearables as accelerant: new device form factors (smart glasses, earbuds, watches) make delegation not just preferable but *necessary* — you can't navigate Skyscanner's 14 filters on a watch face. Every screenless or screen-constrained device is a device that requires the delegation model. And the always-on sensor context (location, biometrics, time patterns) makes the agent richer. But this also raises the stakes: whoever controls the device OS controls which agent gets default access. (This is why OpenAI hired Jony Ive — see Post 4.)
+
 **Historical anchor:** The App Store lowered the barrier from "build a desktop application" to "build a mobile app." Web 4.0 lowers it further to "expose an API with a display template."
 
 ### 6. OpenClaw + mcporter: the proof it's already converging (~300 words)

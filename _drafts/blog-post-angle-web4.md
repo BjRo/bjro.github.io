@@ -87,7 +87,7 @@ The response: vertical agents handle single-domain tasks. But cross-domain coord
 
 The OpenClaw acquisition looks like a talent hire. It's actually OpenAI assembling the early infrastructure of Web 4 — the platform shift that Web 3 promised but couldn't deliver. Open protocol (MCP) + consumer agent (OpenClaw) + marketplace (ClawHub) + model (GPT) = the full stack.
 
-We're watching the App Store moment for AI. The question isn't whether it happens. It's who builds the trust, payments, and discovery layer on top — and whether one US company becomes the new Google, or the open protocol enables a more distributed future.
+We're watching the App Store moment for AI. The question isn't whether it happens. It's who builds the trust, payments, and discovery layer on top — and who controls the device you interact through. Wearables make this urgent: screen-constrained devices *require* the delegation model, but whoever controls the device OS controls which agent is the default. Three companies are making three different bets: Apple (the device is the gatekeeper), OpenAI (build our own device — hence hiring Jony Ive — plus messaging distribution as a hedge), Anthropic (the protocol is the platform, devices are interchangeable). The wearable transition may be the tiebreaker.
 
 ## Source Document
 
