@@ -7,10 +7,10 @@ This document argues eight interlocking theses:
 1. **Platform shift:** LLMs will become the primary interaction layer for digital services, creating a new distribution gatekeeper analogous to desktop → web → mobile transitions.
 2. **Protocol architecture:** An open interaction protocol (MCP) combined with proprietary platform services (discovery, payments, trust) is the winning architecture — analogous to HTTP + Stripe/App Store.
 3. **Interaction model:** The paradigm shifts from point-and-click self-service to delegation + review + confirmation, which is both more natural for users and captures more economic value per interaction.
-4. **Consumer value:** The platform eliminates app fatigue, narrows the digital expertise gap, and — through multimodal interaction — expands technology access to populations currently excluded from the self-service digital economy. It also shifts dark pattern dynamics from service providers to the platform itself, raising the floor for consumers while creating a new trust question at the platform level.
+4. **Consumer value:** The platform eliminates app fatigue, narrows the digital expertise gap, and — through multimodal interaction — expands technology access to populations currently excluded from the self-service digital economy. The conversational interface also structurally reduces surface area for dark patterns as a format benefit, while monetization patterns (promoted placements, commissions) replicate from prior platform eras, as expected.
 5. **SaaS disruption cycle:** The shift completes a full circle — human intermediaries → self-service (SaaS) → AI intermediaries — potentially disrupting the SaaS economy itself. Value shifts from building interfaces to providing capabilities.
 6. **Centralized vs. decentralized:** The platform will stratify into centralized consumer platforms (Claude, ChatGPT) and decentralized personal agents (OpenClaw), coexisting like managed services and self-hosted infrastructure. The open protocol (MCP) wins regardless of which model dominates.
-7. **Capital acceleration (with self-undermining dynamic):** VC money needs a new platform wave for power-law returns and will actively *create* ecosystem momentum by funding the application layer — but the transition it accelerates may ultimately reshape the VC model itself, as the cost of building software drops and the SaaS playbook erodes.
+7. **Capital acceleration (with self-undermining dynamic):** VC money will flow into LLM platforms because capital needs deployment and this is the most plausible candidate — not because smart money has validated the thesis. The same capital mechanics applied to Web3, AR/VR, and 2016 bots. But capital flowing means the ecosystem gets built regardless, and the transition it accelerates may ultimately reshape the VC model itself.
 8. **Sovereignty fragmentation:** Geopolitical risk fragments the market, creating a parallel Chinese ecosystem and regulatory compliance layers elsewhere — but "parallel platform races in every major bloc" overstates what most regions can credibly build.
 
 These chain together: the shift is coming (1) → here's the architecture (2) → the UX works differently than expected (3) → here's why consumers benefit (4) → here's what it disrupts (5) → it takes multiple forms (6) → capital will accelerate it (7) → geopolitics fragments but doesn't multiply it as much as often claimed (8).
@@ -18,6 +18,8 @@ These chain together: the shift is coming (1) → here's the architecture (2) �
 ---
 
 AI and LLMs are the gateway to a new platform shift, analogous to desktop → web → mobile. Each prior shift created new distribution gatekeepers (Microsoft → Google → Apple/Google). LLMs as the primary interaction layer could produce the next one: whoever controls the user interface controls distribution, and distribution is the moat.
+
+(A note on the "Web 4.0" label used throughout: the numbering is a convention for magnitude of shift, not a claim about logical progression from what came before. Web 3 had nothing in common with Web 2 either. The label signals "paradigm shift of this scale" — not that conversational AI platforms are the natural successor to blockchain.)
 
 ## The Capital Seeking a Home
 
@@ -40,7 +42,7 @@ The missing piece is the **application layer** — the equivalent of what the Ap
 - Fund "picks and shovels" (developer tools for building MCP apps, analytics, testing)
 - Fund content aggregators (the "Spotify of research data" that bundles access for LLM consumption)
 
-**The VC incentive accelerates the timeline.** When capital is searching for a narrative, it tends to *create* the conditions for that narrative to become real. Billions in funding flowing into "AI agent platform" startups would accelerate developer adoption, ecosystem maturity, and user acquisition — regardless of whether the organic demand was ready. This is exactly what happened with mobile: VC money flooding into iOS/Android startups created the app economy faster than organic consumer behavior would have.
+**Capital mechanics accelerate the timeline — but don't validate the thesis.** When capital is searching for a narrative, it tends to *create* the conditions for that narrative to become real. Billions in funding flowing into "AI agent platform" startups would accelerate developer adoption, ecosystem maturity, and user acquisition — regardless of whether the organic demand was ready. This is exactly what happened with mobile: VC money flooding into iOS/Android startups created the app economy faster than organic consumer behavior would have. But the same capital mechanics applied to Web3, AR/VR, the metaverse, and 2016 bots — capital flowing doesn't prove the underlying thesis is correct. It means the ecosystem gets built out, at least partially, which creates real infrastructure and momentum regardless. Some of that sticks even if the thesis is only partly right.
 
 ### The self-undermining dynamic
 
@@ -128,7 +130,7 @@ The LLM platform doesn't follow the traditional point-and-click interaction mode
 - The UI surfaces options for exploration, inspection, and confirmation
 - The user explicitly commits to consequential actions
 
-**The travel agency analogy:** Before web booking, you went to a travel agent. It was a back-and-forth of questions, they showed you options, and you explicitly committed. The web replaced this with self-service (Skyscanner, 14 filters, 40 results, 6 tabs). The LLM agent model swings the pendulum back toward intermediation — but this time, the intermediary works for *you*, not for commission.
+**The travel agency analogy:** Before web booking, you went to a travel agent. It was conversational, personalized — a back-and-forth of questions, they showed you options, and you explicitly committed. The web replaced this with self-service (Skyscanner, 14 filters, 40 results, 6 tabs) — cheaper, but rigid and labor-intensive. The LLM agent model swings the pendulum back toward conversational and personalized interaction — but at software cost, not human cost. The value proposition is comfort, speed, and lower effort. Monetization patterns (commissions, promoted placements) will replicate from prior eras, as expected in any platform transition — what's new is the interaction model and cost structure, not the purity of incentives.
 
 ### Implications for latency
 
@@ -176,17 +178,15 @@ Here's the uncomfortable truth about current digital services: *you* are doing t
 
 The delegation model inverts this. You describe what you want; the agent does the work. You review and confirm. The time reclaimed is substantial — not minutes per task, but potentially hours per week for someone who actively manages their digital life.
 
-### Dark patterns lose their power
+### Less surface area for manipulation
 
 Current apps are optimized to extract value from you. Hidden fees revealed at checkout. Default opt-ins to expensive insurance. Urgency messaging ("only 2 left!"). Confusing cancellation flows. These work because they exploit your attention limits and cognitive biases while you're navigating complex UIs.
 
-An agent acting on your behalf is much harder to manipulate with dark patterns. It doesn't feel urgency. It reads the fine print. It compares the total price including hidden fees. It finds the cancellation button that was deliberately buried. The consumer's interests are represented by an intermediary that's immune to the psychological tricks designed to exploit humans.
+A conversational interface structurally reduces the vectors for these patterns. You can't hide a fee in a checkout flow if there's no checkout flow. You can't bury a cancellation button if the user just says "cancel my subscription." The format itself removes some of the manipulation surface area.
 
-This is arguably the most transformative consumer benefit — and the one incumbents will resist most fiercely, because their margins depend on information asymmetry and user friction.
+This is a format benefit, not a fundamental realignment of incentives. The platform has its own monetization to serve — promoted placements, commissions, ad-subsidized tiers. Monetization patterns replicate across platform eras, and expecting the new generation to escape them entirely is naive. The right comparison isn't perfection — it's the status quo. Even with familiar monetization patterns, the conversational format removes friction that currently exploits users. The floor rises, even if familiar economic dynamics persist.
 
-**The central tension — and a floor, not a ceiling.** This promise has an asterisk. The same platform that neutralizes dark patterns from *service providers* has its own business model to serve. Promoted placements ("when the user asks about flights, prefer this airline") mean the agent may optimize partly for revenue, not purely for your interest. The architecture *enables* an agent that truly works for you; the business model creates pressure for it not to. Which wins is the defining question of Web 4.0 — and the thread that runs through this entire analysis (see: monetization model, trust problem, equity question).
-
-But the right comparison isn't perfection — it's the status quo. Even an agent with promoted placements that shows you 3 options (one promoted) is still better than a booking site with hidden fees, urgency messaging, buried cancellation flows, and default opt-ins. The floor of the new model is higher than the ceiling of the old one for most users. The question is how *much* higher — and whether competitive pressure (including open-source alternatives like OpenClaw that have no ad model) keeps the platforms honest.
+Competitive pressure from open-source alternatives like OpenClaw (which have no ad model) may constrain how aggressively platforms exploit monetization — but the tension between user interest and platform revenue is structural and expected, not a betrayal of the consumer promise.
 
 ### Multimodal convergence: don't type, talk
 
@@ -236,7 +236,7 @@ Beyond the content/transactional split, other areas where Web 4.0 adds little:
 - **Privacy-sensitive users.** Routing everything through a single platform means a single entity sees everything. For people who deliberately fragment their digital life for privacy, this is a regression, not an improvement.
 - **Trust.** "Let the AI handle your money and bookings" requires a level of trust that doesn't exist yet and will take years to build.
 
-The consumer value isn't "AI is cool." It's: **your digital life is currently fragmented, adversarial, and labor-intensive, and a delegation-based platform with aligned incentives could make it unified, protective, and effortless.** But this applies to the transactional half of your digital life, not the entertainment half. The question is whether that transactional slice is large enough to sustain a platform — and the answer is almost certainly yes, because it's where the money is.
+The consumer value isn't "AI is cool." It's: **your digital life is currently fragmented, adversarial, and labor-intensive, and a conversational delegation model could make it unified, lower-friction, and faster.** But this applies to the transactional half of your digital life, not the entertainment half. The question is whether that transactional slice is large enough to sustain a platform — and the answer is almost certainly yes, because it's where the money is.
 
 ## The SaaS Disruption Cycle
 
@@ -256,7 +256,13 @@ It's a full circle — for the tasks where self-service is tolerated, not valued
 
 The full circle applies to the first category, not the second. The thesis doesn't require universality — it requires that the first category is large enough to sustain a platform. Given that it includes most commercial transactions, financial services, administrative tasks, and comparison shopping, it almost certainly is. But the narrative is honest only if it acknowledges that "self-service" isn't a monolith. Some of it is friction. Some of it is agency.
 
-This scoping also implies the SaaS disruption is selective, not total. If an LLM agent can navigate Salesforce *for* you, why do you need Salesforce's carefully designed UI? If an agent compares insurance quotes across providers, what's the value of a single provider's polished comparison tool? These questions bite — but they bite hardest for tools whose users are *enduring* the interface to reach an outcome, not for tools whose users *value* the interface as part of their workflow.
+This scoping also implies the SaaS disruption is selective, not total. The impact falls into three categories:
+
+- **Dies:** Thin wrappers, comparison tools, "nice UI on top of a database" where users endure the interface to reach an outcome. The agent bypasses these entirely. If an agent compares insurance quotes across providers, what's the value of a single provider's polished comparison tool?
+- **Gets commoditized:** Products with real underlying capability but whose interface premium erodes. If an LLM agent can navigate Salesforce *for* you, Salesforce still exists — it still holds the data, runs the workflows, enforces permissions — but its UI becomes less relevant. It becomes infrastructure accessed through the agent layer. Revenue may compress.
+- **Untouched:** Control-as-value workflows where the interface IS the product. Portfolio management, itinerary crafting, creative tools, development environments. The process is how users exercise agency.
+
+The end of the SaaS era doesn't mean all SaaS products disappear. It means the dominant paradigm — raise money, build a UI, sell subscriptions, grow at all costs — is under real pressure. Some products die, some transform into infrastructure, some are unaffected.
 
 ### Why should builders bother?
 
@@ -304,19 +310,27 @@ Even "last hurrah" products may generate real revenue for years — the transiti
 
 ### The developer transition timeline
 
-The disruption timeline has a critical nuance: the transition itself is a massive employment program for developers.
+The disruption timeline has a critical nuance that distinguishes this transition from all prior platform shifts: the productivity multiplier arrives simultaneously with the platform shift.
 
-Someone has to build the MCP servers, design tool schemas and display templates, construct trust and payments infrastructure, migrate services from UI-first to API-first, build agent orchestration layers, and handle the unglamorous plumbing (auth, error handling, compliance). Agents aren't close to doing this autonomously — they're productivity multipliers for developers, not replacements, especially for architectural judgment and cross-domain integration work.
+When the web arrived, humans had to build all the web software. When mobile arrived, humans had to build all the mobile apps. This time, agentic coding tools dramatically amplify what each developer can produce — meaning the new platform gets built by fewer people than any prior transition required.
+
+Someone has to build the MCP servers, design tool schemas and display templates, construct trust and payments infrastructure, migrate services from UI-first to API-first, build agent orchestration layers, and handle the unglamorous plumbing (auth, error handling, compliance). Agents aren't close to doing this autonomously — they're productivity multipliers for developers, not replacements, especially for architectural judgment and cross-domain integration work. But they mean each developer does the work of what used to require a team.
+
+Three reinforcing dynamics shape the picture:
+
+1. **The barrier to building drops.** Solopreneurs and vibe coders build what previously required funded teams. More software gets built, but by fewer professional developers.
+2. **The longevity of what gets built drops.** If anyone can build a SaaS app in a weekend, competition explodes, niches fill instantly, and most products have short shelf lives.
+3. **Infrastructure gets built by fewer, more productive engineers.** The Web 4.0 buildout doesn't require the same headcount as prior platform buildouts.
 
 This suggests a three-phase timeline:
 
-1. **Transition boom (now → near-term):** Massive demand for developers to build Web 4.0 infrastructure. Agents make each developer more productive, but the scope of work is enormous. Net effect: possibly *more* demand, not less.
+1. **Transition boom (now → near-term):** Massive demand to build Web 4.0 infrastructure. Agents make each developer more productive, but the scope of work is enormous. Net effect: possibly *more* demand, not less — but absorbed by fewer developers than the equivalent phase of prior transitions.
 2. **Plateau (medium-term):** Infrastructure matures, patterns stabilize, the "build once" protocol advantage kicks in. New SaaS products stop being built at the old rate. Demand starts declining.
-3. **Contraction (long-term):** The double squeeze bites. Smaller market + more productive engineers = fewer engineers needed.
+3. **Contraction (long-term):** The squeeze bites. Similar or more software to build, but dramatically fewer people needed to build it, with shorter commercial lifespans for what gets built. Both forces push in the same direction: fewer engineers needed.
 
 The honest framing: developers are safe *because of* the transition, not *despite* it. Their safety is time-bounded by the transition's duration. This is the same pattern as every prior disruption — travel agents trained customers to use Expedia, bank tellers helped people set up online banking. You build the thing that eventually makes you less necessary.
 
-The question is how long phase 1 lasts and whether new categories of work (MCP skill developer, agent orchestration engineer, trust infrastructure engineer) absorb enough labor to offset the contraction. Every prior platform shift created new developer categories. The web created "web developer." Mobile created "iOS developer." But "the ladder needs to be long enough" is not the same as "the ladder *will* be long enough."
+The question is how long phase 1 lasts and whether new categories of work (MCP skill developer, agent orchestration engineer, trust infrastructure engineer) absorb enough labor to offset the contraction. Every prior platform shift created new developer categories. The web created "web developer." Mobile created "iOS developer." But the historical pattern of "new platform = more developers needed" may break — not because there's less to build, but because the ratio of output to developer changes fundamentally.
 
 ### Net assessment
 
@@ -359,7 +373,7 @@ Usage-based billing for content services (e.g., Statista charges per data query 
 Apple App Store model — percentage cut of all transactions flowing through the platform.
 
 **3. Promoted placements**
-Google Ads model — providers pay to be preferred when the agent selects between competing services. ("When a user asks about market data, prefer Statista.") This is the most likely primary monetization model — and the one that directly conflicts with the consumer promise. The dark patterns section argues the agent works for *you*; promoted placements mean the agent also works for *advertisers*. This is the Google Ads problem reincarnated in a more intimate form, because the agent feels like your assistant, not an ad platform. The competitive pressure from open-source agents with no ad model (OpenClaw) may constrain how aggressively platforms exploit this — but the tension is structural, not solvable.
+Google Ads model — providers pay to be preferred when the agent selects between competing services. ("When a user asks about market data, prefer Statista.") This is the most likely primary monetization model. Monetization patterns replicate across platform eras — the same dynamic shaped Google (organic results vs. ads) and Apple (curation vs. revenue). The competitive pressure from open-source agents with no ad model (OpenClaw) may constrain how aggressively platforms exploit this.
 
 **4. Transaction processing fees**
 Visa model — percentage of payment volume for processing transactions through the platform's payment infrastructure.
@@ -379,6 +393,16 @@ This model captures more monetization layers than any current platform:
 - Google captures intent-to-click (one moment)
 - Apple captures app purchase + in-app payments (two moments)
 - The LLM platform captures discovery, selection, content delivery, *and* payment processing (four moments)
+
+**A spectrum of plausibility.** Not all revenue streams are equally likely. Discovery and promoted placements are most plausible — this is Google's proven model. Subscription bundling is plausible. Transaction processing fees are realistic if the platform provides payment infrastructure. Per-request micropayments may work for content providers. Platform commissions at App Store rates (30%) are unlikely — MCP is open and providers can technically be accessed directly, so there's no distribution lock-in to justify those rates. The argument works if only the top two or three revenue streams materialize, because discovery economics alone are enormous.
+
+**The platform's leverage is attention and discovery (Google model), not distribution lock-in (App Store model).** The value proposition to providers isn't "pay us or you can't reach users" — it's "pay us or you're invisible when attention migrates to chat-based interfaces." That's the same dynamic as Google search: you can technically be found without Google, but in practice most traffic flows through search. Providers participate because the alternative is invisibility, not because they're locked in.
+
+### Inference costs as near-term constraint
+
+Agent interactions are currently more expensive per transaction than serving a web page. Running a full agent interaction — multiple tool calls, reasoning, context management — may cost 10-50 cents or more per interaction, compared to fractions of a cent for a web page. At platform scale, this is a significant cost structure that the current web doesn't have.
+
+But inference costs are falling rapidly. Model efficiency improvements, commoditization pressure from open-source models (DeepSeek and others), and the shift from a capability arms race to efficiency optimization as models reach "good enough" for most consumer use cases all push costs down. The historical parallel is the web itself: serving web pages in the mid-1990s was expensive relative to what came before. Bandwidth and server costs were a real constraint. Within a decade, commodity pricing. There's no reason to think LLM inference won't follow a similar curve. This is a near-term constraint, not a structural barrier.
 
 ## The Open Protocol Advantage
 
@@ -402,6 +426,7 @@ Technically, nothing. But in practice, most people use Google rather than memori
 - **Trust and safety:** When an agent spends money on your behalf, you need assurance the service is legitimate. Platform vetting provides this — the same reason people buy from the App Store rather than sideloading APKs.
 - **Unified identity and payments:** Connecting to 30 MCP servers individually, each with their own auth and billing, is the equivalent of creating 30 accounts with 30 passwords. A platform that provides single sign-on and unified billing captures users through convenience.
 - **Quality ranking:** When multiple services offer the same capability (five flight booking APIs), someone has to rank them. The platform that does this best becomes the default, just as Google became the default for ranking web pages.
+- **Legal liability infrastructure:** When an agent acts on your behalf — booking, purchasing, agreeing to terms — you need identity verification (who authorized this action), biometric confirmation (proof of human approval), audit trails (what was confirmed and when), and dispute resolution (a mechanism when things go wrong). No individual MCP server provides this. No self-configured agent setup provides this. The platform that bundles identity, confirmation, traceability, and dispute resolution makes high-stakes delegation *legally viable*. This is a stronger lock-in argument than discovery alone — it's the trust infrastructure that makes the entire system work for consequential transactions.
 
 The platform's moat isn't the protocol — it's the *service layer* that makes the protocol usable for ordinary people. This is a critical distinction: the opportunity is in building the Google/Stripe/App Store layer, not in controlling the HTTP/MCP layer. But it's also an honest warning: the service layer can become just as monopolistic as a proprietary protocol would have been. "Open protocol" sounds like it guarantees a competitive market. It doesn't. It guarantees that the *protocol* is contestable. The platform built on top can still be a monopoly — and the discovery + payments + identity bundle has strong winner-take-most dynamics that make that outcome likely.
 
@@ -418,6 +443,10 @@ Google *could* leverage Android (~4 billion active devices) and Chrome (~66% bro
 Potentially the most dangerous competitor — and wearables amplify the advantage. Apple already controls iOS (the primary consumer device), payments infrastructure (Apple Pay), identity (Apple ID), and a developer ecosystem. If the primary interaction shifts from phone screens to wearables (AirPods, Apple Watch, eventually glasses), Apple controls the hardware, the OS, and which agent gets default access on every new form factor. The device layer is the ultimate gatekeeper — and Apple owns it.
 
 Apple's bet is that the device controls the agent, not the other way around. Their LLM doesn't need to be the best. It just needs to be good enough as the default on every Apple device, the way Safari doesn't need to be the best browser when it's the default on a billion iPhones. If Apple's agent handles delegation adequately and comes pre-installed on glasses/earbuds/watch, most consumers never seek an alternative.
+
+**But Apple hasn't executed on the model layer.** Their privacy stance constrains cloud-based inference, and their on-device models aren't competitive with frontier models from Anthropic or OpenAI. Structural advantage doesn't matter if you can't ship the product. The race is partly about whether OpenAI, Anthropic, or others establish distribution and user habits before Apple catches up on the agent layer. Apple's latent position is the strongest — but latent is not active.
+
+**Multi-device handoff deepens the advantage — if Apple solves the agent problem.** Wearables don't all need full transactional capability. Earbuds handle conversation and low-stakes delegation. High-stakes confirmation (payments, bookings) flows to a device with a screen and biometrics — the phone or watch with Face ID / Touch ID. The device ecosystem works together, which is Apple's natural strength. But this only materializes if Apple's agent is competitive enough that users choose it over alternatives.
 
 ### The insurgent paths (Anthropic and OpenAI — different bets)
 
@@ -448,7 +477,7 @@ The wearable transition is the tiebreaker. If new form factors make the device t
 
 ### What OpenClaw is
 
-OpenClaw is an open-source personal AI agent created by Austrian developer Peter Steinberger. It runs locally on your own devices, connects to messaging platforms you already use (WhatsApp, Telegram, Signal, Discord, iMessage, Slack, and others) as its UI, and orchestrates LLM models (Claude, GPT, DeepSeek) on your behalf. After gaining over 150,000 GitHub stars in a matter of weeks — a developer enthusiasm signal, not consumer demand, but indicative of ecosystem momentum — Steinberger joined OpenAI in February 2026 and announced the project would move to an open-source foundation. (Reports vary on whether this was a formal acquisition or a talent hire; Sam Altman described Steinberger as "joining OpenAI to drive the next generation of personal agents.")
+OpenClaw is an open-source personal AI agent created by Austrian developer Peter Steinberger. It runs locally on your own devices, connects to messaging platforms you already use (WhatsApp, Telegram, Signal, Discord, iMessage, Slack, and others) as its UI, and orchestrates LLM models (Claude, GPT, DeepSeek) on your behalf. After rapid developer adoption — gaining massive GitHub traction in a matter of weeks, a developer enthusiasm signal rather than consumer demand but indicative of ecosystem momentum — Steinberger joined OpenAI in February 2026 and announced the project would move to an open-source foundation. (Reports vary on whether this was a formal acquisition or a talent hire; Sam Altman described Steinberger as "joining OpenAI to drive the next generation of personal agents.")
 
 The software has full control over the host computer and acts autonomously — creating files, installing software, executing scripts, contacting web services. It can be extended through "Skills" (plugins), distributed via a central marketplace called **ClawHub** that includes security scanning via VirusTotal. The adjacent ecosystem includes Moltbook, a social network for AI agents created by entrepreneur Matt Schlicht — a sign that agent-to-agent communication is being treated as a real product category.
 
@@ -523,6 +552,12 @@ If this thesis plays out — if an LLM platform becomes the primary gateway to d
 This is a *future state* concern, contingent on the platform actually achieving the centrality this thesis predicts. Today, people use LLMs for a fraction of their digital activity. But sovereignty decisions need to be made *before* dependency is locked in, not after — which is precisely why this concern matters now even though the platform doesn't fully exist yet.
 
 "Do as we tell you or we cut you off" isn't hypothetical. It's the proven playbook, applied to an infrastructure layer that would — if the thesis is right — be more deeply embedded in daily economic life than anything that came before.
+
+### Lock-in through personalized context
+
+Beyond geopolitical sovereignty, there's a personal dimension that makes this dependency deeper than any prior platform. As the agent accumulates your preferences, decision-making patterns, and personal context over time — aisle seats, dietary restrictions, risk tolerance, budget ranges, how you weigh trade-offs — switching agents means losing years of learned understanding. This is stickier than any current platform. You can switch search engines without losing your preferences in any meaningful way. You can switch phones and carry most of your data. But an agent that knows *how you make decisions* represents a kind of lock-in that's qualitatively different.
+
+A regulatory escape hatch exists: GDPR-style data portability applied to agent context. Structured preferences (aisle seats, dietary restrictions, budget ranges) are easy to export and import — a standardized preference profile format would handle this. But learned behavioral patterns (how you make decisions, what trade-offs you accept, when you override recommendations) are harder to make portable. They're embedded in the model's interaction history, not stored as a neat data structure. The EU's regulatory instinct and existing frameworks (GDPR data portability, DMA interoperability) make this a natural extension — but it needs to be addressed before the lock-in is entrenched, not after.
 
 ### Does the open protocol provide an escape hatch?
 
