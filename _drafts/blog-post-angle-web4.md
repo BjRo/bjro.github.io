@@ -73,9 +73,9 @@ If an LLM platform becomes the primary gateway to digital services, the data exp
 
 MCP being open means non-US players (Mistral, etc.) *can* build competing platforms on the same protocol. The EU has regulatory building blocks (PSD2, eIDAS 2.0, DMA). But the EU has never built a competitive tech platform — regulation-as-moat is more realistic than competition-as-moat.
 
-### Sovereignty multiplies the market
+### Sovereignty fragments, but "multiplies" overstates it
 
-Rather than undermining the thesis, sovereignty concerns multiply it: parallel platform races in the US, EU, China, and eventually India, Brazil, and Gulf states. Each bloc needs its own stack. MCP as the common protocol keeps fragmentation manageable.
+Sovereignty concerns don't undermine the thesis, but the "parallel platform race in every major bloc" framing is aspirational. Realistically: the US builds the platforms, China has its own parallel ecosystem (and has already proven the model with WeChat), and the EU regulates rather than builds. India, Brazil, Gulf states lack the combination of model competitiveness, developer ecosystem, and compute infrastructure for a full sovereign stack. The real opportunity is compliance infrastructure and regional integration layers — meaningful, but not multiplication. MCP as the common protocol keeps the fragmentation manageable.
 
 ## The Counterargument to Confront
 

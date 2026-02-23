@@ -119,7 +119,7 @@ Covers:
 - Technology sovereignty: US weaponization precedent (SWIFT, Huawei, Cloud Act, TikTok), why an LLM platform is worse than Google dependency
 - Open protocol as escape hatch — necessary but not sufficient
 - The EU's position: strong regulatory infrastructure (PSD2, eIDAS, DMA), weak platform-building track record, Mistral as the French bet
-- Sovereignty multiplies the market: parallel platform races per geopolitical bloc
+- Sovereignty fragments but doesn't multiply as claimed: US platforms + China's parallel ecosystem + EU regulatory compliance layers is the realistic picture, not parallel platform races in every major bloc. India/Brazil/Gulf states are speculative. The real opportunity is compliance infrastructure, not sovereign platforms.
 - How VC model reshaping (Post 3) affects competitive dynamics: who funds competing platforms if the traditional VC playbook is eroding? Infrastructure-scale capital vs. sovereign development funds vs. big tech self-funding
 - The strongest counterargument: what if the platform doesn't consolidate? (LLMs as distributed feature layer vs. cross-cutting platform)
 

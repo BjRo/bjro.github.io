@@ -11,9 +11,9 @@ This document argues eight interlocking theses:
 5. **SaaS disruption cycle:** The shift completes a full circle — human intermediaries → self-service (SaaS) → AI intermediaries — potentially disrupting the SaaS economy itself. Value shifts from building interfaces to providing capabilities.
 6. **Centralized vs. decentralized:** The platform will stratify into centralized consumer platforms (Claude, ChatGPT) and decentralized personal agents (OpenClaw), coexisting like managed services and self-hosted infrastructure. The open protocol (MCP) wins regardless of which model dominates.
 7. **Capital acceleration (with self-undermining dynamic):** VC money needs a new platform wave for power-law returns and will actively *create* ecosystem momentum by funding the application layer — but the transition it accelerates may ultimately reshape the VC model itself, as the cost of building software drops and the SaaS playbook erodes.
-8. **Sovereignty multiplication:** Geopolitical risk fragments the market into parallel regional platform races, multiplying the total opportunity.
+8. **Sovereignty fragmentation:** Geopolitical risk fragments the market, creating a parallel Chinese ecosystem and regulatory compliance layers elsewhere — but "parallel platform races in every major bloc" overstates what most regions can credibly build.
 
-These chain together: the shift is coming (1) → here's the architecture (2) → the UX works differently than expected (3) → here's why consumers benefit (4) → here's what it disrupts (5) → it takes multiple forms (6) → capital will accelerate it (7) → it happens multiple times globally (8).
+These chain together: the shift is coming (1) → here's the architecture (2) → the UX works differently than expected (3) → here's why consumers benefit (4) → here's what it disrupts (5) → it takes multiple forms (6) → capital will accelerate it (7) → geopolitics fragments but doesn't multiply it as much as often claimed (8).
 
 ---
 
@@ -495,18 +495,27 @@ What's missing is the model layer (Mistral needs to stay competitive) and the de
 
 **A necessary dose of skepticism:** The EU has strong *regulatory* infrastructure but a near-zero track record of *building* competitive tech platforms. The regulatory building blocks exist because the EU's institutional instinct is to regulate platforms, not create them. Mistral is a French company, not an EU project — and France's digital sovereignty ambitions are national, not pan-European. The gap between "the EU has PSD2 and eIDAS" and "the EU produces a competing platform ecosystem" is enormous and historically unprecedented. The most realistic path may not be a European champion but rather European regulatory frameworks that force *any* platform operating in the EU (including US ones) to meet sovereignty requirements — data localization, algorithmic transparency, interoperability mandates. That's regulation-as-moat rather than competition-as-moat, and it's more consistent with what the EU actually does well.
 
-### Sovereignty multiplies the market
+### Sovereignty fragments the market — but "multiplies" overstates it
 
-This is the key insight for the thesis: sovereignty concerns don't undermine the LLM platform opportunity — they **multiply** it. Instead of one global platform race, you get parallel races in multiple geopolitical blocs:
+Sovereignty concerns don't undermine the LLM platform opportunity, but calling them a "multiplier" requires honest accounting of who can actually build sovereign platforms.
 
-- **US:** Anthropic/OpenAI, potentially Apple/Google
-- **EU:** Mistral-led consortium, leveraging existing EU regulatory infrastructure
-- **China:** Already underway — Baidu, Alibaba, ByteDance, with WeChat as the proven template
-- **India, Brazil, Gulf states:** Eventually, sovereignty-motivated local platforms
+**Credible parallel ecosystems:**
 
-Each bloc needs its own platform stack. That means more total investment, more companies built, more VC capital deployed. The addressable market for "LLM platform infrastructure" multiplies by the number of sovereign regions that refuse to depend on US providers. For VCs, this means the power-law opportunity exists not just once, but in every major economic bloc.
+- **US:** Anthropic/OpenAI, potentially Apple/Google. The incumbents.
+- **China:** Already underway — Baidu, Alibaba, ByteDance, with WeChat as the proven template. China has its own internet and has demonstrated the ability to build platform ecosystems at scale. This is the one genuinely independent parallel race.
 
-The open protocol (MCP) is what makes this fragmentation *manageable* rather than chaotic. Service providers build to MCP once; sovereign platforms compete on platform services (discovery, payments, trust), not protocol compatibility. It's the same dynamic as the web: HTTP is global, but payment processors, identity systems, and regulatory compliance are regional.
+**Plausible but uncertain:**
+
+- **EU:** The preceding section already made the case for skepticism. The EU has strong regulatory infrastructure but a near-zero track record of building competitive platforms. The most realistic outcome isn't a European platform champion — it's European regulatory frameworks (DMA, GDPR, eIDAS) that constrain how US platforms operate in the EU, creating compliance requirements that benefit EU-based infrastructure providers without producing a full competing ecosystem. That's real economic activity, but it's not a "parallel platform race."
+- **Mistral** is the closest thing to a credible European challenger, but it's a French national bet, not an EU project — and staying competitive with US-funded frontier models on a fraction of the capital is a year-by-year question, not a given.
+
+**Speculative at best:**
+
+- **India, Brazil, Gulf states:** These are mentioned in most sovereignty discussions but lack the combination of model competitiveness, developer ecosystem, and compute infrastructure needed to build a full platform stack. India has strong technical talent but no foundation model player. Brazil has market scale but no relevant infrastructure. Gulf states have capital but no ecosystem. "Eventually, sovereignty-motivated local platforms" is a hope, not a plan.
+
+**What sovereignty actually does to the market:** Rather than multiplying platforms, sovereignty more likely creates a three-tier structure: (1) US platforms as the global default, (2) China's parallel ecosystem behind the firewall, and (3) regulatory compliance layers in the EU and elsewhere that constrain US platforms without replacing them. That's not multiplication — it's one dominant ecosystem, one walled alternative, and regulatory friction everywhere else. It creates real economic opportunity in compliance infrastructure, regional payments integration, and sovereignty-adjacent services — but the "parallel platform race in every major bloc" framing is aspirational rather than realistic.
+
+The open protocol (MCP) is what makes the regulatory fragmentation *manageable* rather than chaotic. Service providers build to MCP once; the compliance, payments, and identity layers are regional. It's the same dynamic as the web: HTTP is global, but payment processors, identity systems, and regulatory compliance are regional. That's a meaningful insight — it just doesn't add up to "multiplication."
 
 ## The Strongest Counterargument: What If the Platform Doesn't Consolidate?
 
