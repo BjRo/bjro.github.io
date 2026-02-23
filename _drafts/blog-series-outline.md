@@ -26,7 +26,7 @@ The series is written from a specific vantage point that should thread through t
 
 ## Why this isn't being covered
 
-A natural reader question: if this thesis is directionally correct, why hasn't the tech press already written about it? The absence of coverage is itself part of the argument.
+A natural reader question: if this thesis is directionally correct, why hasn't the tech press already written about it? There are plausible explanations — but honesty requires acknowledging that the simplest explanation is also possible: maybe the synthesis is wrong, and the pieces are covered separately because they *are* separate stories.
 
 - **The pieces are everywhere, the synthesis is nowhere.** Tech news covers OpenClaw's viral growth, MCP's release, MCP Apps, the AI coding revolution, SaaS companies adding AI features — each as a standalone story. Nobody is connecting protocol + interaction model + economic disruption + competitive dynamics into a unified platform shift thesis. Journalism is event-driven, not pattern-driven.
 - **MCP is plumbing, and plumbing doesn't make headlines.** HTTP didn't get mainstream coverage in 1993. Protocol-level shifts are invisible until the consumer applications built on them become undeniable.
@@ -38,7 +38,9 @@ A natural reader question: if this thesis is directionally correct, why hasn't t
 
 **Implication for the series:** The first credible articulation captures the framing. This isn't competing with existing coverage — it's creating the category. The risk is being wrong. The risk of not writing it is that someone else names it first.
 
-**How to use in the posts:** Post 1 can briefly acknowledge the absence and explain it — a rhetorical move that preempts the reader's skepticism ("if this were true, I'd have heard about it") and turns it into evidence for the thesis.
+**The honest caveat:** This reasoning is dangerously close to unfalsifiable. "Nobody's written about it yet" can explain both "it's too early to see" and "it's not there to see." The series should use these explanations to *address* the reader's skepticism, not to *dismiss* it. The rhetorical move works only if it's paired with genuine humility: "Here's why I think it hasn't been synthesized yet. I could also just be wrong."
+
+**How to use in the posts:** Post 1 can briefly acknowledge the absence and offer explanations — but frame them as plausible reasons, not proof. The credibility comes from the quality of the argument, not from explaining away the lack of corroboration.
 
 ---
 
