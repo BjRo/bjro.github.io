@@ -9,7 +9,7 @@ I'm still figuring that out. But I have a thesis now, and it's not a small one.
 
 Then OpenAI [brought in Peter Steinberger](https://techcrunch.com/2026/02/15/openclaw-creator-peter-steinberger-joins-openai/), the creator of OpenClaw — the open-source AI agent that gained [150,000+ GitHub stars in weeks](https://nathanowen.substack.com/p/openclaws-clawdbot150k-github-stars), the fastest-growing project in GitHub's history — and the pattern clicked.
 
-Most coverage treated the acquisition as a talent hire. A prominent open-source developer joins a well-funded AI lab. Story over. But zoom out: OpenAI is now assembling a proprietary model (GPT), an open-source agent layer (OpenClaw), a skill marketplace (ClawHub), messaging distribution through WhatsApp, Telegram, and Signal, and hardware ambitions through the [Jony Ive acquisition](https://openai.com/sam-and-jony/). That's not a talent acquisition. That's model + agent + app store + distribution + device. To me, it looks like a platform stack being assembled in plain sight. And the structural echo — open-source engine absorbed into a consumer platform with proprietary services on top — is familiar. It's the Google/Android pattern. Not a prediction that the outcome will be the same, but a recognition that the *type of move* is the same.
+Most coverage treated the acquisition as a talent hire. A prominent open-source developer joins a well-funded AI lab. Story over. But zoom out: OpenAI is now assembling a proprietary model (GPT), an open-source agent layer (OpenClaw), a skill marketplace (ClawHub), access to users through WhatsApp, Telegram, and Signal, and hardware ambitions through the [Jony Ive acquisition](https://openai.com/sam-and-jony/). That's not a talent acquisition. That's model + agent + app store + distribution + device. To me, it looks like a platform stack being assembled in plain sight. And the structural echo — open-source engine absorbed into a consumer platform with proprietary services on top — is familiar. It's the Google/Android pattern. Not a prediction that the outcome will be the same, but a recognition that the *type of move* is the same.
 
 ## The Web 4.0 Frame
 
@@ -93,7 +93,7 @@ I don't think Web 4.0 replaces the entire internet. If the thesis holds, it resh
 
 Television didn't kill radio. Mobile didn't kill the web. New platforms capture the highest-value interactions and coexist with what came before.
 
-Now, the title of this post makes a claim: the SaaS era ends. Let me be precise about what I mean. The *SaaS playbook* ends as the default model — raise money, build a UI, sell subscriptions, grow at all costs. Three independent forces are driving this, and they don't depend on whether a centralised Web 4.0 platform emerges:
+Now, the title of this post makes a claim: the SaaS playbook ends. Let me be precise about what I mean. The *SaaS playbook* ends as the default model — raise money, build a UI, sell subscriptions, grow at all costs. Three independent forces are driving this, and they don't depend on whether a centralised Web 4.0 platform emerges:
 
 1. **Post-ZIRP economics** compressing multiples and raising the bar for profitability.
 2. **LLM commoditisation** — general-purpose models doing what SaaS products charged subscriptions for.
@@ -117,11 +117,11 @@ The reliability question matters here too. Confirmation gates ("confirm this EUR
 
 ## What I Think We're Watching
 
-The OpenClaw acquisition looks small. I believe what it signals is much larger.
+The OpenClaw acquisition looks small. I think the signal is much larger than the event.
 
 The early infrastructure of Web 4.0 is being assembled: an open protocol (MCP), rich interactive UI (MCP Apps), an agent layer (OpenClaw), a marketplace (ClawHub), multi-client adoption across competitors. I don't think the question is whether delegation-based interaction is better for complex tasks — OpenClaw's developer traction suggests it is, even if GitHub stars don't prove consumer demand. The questions I keep coming back to: who builds the trust, payments, and discovery layer on top? And whether one company becomes the new Google, or the open protocol enables something more distributed.
 
-Three companies are making three different bets. Apple is betting the device controls the agent. OpenAI is betting on owning both the device (the Jony Ive acquisition) and messaging distribution (OpenClaw) as a hedge. Anthropic is betting the protocol is the platform, and devices are interchangeable. Google's notable absence from MCP — embedding Gemini into existing products instead of building a cross-cutting platform — looks to me like the innovator's dilemma playing out in real time: the company with the most to lose betting against the platform thesis entirely.
+Three companies are making three different bets. Apple is betting the device controls the agent. OpenAI is betting on both a purpose-built device (the Jony Ive acquisition) and meeting users where they already are through messaging apps (OpenClaw). Anthropic is betting the protocol is the platform, and devices are interchangeable. Google's notable absence from MCP — embedding Gemini into existing products instead of building a cross-cutting platform — looks to me like the innovator's dilemma playing out in real time: the company with the most to lose betting against the platform thesis entirely.
 
 I said at the top that I'm still figuring out where I want to be in this transition. That's true. But I've seen what happens when paradigm shifts catch people off guard — personally — and I'd rather think about this one clearly than be surprised by it. I hope these thoughts help others doing the same.
 
