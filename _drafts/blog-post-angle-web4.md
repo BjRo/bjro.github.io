@@ -53,13 +53,15 @@ Web 4 isn't "AI is cool." The consumer pitch is specific:
 
 ## The SaaS Disruption Angle
 
-Web 4 completes a full circle:
+Web 4 completes a full circle — selectively:
 
 - **Pre-web:** Human intermediaries did the work for you (travel agents, bank tellers). Expensive.
 - **Web 2 / SaaS:** Self-service replaces humans. Cheaper, but *you* do the work now.
 - **Web 4:** AI intermediaries do the work for you again — at software cost.
 
-Implication: SaaS businesses whose value is primarily "nice UI on top of a database" are vulnerable. The agent replaces the UI. Builders who survive are the ones with proprietary data, real-world execution capability, domain logic, or certified trust — things the agent can't replicate, only invoke.
+The circle closes for friction-heavy tasks (comparing insurance, researching flights, filing paperwork). It doesn't close for tasks where the process itself is the value — building a portfolio, crafting an itinerary, configuring a dev environment. Some power users *want* to compare 40 flights.
+
+Implication: SaaS businesses whose users *endure* the interface to reach an outcome are vulnerable. SaaS whose users *value* the interface as part of their workflow is safer. Builders who survive in the vulnerable category need proprietary *raw* data, real-world execution capability, domain logic, or certified trust. Even "proprietary data" has a squeeze: a Gartner-style firm's synthesized analysis is vulnerable when LLMs can approximate it from public sources. The truly safe data is unique and irreplaceable — raw datasets, not the interpretation layer on top.
 
 ## The Dark Side: What's at Stake
 

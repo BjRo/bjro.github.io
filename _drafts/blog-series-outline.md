@@ -84,13 +84,13 @@ Key insight to land: "The web democratized access. Web 4.0 democratizes expertis
 Post 1 introduces the SaaS death spiral, the AI-enhanced app trap, and the internet bifurcation (transactional vs. content) at a high level. This post goes deep on the builder implications — what it means practically for founders, SaaS companies, and investors.
 
 Covers:
-- The full circle in depth: human intermediaries → self-service (SaaS) → AI intermediaries
-- Why "nice UI on top of a database" becomes vulnerable — the agent bypasses the UI entirely
+- The full circle in depth: human intermediaries → self-service (SaaS) → AI intermediaries — but scoped honestly. The circle closes for friction-heavy self-service (comparing, researching, filing, navigating). It doesn't close for control-as-value self-service (portfolio management, itinerary crafting, creative tools). This distinction is what separates the thesis from overclaiming.
+- Why "nice UI on top of a database" becomes vulnerable — the agent bypasses the UI entirely — but with the nuance: vulnerability depends on whether users *endure* or *value* the interface
 - The AI-enhanced app trap: why bolting LLM features onto existing products is the most vulnerable strategy (three layers of vulnerability — general LLM wrappers vs. interface-level AI vs. genuinely new capabilities)
 - The bifurcation's implications for builders: which categories are in the transactional kill zone vs. content safe zone
 - The pessimistic view: SaaS as the new travel agent
 - The optimistic view: value shifts from interface to capability
-- What builders should build instead (proprietary data, real-world execution, domain logic, certified trust)
+- What builders should build instead — but with honest scoping of each safe zone: proprietary *raw* data is safe (unique datasets), but proprietary *synthesized analysis* is not (Gartner's $30k research subscriptions are vulnerable when LLMs can approximate the synthesis from public sources); real-world execution is safe; domain logic is safe *for now* but the boundary shifts as models improve; certified trust is the most durable because it's regulatory
 - "Don't build interfaces, build capabilities" — the MCP app model
 - The solopreneur wave: two overlapping dynamics — "last SaaS hurrah" (building traditional products faster, but into a shrinking category) vs. "first Web 4.0 ecosystem" (building MCP skills, agent infrastructure, domain tools that serve the new platform)
 - The developer transition timeline: boom (building Web 4.0 infra) → plateau → contraction — developers are safe *because of* the transition, but that safety is time-bounded

@@ -216,6 +216,7 @@ Content platforms have two reasons to resist:
 Beyond the content/transactional split, other areas where Web 4.0 adds little:
 
 - **Simple, habitual tasks.** Checking the weather, reading email, glancing at notifications. Already fast and frictionless. An LLM intermediary adds latency for no benefit.
+- **Control-as-value tasks.** Not all complex self-service is friction. Some users actively prefer managing their own investments, building custom travel itineraries, or configuring their development environments. The process is how they exercise agency. Delegation isn't better for these users — it's unwelcome. This isn't a small edge case; it describes the power-user segment that currently drives disproportionate SaaS revenue.
 - **Privacy-sensitive users.** Routing everything through a single platform means a single entity sees everything. For people who deliberately fragment their digital life for privacy, this is a regression, not an improvement.
 - **Trust.** "Let the AI handle your money and bookings" requires a level of trust that doesn't exist yet and will take years to build.
 
@@ -231,7 +232,15 @@ The historical arc is striking:
 - **SaaS/web era:** Self-service replaces human services. Cheaper, faster, available 24/7 — but the labor shifts to the user. Entire service economies die. Travel agents, bank branches, local retail decline.
 - **LLM platform era:** AI delegation replaces self-service. The agent does the work for you again — but at software cost, not human cost.
 
-It's a full circle. And it implies the potential disruption of the SaaS economy as we know it. If an LLM agent can navigate Salesforce *for* you, why do you need Salesforce's carefully designed UI? If an agent compares insurance quotes across providers, what's the value of a single provider's polished comparison tool?
+It's a full circle — for the tasks where self-service is tolerated, not valued. And the distinction matters.
+
+**Where the circle closes:** Tasks where the labor is unwanted and the user wants an outcome, not the process. Comparing insurance quotes across providers. Researching flights. Filing tax paperwork. Navigating government bureaucracy. Nobody *enjoys* setting 14 Skyscanner filters. These are the tasks where delegation is unambiguously better.
+
+**Where it doesn't:** Tasks where the process itself is the value — where self-service represents *control*, not burden. Managing your own investment portfolio. Building a custom travel itinerary for a trip you care deeply about. Configuring a complex development environment. Some power users *want* to compare 40 flights because informed decision-making is how they exercise agency. For these users, the agent is unwelcome — not because it can't do the work, but because doing the work is the point.
+
+The full circle applies to the first category, not the second. The thesis doesn't require universality — it requires that the first category is large enough to sustain a platform. Given that it includes most commercial transactions, financial services, administrative tasks, and comparison shopping, it almost certainly is. But the narrative is honest only if it acknowledges that "self-service" isn't a monolith. Some of it is friction. Some of it is agency.
+
+This scoping also implies the SaaS disruption is selective, not total. If an LLM agent can navigate Salesforce *for* you, why do you need Salesforce's carefully designed UI? If an agent compares insurance quotes across providers, what's the value of a single provider's polished comparison tool? These questions bite — but they bite hardest for tools whose users are *enduring* the interface to reach an outcome, not for tools whose users *value* the interface as part of their workflow.
 
 ### Why should builders bother?
 
@@ -241,10 +250,10 @@ This is the existential question for the current generation of software companie
 
 **The optimistic view:** The value shifts from *interface* to *capability*. The builders who thrive are the ones who provide things the LLM agent can't do on its own:
 
-- **Proprietary data** — Statista's data doesn't exist elsewhere. The LLM needs to access it, and Statista can charge for that.
+- **Proprietary raw data** — Unique datasets that literally don't exist elsewhere: sensor networks, transaction records, genomic databases, satellite imagery. The LLM needs to access these, and the provider can charge for that. But note the squeeze: even proprietary data providers face pressure. A firm like Gartner charges $30k/year for market research — but their value is partly *raw data* (survey results, vendor assessments) and partly *synthesized analysis* (trend reports, analyst interpretation). LLMs can approximate the synthesis from public sources. If an agent can produce "good enough" market analysis by aggregating freely available data, the premium for expensive synthesized research collapses — not because the data is replicated, but because the *analysis layer* is. The safe zone is truly unique raw data that can't be approximated, not the interpretation built on top of it.
 - **Real-world execution** — Booking a flight, processing a payment, shipping a package. These require infrastructure the LLM doesn't own.
-- **Domain expertise encoded as logic** — Complex calculations, compliance rules, risk models. The LLM can invoke these but not replicate them.
-- **Trust and certification** — A medical diagnosis tool, a legal compliance checker. Users need *certified* outputs, not LLM approximations.
+- **Domain expertise encoded as logic** — Complex calculations, compliance rules, risk models. The LLM can invoke these but not replicate them — yet. The boundary here shifts as models improve.
+- **Trust and certification** — A medical diagnosis tool, a legal compliance checker. Users need *certified* outputs, not LLM approximations. This is the most durable safe zone because it's regulatory, not technical.
 
 The builder opportunity shifts: **don't build interfaces, build capabilities.** The MCP app model is essentially this — you're not building a full application, you're building a service that an agent invokes. The surface area is smaller, the development cost is lower, but the value per interaction can be higher because you're accessed at the exact moment of need.
 
