@@ -310,7 +310,17 @@ A key concern: LLM tool calling is probabilistic, not deterministic. A 95% succe
 
 **Mitigation via confirmation gates:** For high-stakes actions (payments, bookings), an explicit confirmation step ("Claude wants to charge EUR 340 for a JFK flight on March 15 — confirm?") catches misinterpretations before they cause harm.
 
-The remaining question: is the residual intent interpretation gap small enough that users accept it? For complex, high-value tasks (travel, research, purchasing), likely yes. For simple, frequent actions (checking notifications, quick messaging), traditional apps may remain preferable.
+**What confirmation gates don't catch.** These mitigations address the *wrong action* problem — the agent booking the wrong date or the wrong flight. But there's a harder reliability problem: **filtered information**. The agent shows you 3 flight options. Were there 10? 50? Were the 3 it selected actually the best, or did the promoted placement algorithm influence the selection? The user confirms a choice from a set they believe is complete and well-curated — but they have no way to verify what they weren't shown.
+
+This is a fundamentally different reliability concern than intent misinterpretation:
+
+- **Intent errors are visible.** The confirmation gate shows you a wrong date — you catch it. The failure mode is detectable.
+- **Filtering errors are invisible.** The agent omits a cheaper flight or a better-reviewed hotel. You never know it existed. The failure mode is undetectable by design.
+- **Systematic filtering is the worst case.** If promoted placements bias which options surface, the filtering isn't random error — it's structural. The agent reliably shows you *something*, but what it shows is shaped by revenue incentives, not purely by your interest. This connects directly to the central tension: the architecture enables an aligned agent, the business model pushes against it.
+
+The honest assessment: confirmation gates are a genuine and effective mitigation for wrong actions. They are not a mitigation for filtered information. And for the highest-value use cases — financial decisions, insurance comparison, medical research — filtered information is the more consequential failure mode. Would you trust an agent to compare mortgage terms if you couldn't verify it had shown you all the options? The answer for most people today is no. Building that trust requires either radical transparency (showing the agent's reasoning and the full option set) or institutional guarantees (insurance, dispute resolution, audit trails) — neither of which exists yet.
+
+This is arguably the single biggest barrier to Web 4.0 capturing its highest-value use cases, and the thesis should not understate it.
 
 ## Monetization Model
 

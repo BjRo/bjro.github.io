@@ -149,6 +149,8 @@ Brief — detailed treatment in later posts. Enough to show the economics *could
 
 **Name the tension explicitly here.** The consumer argument promises an agent that works for you. Promoted placements mean the agent also works for advertisers. This is the defining tension of Web 4.0 — the same tension that shaped every prior platform (Google's organic results vs. ads, Apple's curation vs. revenue). The architecture *enables* a genuinely aligned agent. The business model pushes against it. The right comparison isn't perfection but the status quo: even a compromised agent is better than today's dark-pattern-laden self-service. But the reader deserves to see you've noticed the contradiction. This is what Post 5 fully unpacks — flag it here, don't hide it.
 
+**Flag the reliability barrier.** Confirmation gates catch wrong actions (wrong date, wrong flight). They don't catch filtered information — the agent showing 3 options when 10 exist, or promoted placements biasing which results surface. For the highest-value use cases (financial decisions, insurance, medical research), this invisible filtering is the more consequential failure mode. Building trust for these use cases requires transparency or institutional guarantees that don't exist yet. This is arguably the single biggest barrier to Web 4.0 capturing the transactional layer's most valuable slice.
+
 **Historical anchor:** Apple shipped the iPhone SDK before the App Store. The store came months later. Payments and the 30% cut came after developers were committed. Same sequence: MCP (2024) → MCP Apps (2026) → discovery (next) → payments (after).
 
 ### 9. Close: what we're watching (~200 words)
