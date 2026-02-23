@@ -97,7 +97,7 @@ Covers:
 - The solopreneur wave: two overlapping dynamics — "last SaaS hurrah" (building traditional products faster, but into a shrinking category) vs. "first Web 4.0 ecosystem" (building MCP skills, agent infrastructure, domain tools that serve the new platform)
 - The developer transition timeline: boom (building Web 4.0 infra) → plateau → contraction — developers are safe *because of* the transition, but that safety is time-bounded
 - The VC capital thesis: what's now investable (vertical agents, infra, picks-and-shovels, content aggregators)
-- The VC model reshaping: the transition VC money accelerates may undermine the VC model itself — industry bifurcates into infrastructure-scale bets and micro-fund/solopreneur bets, with the traditional Series A-B SaaS fund most at risk
+- The VC model reshaping: the transition VC money accelerates may undermine the VC model itself — industry bifurcates into infrastructure-scale bets and micro-fund/solopreneur bets, with the traditional Series A-B SaaS fund most at risk. The funding gap in the middle gets partially filled by incumbent defensive capital: the companies fighting hardest against irrelevance (Google, Salesforce, enterprise SaaS) fund ecosystem development to control the transition or stay relevant through it. Different incentives than growth-seeking VC, but keeps the ecosystem capitalised.
 
 Audience: founders, SaaS builders, VCs. This is the most directly actionable post.
 
@@ -120,7 +120,7 @@ Covers:
 - Open protocol as escape hatch — necessary but not sufficient
 - The EU's position: strong regulatory infrastructure (PSD2, eIDAS, DMA), weak platform-building track record, Mistral as the French bet
 - Sovereignty fragments but doesn't multiply as claimed: US platforms + China's parallel ecosystem + EU regulatory compliance layers is the realistic picture, not parallel platform races in every major bloc. India/Brazil/Gulf states are speculative. The real opportunity is compliance infrastructure, not sovereign platforms.
-- How VC model reshaping (Post 3) affects competitive dynamics: who funds competing platforms if the traditional VC playbook is eroding? Infrastructure-scale capital vs. sovereign development funds vs. big tech self-funding
+- How VC model reshaping (Post 3) affects competitive dynamics: who funds the ecosystem if the traditional VC playbook is eroding? Three capital sources: infrastructure-scale VC at the top, incumbent defensive funding in the middle (threatened companies buying optionality in the thing replacing them), micro-funds at the bottom. The hollow middle gets partially filled by corporate venture from the companies fighting against irrelevance.
 - The strongest counterargument: what if the platform doesn't consolidate? (LLMs as distributed feature layer vs. cross-cutting platform)
 
 Audience: strategists, policy people, VCs thinking about geographic bets. The readers who want the geopolitical dimension.
