@@ -100,7 +100,7 @@ This is the literal implementation of the "browser inside the LLM" model.
 
 A notable trend in agentic coding (Claude Code, Cursor, Windsurf) is moving away from MCP in favor of direct native tool calls. The reason: MCP server schemas consume context tokens. Loading tool definitions eats into the space available for actual work. When you have a coding agent that needs 5-10 well-known tools (file read, file write, terminal, search), the discovery and schema overhead of MCP isn't worth the cost. Just wire the tools directly.
 
-Does this undermine the protocol thesis? No — but it exposes what's missing.
+Does this undermine the protocol thesis? Not necessarily — but it's a stronger signal than a simple dismissal would suggest. The most resource-rich, technically sophisticated adopters of LLM tooling — the companies building the agentic coding products themselves — have concluded that MCP isn't worth the overhead for their use case. That deserves honest engagement, not just a "different use case" hand-wave.
 
 **The key distinction: known tools vs. discoverable services.** Agentic coding is a closed, single-domain environment where you know exactly which tools you need. The Web 4.0 use case is an open, cross-domain environment where "plan a trip to Portugal" requires discovering and comparing flight APIs, hotel services, restaurant booking tools, and activity providers from different vendors. You can't hard-wire direct tool calls to thousands of potential service providers. That's where standardized discovery and schema matter — and where MCP's overhead is justified.
 
@@ -278,7 +278,13 @@ AI coding tools are enabling a wave of solopreneurs and tiny teams building prod
 - **The last SaaS hurrah.** Solopreneurs building traditional SaaS products (comparison tools, dashboards, aggregators) faster and cheaper than ever. But if *everyone* can build a SaaS product in a weekend, competition explodes — and the moat (UI/UX polish) is exactly the thing agents commoditize. Lower cost to build, but shorter shelf life.
 - **The first Web 4.0 ecosystem.** Solopreneurs building MCP skills, niche domain tools, agent infrastructure — things that *serve* the new platform rather than compete with it. The economics favor small teams here: building an MCP skill is closer to building an API than building an app.
 
-The tragedy is that most solopreneurs today can't easily tell which wave they're on. The tools that help them build fast don't help them distinguish between building the next travel agency and building the next Stripe plugin.
+The tragedy is that most solopreneurs today can't easily tell which wave they're on. But there are distinguishing signals:
+
+- **Ask: "Does my product's value survive if the user never sees my UI?"** If yes (you provide proprietary data, real-world execution, or certified domain logic), you're building capability — you're on the Web 4.0 wave. If no (your value is the interface, the workflow, the dashboard), you're building a product the agent will eventually bypass.
+- **Ask: "Am I building something an agent would invoke, or something an agent would replace?"** An MCP skill that provides flight pricing data serves the agent. A comparison website that displays flight pricing competes with the agent.
+- **Ask: "Does my moat get stronger or weaker as agents improve?"** Proprietary data, regulatory certification, and physical-world infrastructure get more valuable as more agents need to access them. UI polish, onboarding flows, and curation get less valuable as agents bypass them.
+
+None of these are binary — most products have elements of both. But the directional signal is useful, especially for solopreneurs deciding what to build next.
 
 Even "last hurrah" products may generate real revenue for years — the transition won't be instant. At solopreneur cost structures, a 3-5 year revenue window is a perfectly good business. It's just not a venture-scale business, which circles back to the VC model's reshaping.
 
@@ -582,7 +588,7 @@ This sequence is clean but US-centric. The global picture is messier. Sovereignt
 11. **SaaS disruption speed:** How quickly does "nice UI on a database" become vulnerable? Is this a 5-year gradual shift or a sudden cliff once agent platforms hit critical mass?
 12. **Builder incentive structure:** Can "capability provider accessed via MCP" support venture-scale businesses, or does the smaller surface area mean smaller companies with lower ceilings?
 13. **AI-enhanced apps shelf life:** How long before AI features bolted onto traditional SaaS become redundant with general-purpose agents? Companies are investing heavily in this category right now — how many of those investments will look like stranded assets in 3-5 years?
-14. **Solopreneur wave sorting:** How quickly does the solopreneur wave bifurcate into "last SaaS hurrah" and "first Web 4.0 ecosystem"? Are there signals that help builders distinguish which wave they're on before the market decides for them?
+14. **Solopreneur wave sorting:** The distinguishing signals are outlined above (does your value survive without the UI? would an agent invoke or replace you? does your moat strengthen or weaken as agents improve?). The open question is how quickly this distinction becomes *financially* visible — how long before "last SaaS hurrah" products start seeing revenue pressure that validates the signals?
 15. **Developer transition duration:** How long does the "transition boom" phase last? Is it 3 years or 10? The answer determines whether the developer employment impact is a mild adjustment or a severe contraction — and whether new categories (MCP skill developer, trust infrastructure engineer) absorb enough labor to offset SaaS engineering decline.
 16. **VC model adaptation and the incumbent funding question:** How quickly do VC fund structures adapt to a world where software is cheap to build? Does incumbent defensive funding (corporate venture from threatened companies) sustain ecosystem momentum long enough for the platform to reach self-sustaining scale — or does it distort the ecosystem by funding what protects incumbents rather than what serves users?
 
