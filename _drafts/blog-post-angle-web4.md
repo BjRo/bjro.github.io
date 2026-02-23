@@ -46,7 +46,7 @@ The OpenClaw acquisition tells VCs: the application layer is real. You can fund 
 Web 4 isn't "AI is cool." The consumer pitch is specific:
 
 - **App fatigue ends.** One agent, one interface, instead of 30 apps with 30 accounts.
-- **The expertise gap closes.** Your grandmother gets the same quality of flight research as a power user. The web democratized access; Web 4 democratizes expertise.
+- **The expertise gap narrows.** Your grandmother goes from unable to use Skyscanner to having an agent that researches flights for her. The web democratized access; Web 4 moves toward democratizing expertise. (How far depends on whether the free tier optimizes for her or for advertisers — see the central tension.)
 - **You stop working for the apps.** The agent does the comparison, synthesis, and decision-prep. You review and confirm.
 - **Dark patterns lose their power.** An agent doesn't feel urgency, reads the fine print, and compares total prices including hidden fees. It's immune to the psychological tricks designed to exploit humans.
 - **Voice makes it universal.** "Plan me a trip to Portugal, under two thousand euros, first week of April" is natural to say out loud. It's awkward to type into a search box. LLM + voice + MCP delivers what Siri promised in 2011 and never fulfilled.
