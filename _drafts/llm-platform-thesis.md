@@ -115,7 +115,7 @@ This isn't a fundamental protocol redesign. It's a discovery layer on top — so
 
 **And this is where the platform economics live.** The discovery layer *is* the business model. Whoever runs on-demand schema discovery controls which tools get loaded for a given intent. That's the Google Ads position ("when the user asks about flights, which flight API gets loaded first?"). That's the App Store position ("which tools surface for this intent?"). Promoted placements, quality ranking, trust vetting — all of it lives in the layer between user intent and schema loading. The on-demand loading mechanism isn't just an engineering fix for context overhead. It's the monetization layer.
 
-The current state is like the web with HTTP but no DNS and no search engines — everyone manually typing IP addresses. The protocol works; the discovery infrastructure doesn't exist yet. ClawHub is a rudimentary attempt. The platform that builds the real discovery layer captures the economics.
+The current state is like the web with HTTP but no DNS and no search engines — everyone manually typing IP addresses. The protocol works; the discovery infrastructure doesn't exist yet. ClawHub is a rudimentary attempt. The platform that builds the real discovery layer captures the economics — and, critically, captures the power. The open protocol section below argues that MCP's openness prevents lock-in. That's true at the protocol layer. But if the discovery layer has winner-take-most dynamics (and it does — see the open protocol section), the bottleneck just moves up the stack. HTTP being open didn't prevent Google from dominating search. MCP being open won't prevent a discovery monopoly. It just changes which layer the monopoly lives on.
 
 **Protocol evolution is expected, not fatal.** MCP in its current form may be HTTP/0.9 — functional enough to prove the concept, not efficient enough for the scale the thesis imagines. Lazy schema loading, hierarchical discovery, tool summarization, capability negotiation before full schema exchange — these are engineering problems, not architectural ones. And even if a more efficient protocol eventually supersedes MCP, the thesis isn't married to MCP specifically. What matters is the *existence* of a standardized interaction layer for open, multi-service environments. The protocol might change; the need for one doesn't.
 
@@ -352,13 +352,15 @@ This model captures more monetization layers than any current platform:
 
 ## The Open Protocol Advantage
 
-An open protocol (MCP) defuses the antitrust argument that could otherwise constrain the platform. If the protocol is standardized and any LLM can connect to any service:
+An open protocol (MCP) changes *where* power concentrates, but it doesn't prevent concentration. If the protocol is standardized and any LLM can connect to any service:
 
-- Regulators can't easily argue illegal gatekeeping
+- Regulators can't easily argue illegal gatekeeping *at the protocol layer*
 - Developers adopt faster ("build once, work everywhere")
 - The competitive moat shifts from protocol lock-in to **platform services**
 
 The winning play: **open protocol + proprietary platform services** (discovery, billing, trust, identity). Like how HTTP is open but Stripe, Google Ads, and the App Store are proprietary layers on top. The provider that builds the best "Stripe for AI agent transactions" layer wins — not through lock-in, but through superior infrastructure.
+
+**The honest implication of this analogy:** HTTP is open. Google still controls ~90% of search. The open protocol didn't prevent concentration of power — it moved the bottleneck from the protocol layer to the discovery layer. The same will likely happen here. MCP being open means anyone *can* build a competing platform. In practice, discovery has winner-take-most dynamics: the platform with the best ranking attracts the most users, which attracts the most service providers, which improves the ranking. "Open protocol + proprietary discovery" can produce exactly the same concentration of power as a proprietary protocol — it's just harder to regulate, because the protocol layer *is* open. This is a feature for the platform builder and a risk for everyone else.
 
 ### Why users wouldn't bypass the platform
 
@@ -371,7 +373,7 @@ Technically, nothing. But in practice, most people use Google rather than memori
 - **Unified identity and payments:** Connecting to 30 MCP servers individually, each with their own auth and billing, is the equivalent of creating 30 accounts with 30 passwords. A platform that provides single sign-on and unified billing captures users through convenience.
 - **Quality ranking:** When multiple services offer the same capability (five flight booking APIs), someone has to rank them. The platform that does this best becomes the default, just as Google became the default for ranking web pages.
 
-The platform's moat isn't the protocol — it's the *service layer* that makes the protocol usable for ordinary people. This is a critical distinction: the opportunity is in building the Google/Stripe/App Store layer, not in controlling the HTTP/MCP layer.
+The platform's moat isn't the protocol — it's the *service layer* that makes the protocol usable for ordinary people. This is a critical distinction: the opportunity is in building the Google/Stripe/App Store layer, not in controlling the HTTP/MCP layer. But it's also an honest warning: the service layer can become just as monopolistic as a proprietary protocol would have been. "Open protocol" sounds like it guarantees a competitive market. It doesn't. It guarantees that the *protocol* is contestable. The platform built on top can still be a monopoly — and the discovery + payments + identity bundle has strong winner-take-most dynamics that make that outcome likely.
 
 ## Competitive Dynamics
 
@@ -548,7 +550,7 @@ This sequence is clean but US-centric. The global picture is messier. Sovereignt
 2. **Provider holdout risk:** Will high-value content providers (the "Statistas" of the world) participate if per-query economics are worse than their current subscription model? This is the Spotify problem — the most valuable providers have the most leverage to resist.
 3. **Where's the boundary?** The internet likely bifurcates: transactional interactions move to Web 4.0, content/entertainment stays native. The consumption experience itself is resistant to intermediation (Alexa hasn't commoditized Spotify). The contested zone is the comparison and switching layer — cross-platform search, subscription optimization — where the agent threatens retention without touching the in-app experience. Is that a narrow threat or an existential one for content platforms?
 4. **Timeline:** Infrastructure is assembling faster than expected (MCP → MCP Apps in ~14 months). Is this a 2-3 year or 5-7 year build to full platform economics?
-5. **The discovery layer race:** On-demand schema loading is the critical missing piece between MCP and a viable platform. Who builds it — the LLM providers (Anthropic, OpenAI), the agent platforms (OpenClaw/ClawHub), or a new entrant? Does the discovery layer become the primary platform lock-in mechanism, or does the open protocol keep it contestable?
+5. **The discovery layer race:** On-demand schema loading is the critical missing piece between MCP and a viable platform. Who builds it — the LLM providers (Anthropic, OpenAI), the agent platforms (OpenClaw/ClawHub), or a new entrant? The open protocol makes the discovery layer *technically* contestable, but discovery has winner-take-most dynamics (more users → more providers → better ranking → more users). HTTP is open; Google has 90% of search. Will MCP-based discovery be any different, or does "open protocol + discovery monopoly" become the structural outcome?
 6. **Protocol evolution or replacement:** MCP's schema overhead is a real constraint for current context windows. Does MCP evolve (lazy loading, hierarchical discovery, capability negotiation) fast enough, or does a more efficient protocol emerge? If MCP becomes the Gopher of this era, does that delay the platform shift or just change which protocol wins?
 
 ### Consumer adoption
