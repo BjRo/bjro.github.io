@@ -136,7 +136,7 @@ This is where the title's "death of SaaS" claim gets substantiated.
 
 ### 8. The economics sketch (~200 words)
 
-Brief — detailed treatment in later posts. Enough to show the economics *could* work for the transactional layer.
+Brief — detailed treatment in later posts. Enough to show the economics *could* work, and honest about the central tension.
 
 - Three-sided marketplace: service providers, platform, users
 - Key revenue streams:
@@ -146,6 +146,8 @@ Brief — detailed treatment in later posts. Enough to show the economics *could
   - Transaction processing (Visa model — % of payment volume)
   - Subscription bundling (Spotify model — aggregated access)
 - Combined: more monetization surface than any current platform (Google captures one moment, Apple two, Web 4.0 captures four: discovery, selection, content, payment)
+
+**Name the tension explicitly here.** The consumer argument promises an agent that works for you. Promoted placements mean the agent also works for advertisers. This is the defining tension of Web 4.0 — the same tension that shaped every prior platform (Google's organic results vs. ads, Apple's curation vs. revenue). The architecture *enables* a genuinely aligned agent. The business model pushes against it. The right comparison isn't perfection but the status quo: even a compromised agent is better than today's dark-pattern-laden self-service. But the reader deserves to see you've noticed the contradiction. This is what Post 5 fully unpacks — flag it here, don't hide it.
 
 **Historical anchor:** Apple shipped the iPhone SDK before the App Store. The store came months later. Payments and the 30% cut came after developers were committed. Same sequence: MCP (2024) → MCP Apps (2026) → discovery (next) → payments (after).
 

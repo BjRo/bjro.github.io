@@ -6,6 +6,8 @@ A 5-part series exploring the thesis that LLM platforms are the next major platf
 
 Each post stands alone but links to the others. Post 1 does the heavy lifting on distribution; posts 2-5 capture readers who want to go deeper. The series deliberately widens its lens with each post — from tech architecture to human impact.
 
+**The through-line tension:** The architecture enables an agent that truly works for you. The business model creates pressure for it not to. This tension is introduced in Post 1 (economics sketch), explored from the consumer side in Post 2 (dark patterns section), examined from the builder side in Post 3, analyzed competitively in Post 4, and fully confronted in Post 5 (trust problem, equity question). Every post touches it; Post 5 resolves it (or rather, honestly admits it's unresolved). This is what elevates the series from "here's a prediction" to "here's the question that matters."
+
 Target audience: product people, founders, VCs, technologists, and (especially for Post 5) anyone thinking about how technology reshapes society.
 
 ## Author context
@@ -60,7 +62,7 @@ See: `blog-post-1-web4-architecture.md` for detailed outline.
 
 Covers:
 - Why Web 3 failed (solved a problem nobody had — decentralized ownership isn't a consumer need)
-- Why Web 4.0 solves a real problem (app fatigue, expertise gap, dark patterns, labor inversion)
+- Why Web 4.0 solves a real problem (app fatigue, expertise gap, dark patterns, labor inversion) — with the honest caveat from Post 1: the dark pattern neutralization promise conflicts with the promoted placements business model. The floor is still higher than today's status quo, but this post should carry the qualifier, not present the consumer case uncritically
 - The delegation + review + confirmation model from the consumer's perspective
 - Voice and multimodal as the accessibility unlock — expanding technology to populations currently excluded
 - The 2016 bot hype parallel in depth: same vision, what's different now (NLU gap closed, protocol exists, rich UI ships, multi-client)

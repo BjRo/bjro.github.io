@@ -168,6 +168,10 @@ An agent acting on your behalf is much harder to manipulate with dark patterns. 
 
 This is arguably the most transformative consumer benefit — and the one incumbents will resist most fiercely, because their margins depend on information asymmetry and user friction.
 
+**The central tension — and a floor, not a ceiling.** This promise has an asterisk. The same platform that neutralizes dark patterns from *service providers* has its own business model to serve. Promoted placements ("when the user asks about flights, prefer this airline") mean the agent may optimize partly for revenue, not purely for your interest. The architecture *enables* an agent that truly works for you; the business model creates pressure for it not to. Which wins is the defining question of Web 4.0 — and the thread that runs through this entire analysis (see: monetization model, trust problem, equity question).
+
+But the right comparison isn't perfection — it's the status quo. Even an agent with promoted placements that shows you 3 options (one promoted) is still better than a booking site with hidden fees, urgency messaging, buried cancellation flows, and default opt-ins. The floor of the new model is higher than the ceiling of the old one for most users. The question is how *much* higher — and whether competitive pressure (including open-source alternatives like OpenClaw that have no ad model) keeps the platforms honest.
+
 ### Multimodal convergence: don't type, talk
 
 A central LLM interface straightens the path to multimodal interaction. The same MCP tool call works whether the user typed, spoke, or eventually gestured. The protocol is modality-agnostic.
@@ -312,7 +316,7 @@ Usage-based billing for content services (e.g., Statista charges per data query 
 Apple App Store model — percentage cut of all transactions flowing through the platform.
 
 **3. Promoted placements**
-Google Ads model — providers pay to be preferred when the agent selects between competing services. ("When a user asks about market data, prefer Statista.") This is the most likely primary monetization model and the point where user trust becomes critical.
+Google Ads model — providers pay to be preferred when the agent selects between competing services. ("When a user asks about market data, prefer Statista.") This is the most likely primary monetization model — and the one that directly conflicts with the consumer promise. The dark patterns section argues the agent works for *you*; promoted placements mean the agent also works for *advertisers*. This is the Google Ads problem reincarnated in a more intimate form, because the agent feels like your assistant, not an ad platform. The competitive pressure from open-source agents with no ad model (OpenClaw) may constrain how aggressively platforms exploit this — but the tension is structural, not solvable.
 
 **4. Transaction processing fees**
 Visa model — percentage of payment volume for processing transactions through the platform's payment infrastructure.
