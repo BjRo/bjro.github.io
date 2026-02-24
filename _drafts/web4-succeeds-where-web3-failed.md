@@ -29,6 +29,8 @@ You need insurance. You visit comparison sites that have their own promoted plac
 
 You're moving to a new city. You need to register your address, find an internet provider, set up utilities, locate a GP, understand the local public transport options, figure out waste collection rules. Each of these is a different website, a different account, a different set of forms — and none of them talk to each other.
 
+You're looking for a job. You know what you want — but every job board requires you to mentally translate that into their rigid implementation. Location dropdown, seniority checkbox, keyword search that doesn't understand context. You don't think in filters. You think "senior engineering role, remote-friendly, interesting product, not adtech." Good luck expressing that in a search form.
+
 You want to dispute a charge on your bank statement. You navigate a phone tree, wait on hold, explain the situation to someone who transfers you, explain it again, get told to fill out a form online, log in, can't find the form, call back. An hour of your life, gone.
 
 These aren't edge cases. This is just... Tuesday. This is what digital life actually looks like for most people, most of the time. The web made everything *available*. It also made everything *your job*. And the expertise gap between a savvy digital native and everyone else is enormous — and it's not closing.
@@ -37,7 +39,7 @@ Here's where I think Web 4.0 comes in: describe what you want, and an agent does
 
 ## Voice, Vision, and Who Gets to Participate
 
-Here's what I think is the most underappreciated part of this shift. It's not just voice. It's multimodal interaction — and it changes who technology is *for*.
+Here's what I think is the most underappreciated part of this shift. It's not just text. It's multimodal interaction — and it changes who technology is *for*.
 
 "Plan me a trip to Portugal, under two thousand euros, first week of April" is natural to say out loud. It's awkward to type into a search box. It's impossible to express through Skyscanner's 14 filter dropdowns. Voice is the most natural interface humans have — we've been using it for a few hundred thousand years. Every other interface is a workaround for the fact that computers couldn't understand us.
 
@@ -79,7 +81,7 @@ Now, I could write a breathless piece about how this changes everything. But I d
 
 **Simple habitual tasks stay where they are.** If you order the same coffee every morning through the same app, delegation adds nothing. The current interface is already one tap.
 
-**Privacy-sensitive users opt out.** Some people will never be comfortable with an agent that sees their financial decisions, medical research, and personal deliberations. That's rational, not Luddite. The concentration of personal data in a single platform is unprecedented, and not everyone will accept the trade-off.
+**Privacy-sensitive users opt out.** Some people will never be comfortable with an agent that sees their financial decisions, medical research, and personal deliberations. That's rational, not technophobic. The concentration of personal data in a single platform is unprecedented, and not everyone will accept the trade-off.
 
 **Power users who want control.** Some people *want* to compare 40 flights themselves. They enjoy the process. The interface is the value. Web 4.0 doesn't serve them and doesn't need to.
 
