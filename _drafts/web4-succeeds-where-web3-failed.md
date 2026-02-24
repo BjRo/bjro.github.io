@@ -33,7 +33,7 @@ You want to dispute a charge on your bank statement. You navigate a phone tree, 
 
 These aren't edge cases. This is just... Tuesday. This is what digital life actually looks like for most people, most of the time. The web made everything *available*. It also made everything *your job*. And the expertise gap between a savvy digital native and everyone else is enormous — and it's not closing.
 
-Here's where I think Web 4.0 comes in: describe what you want, and an agent does the comparison, synthesis, and decision-prep for you. You review the options and confirm. If this works — and I think it's starting to — the interaction model swings back to conversational and personalised. Like having a travel agent or insurance broker again, but at software cost instead of human cost.
+Here's where I think Web 4.0 comes in: describe what you want, and an agent does the comparison, synthesis, and decision-prep for you. You review the options and confirm. I think of this as the labour inversion — the self-service era offloaded work from paid intermediaries onto you, the unpaid user. Web 4.0 inverts it back. The interaction model swings to conversational and personalised again, like having a travel agent or insurance broker, but at software cost instead of human cost.
 
 ## Voice, Vision, and Who Gets to Participate
 
@@ -91,7 +91,7 @@ Here's the paradox that makes this hard to evaluate: the demand is latent.
 
 Nobody is asking for Web 4.0. Consumers aren't campaigning against app fatigue. There's no protest movement against having to compare insurance policies yourself. People have normalised the friction because it's all they've known since the self-service era began.
 
-Now, "latent demand" is a convenient argument — you can use it to justify almost anything. But the pattern is real. Nobody asked for a smartphone before the iPhone. Nobody asked for a search engine before Google. Nobody asked for a web browser before Netscape. The demand became obvious *after* the product existed — not before. That doesn't mean every "latent demand" claim is valid. It means you can't use the absence of demand as proof that the demand doesn't exist.
+Now, "latent demand" is a convenient argument — you can use it to justify almost anything. But the pattern is real. Nobody asked for a smartphone before the iPhone. Nobody asked for a web browser before Netscape. The demand became obvious *after* the product existed — not before. That doesn't mean every "latent demand" claim is valid. It means you can't use the absence of demand as proof that the demand doesn't exist.
 
 The test isn't whether people are asking for this today. It's whether, once they experience it, they go back. If your grandmother uses an agent to book a flight and it works — does she ever open Skyscanner again?
 
