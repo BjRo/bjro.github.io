@@ -1,5 +1,5 @@
 ---
-title: "Why Web 4.0 Succeeds Where Web 3 Failed"
+title: "Why Web 4.0 Might Succeed Where Web 3 Failed"
 excerpt: "Web 3 had architecture too. The difference is that Web 4.0 solves a problem people actually have."
 ---
 
