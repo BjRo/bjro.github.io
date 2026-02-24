@@ -109,7 +109,7 @@ Here's how I think the impact shakes out:
 
 ## The Economics — Briefly
 
-I'll go deeper on the economics in a later post, but the architecture supports multiple revenue streams: per-request micropayments (Statista model), platform commissions (Apple's 30% model), promoted placements (Google Ads model), transaction processing (Visa model), and subscription bundling (Spotify model). Combined, that's more monetisation surface than any current platform captures.
+I'll go deeper on the economics in a later post, but the architecture supports multiple revenue streams: per-request micropayments (Twilio model), platform commissions (Apple's 30% model), promoted placements (Google Ads model), transaction processing (Visa model), and subscription bundling (Spotify model). Combined, that's more monetisation surface than any current platform captures.
 
 Let me be honest about what this means. Promoted placements will happen. Commissions will happen. These patterns replicate across every platform era — they're expected, not a betrayal. The conversational format removes old manipulation vectors (hidden fees, buried buttons, urgency messaging) but introduces new ones: information filtering in a trusted context, promoted placements that feel like personal recommendations. The net effect is likely better than today's adversarial UIs. But the new vectors are subtler, and the agent *feeling* like your personal assistant makes them harder to detect.
 
