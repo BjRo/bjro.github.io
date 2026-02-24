@@ -51,7 +51,7 @@ What strikes me is how naturally the modalities shift with context. You're cooki
 
 And this is where it gets bigger than convenience. If this plays out, it doesn't just help existing users. It expands who gets to participate in the digital economy entirely. Your grandmother who can't navigate Booking.com. A visually impaired user who struggles with complex web interfaces. Someone whose first language isn't the one the app was designed in. A first-generation immigrant trying to navigate a new country's bureaucracy. People who are digitally literate enough to have a conversation but not to operate a comparison tool.
 
-That's not a UX improvement. That's a fundamentally different answer to the question of who technology is for. The web democratised access to information. I think Web 4.0 could democratise the expertise needed to act on it.
+That's not a UX improvement. That's a fundamentally different answer to the question of who technology is for. The web democratised access to information. I think Web 4.0 could democratise the expertise needed to act on it. I'm deliberately leaving pricing and access tiers out of this discussion — the capability argument stands on its own, and the economics deserve their own treatment in a later post.
 
 ## Why This Time the Experience Is Different
 
@@ -67,9 +67,9 @@ I think that threshold is starting to be crossed — not across the board, but f
 
 I don't want to oversell this.
 
-The conversational format removes real manipulation vectors. Hidden fees buried in checkout flows. Urgency messaging ("only 2 left!"). Dark patterns that exploit UI layout to steer you toward expensive options. When the interface is a conversation, those tricks don't work the same way.
+The conversational format genuinely kills a category of dark patterns — the ones that are structural to the UI. Hidden cancellation flows, pre-checked boxes, buried opt-outs, confusing checkout sequences designed to prevent you from doing what you want. When an agent acts on your behalf, there's no button to hide. "Cancel my subscription" just happens.
 
-But new ones take their place. When your agent recommends three flight options, are those the best three — or the three whose providers paid for placement? The agent feels like *your* assistant. That intimacy is what makes it useful, and it's also what makes the new manipulation vectors harder to detect. A promoted result on Google is visually marked and feels like what it is — advertising. A promoted recommendation from your personal agent feels like advice.
+But not all manipulation is structural. Urgency messaging ("only 2 left!"), scarcity pressure, and information shaping don't depend on UI layout — they depend on business incentives, and those survive the format change. An agent that says "I found a great rate but it expires in two hours" is the same trick in a more trusted voice. And new vectors take their place on top of that. When your agent recommends three flight options, are those the best three — or the three whose providers paid for placement? The agent feels like *your* assistant. That intimacy is what makes it useful, and it's also what makes the new manipulation vectors harder to detect. A promoted result on Google is visually marked and feels like what it is — advertising. A promoted recommendation from your personal agent feels like advice.
 
 The question isn't whether Web 4.0 is perfect. It's whether the net effect is better than the status quo — and I think it is. Today's digital experience is already adversarial, already full of dark patterns. But the new vectors are subtler, and "your agent might not be fully on your side" is a tension that doesn't go away. I'll come back to this in a later post.
 
@@ -91,7 +91,7 @@ I think knowing where a thesis *doesn't* apply is at least as important as knowi
 
 Here's the paradox that makes this hard to evaluate: the demand is latent.
 
-Nobody is asking for Web 4.0. Consumers aren't campaigning against app fatigue. There's no protest movement against having to compare insurance policies yourself. People have normalised the friction because it's all they've known since the self-service era began.
+Developers are excited — OpenClaw's growth shows that. But consumers aren't asking for Web 4.0. They're not campaigning against app fatigue. There's no protest movement against having to compare insurance policies yourself. People have normalised the friction because it's all they've known since the self-service era began.
 
 Now, "latent demand" is a convenient argument — you can use it to justify almost anything. But the pattern is real. Nobody asked for a smartphone before the iPhone. Nobody asked for a web browser before Netscape. The demand became obvious *after* the product existed — not before. That doesn't mean every "latent demand" claim is valid. It means you can't use the absence of demand as proof that the demand doesn't exist.
 
