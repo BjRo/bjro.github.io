@@ -1,5 +1,5 @@
 ---
-title: "Web 4.0 and the End of Self-Service"
+title: "The Supply Side of Web 4.0"
 excerpt: "The SaaS era was the golden age of building interfaces. What comes next rewards capability, not chrome."
 ---
 
