@@ -9,15 +9,15 @@ This post flips to the builder's side. If the demand story holds, what does it m
 
 I want to be upfront: everything that follows is speculative. The first two posts laid out an architecture and a demand case. This one reasons through the builder implications *if* those arguments hold. They might not. The shift might play out very differently from what I'm imagining, or it might stall entirely. I'd rather think through the possibilities honestly than pretend to certainty I don't have.
 
-The key question from the builder's chair: how much of self-service is *tolerated* rather than *valued*? I covered the [full circle](/openclaw-end-of-saas-era-web4/) — human intermediaries to self-service to AI intermediaries — in the first post. Self-service won not just on cost but because it was less conflicted: no commissions, you saw the raw options. AI intermediaries bring the convenience back, and the trust problem with it. But the circle only closes for tasks where self-service is endured, not enjoyed.
+The key question from the builder's chair: how much of self-service is *tolerated* rather than *valued*?
 
-Nobody wants an agent to manage their investment portfolio — the control *is* the product. But comparing insurance quotes? Filing expenses? Navigating government paperwork? Researching flights? I think most people endure these interfaces to reach an outcome and would happily delegate. That tolerated category — insurance, travel, expense reporting, government services, price comparison, scheduling, routine financial tasks — looks enormous to me.
+I covered the [full circle](/openclaw-end-of-saas-era-web4/) — human intermediaries to self-service to AI intermediaries — in the first post. Self-service won not just on cost but because it was less conflicted: no commissions, you saw the raw options. AI intermediaries bring the convenience back, and the trust problem with it. But the circle only closes for tasks where self-service is endured, not enjoyed.
 
-But many of these sectors are heavily regulated, and agent-mediated transactions in insurance, finance, or healthcare won't work like booking a restaurant. They'll require more controlled integrations — less probabilistic, full forensics on why a service was selected, what went in, what came out. The platform infrastructure that enables that audit trail is what builds trust and opens the regulatory door. The timeline for these sectors depends on the forensics catching up, not just the technology being ready.
+Think about what you actually do when you interact with most software. You compare insurance quotes — not because comparing is fun, but because you need coverage. You file expenses — not because the interface is rewarding, but because you want to get reimbursed. You research flights across six tabs, navigate government paperwork, set up utilities in a new city, dispute a charge with your bank. The [second post](/web4-succeeds-where-web3-failed/) described this from the consumer's side. From the builder's side, the uncomfortable question is: how many of your users are there because they want to be, and how many are there because they have to be?
 
-And the addressable market isn't just "how many tasks are tolerated" — it's also "who do users trust to run the agent?" Not everyone will hand their health and financial data to a US platform. Some will prefer open-source alternatives or regionally controlled agents. The demand for delegation doesn't disappear; it fragments by trust model. I'll come back to this in a later post.
+I think the tolerated category is very big. Insurance, travel, expense reporting, government services, price comparison, scheduling, routine financial tasks, HR workflows, procurement — the list of software people *endure* to reach an outcome dwarfs the list of software people *choose* to use. And the delegation model is a direct substitute for endurance.
 
-If I'm wrong about the size of the tolerated category, or if the regulatory infrastructure takes longer than I expect, much of what follows doesn't apply.
+Some of these sectors are heavily regulated, and agent-mediated transactions in insurance, finance, or healthcare will require more controlled integrations than booking a restaurant — full forensics on why a service was selected, audit trails, compliance infrastructure. That shapes the timeline, not the direction. And the addressable market fragments by trust model too — not everyone will hand their data to a US platform. I'll develop both of these threads in a later post.
 
 ## Why Would Providers Join?
 
@@ -45,11 +45,9 @@ The honest breakdown: companies with real capability behind the UI benefit — t
 
 I touched on this in the first post, but it's worth a closer look. These pressures apply regardless of whether Web 4.0 materialises.
 
-**Post-ZIRP economics.** The funding environment that enabled "grow at all costs" SaaS is gone. Higher interest rates compress multiples, raise the profitability bar, and make the traditional playbook — raise money, build a UI, sell subscriptions, grow — harder to execute. The era of funding SaaS companies on the promise of eventually finding margins is over.
-
-**LLM commoditisation.** General-purpose models now do much of what SaaS products charged subscriptions for: summarisation, analysis, comparison, natural language queries on structured data. The value of wrapping these capabilities in a dedicated product with a monthly price tag erodes when the user's general-purpose agent does the same thing with broader context.
-
-**Agentic coding.** This is the one builders feel most viscerally. Solopreneurs using AI coding tools build in a weekend what previously required a funded team. Competition explodes. Moats that relied on "we built it first and it's polished" weaken when anyone can build a polished version in days. Product shelf life shortens.
+- **Post-ZIRP economics** → The funding environment that enabled "grow at all costs" SaaS is gone. Higher interest rates compress multiples, raise the profitability bar, and make the traditional playbook — raise money, build a UI, sell subscriptions, grow — harder to execute. The era of funding SaaS companies on the promise of eventually finding margins is over.
+- **LLM commoditisation** → General-purpose models now do much of what SaaS products charged subscriptions for: summarisation, analysis, comparison, natural language queries on structured data. The value of wrapping these capabilities in a dedicated product with a monthly price tag erodes when the user's general-purpose agent does the same thing with broader context.
+- **Agentic coding** → This is the one builders feel most viscerally. Solopreneurs using AI coding tools build in a weekend what previously required a funded team. Competition explodes. Moats that relied on "we built it first and it's polished" weaken when anyone can build a polished version in days. Product shelf life shortens.
 
 These three forces are independent. They don't need the platform thesis to be right. They're already reshaping what gets built, what gets funded, and how long it lasts.
 
@@ -57,23 +55,23 @@ These three forces are independent. They don't need the platform thesis to be ri
 
 In the first post, I sketched three categories: dies, commoditised, untouched. Here's the richer picture.
 
-**Dies.** Products that are essentially a presentation layer over data or services that exist elsewhere, with minimal proprietary logic behind the UI. The value is making something accessible or comparable — and an agent does that natively.
+- **Dies** → Products that are essentially a presentation layer over data or services that exist elsewhere, with minimal proprietary logic behind the UI. The value is making something accessible or comparable — and an agent does that natively.
 
-Price comparison aggregators that pull public pricing into a grid. Simple booking intermediaries that wrap someone else's inventory in a nicer interface. Form-filling tools that walk you through a public government form. Dashboard-only analytics that visualise data you already own. Thin job board aggregators that scrape listings from elsewhere.
+  Price comparison aggregators that pull public pricing into a grid. Simple booking intermediaries that wrap someone else's inventory in a nicer interface. Form-filling tools that walk you through a public government form. Dashboard-only analytics that visualise data you already own. Thin job board aggregators that scrape listings from elsewhere.
 
-These products exist because the alternative — doing it manually — is worse. An agent *is* a better alternative.
+  These products exist because the alternative — doing it manually — is worse. An agent *is* a better alternative.
 
-**Gets commoditised.** Products with real underlying capability — proprietary data, workflow logic, network effects — but whose interface premium erodes. The product persists as infrastructure the agent calls into, but the UI becomes less relevant and revenue may compress.
+- **Gets commoditised** → Products with real underlying capability — proprietary data, workflow logic, network effects — but whose interface premium erodes. The product persists as infrastructure the agent calls into, but the UI becomes less relevant and revenue may compress.
 
-Some examples: CRM systems like Salesforce, where the data, workflows, and permissions persist but users increasingly interact through the agent layer. Job boards with proprietary inventory and employer networks — the matching UI erodes but the network and employer-side tools remain. Expense management with approval chains and accounting integrations. Project management tools where the workflow engine persists as infrastructure.
+  Some examples: CRM systems like Salesforce, where the data, workflows, and permissions persist but users increasingly interact through the agent layer. Job boards with proprietary inventory and employer networks — the matching UI erodes but the network and employer-side tools remain. Expense management with approval chains and accounting integrations. Project management tools where the workflow engine persists as infrastructure.
 
-Commodity creative production falls here too — template-based marketing assets, stock photo replacement, social media content at scale. The output is functional rather than craft.
+  Commodity creative production falls here too — template-based marketing assets, stock photo replacement, social media content at scale. The output is functional rather than craft.
 
-The *administrative* uses of productivity tools also land here. Formatting a report in Google Docs, generating a summary spreadsheet from raw data, setting up a Miro board from a template. You're using the tool as a means to an end, and the agent handles the mechanical parts.
+  The *administrative* uses of productivity tools also land here. Formatting a report in Google Docs, generating a summary spreadsheet from raw data, setting up a Miro board from a template. You're using the tool as a means to an end, and the agent handles the mechanical parts.
 
-**Untouched.** Tasks where the interaction fidelity exceeds what text and voice can express, or where the quality and control threshold makes delegation unacceptable. This isn't about being "creative" — it's about the gap between what you can describe in conversation and what you need to do with your hands and eyes.
+- **Untouched** → Tasks where the interaction fidelity exceeds what text and voice can express, or where the quality and control threshold makes delegation unacceptable. This isn't about being "creative" — it's about the gap between what you can describe in conversation and what you need to do with your hands and eyes.
 
-Professional design tools like Figma and Photoshop, where spatial and visual micro-decisions can't be art-directed through a chat interface at the fidelity a brand requires. Music production in Ableton or Logic, where the authoring surface *is* the creative process. Productivity tools *as authoring environments* — writing in Google Docs, thinking visually on a Miro board, building a model in Excel where the cells are the thinking. Portfolio management, where control over financial decisions is the point.
+  Professional design tools like Figma and Photoshop, where spatial and visual micro-decisions can't be art-directed through a chat interface at the fidelity a brand requires. Music production in Ableton or Logic, where the authoring surface *is* the creative process. Productivity tools *as authoring environments* — writing in Google Docs, thinking visually on a Miro board, building a model in Excel where the cells are the thinking. Portfolio management, where control over financial decisions is the point.
 
 Some products straddle categories depending on how they're used — productivity tools are the clearest case. The same app is untouched when you're thinking on the canvas and commoditised when you're doing mechanical work to get a task done. The categories describe *uses*, not products. These lists aren't complete — they're meant to illustrate the principle, not define the boundary.
 
@@ -101,15 +99,15 @@ That's a big "if," though. Users might just as easily develop a preference for *
 
 If the interface premium erodes, where does durable value live?
 
-**Proprietary raw data.** Unique datasets that literally don't exist elsewhere — sensor networks, transaction records, genomic databases, satellite imagery. The agent needs to access these, and the provider charges for it.
+- **Proprietary raw data** → Unique datasets that literally don't exist elsewhere — sensor networks, transaction records, genomic databases, satellite imagery. The agent needs to access these, and the provider charges for it.
 
-But there's a squeeze even here. A firm like Gartner charges tens of thousands a year for market research, and their value is partly raw data (survey results, vendor assessments) and partly synthesised analysis (trend reports, analyst interpretation). An LLM can approximate the synthesis from public sources. The safe zone is truly unique *raw* data that can't be approximated — not the interpretation layer built on top of it.
+  But there's a squeeze even here. A firm like Gartner charges tens of thousands a year for market research, and their value is partly raw data (survey results, vendor assessments) and partly synthesised analysis (trend reports, analyst interpretation). An LLM can approximate the synthesis from public sources. The safe zone is truly unique *raw* data that can't be approximated — not the interpretation layer built on top of it.
 
-**Real-world execution.** Booking a flight, processing a payment, shipping a package, dispatching a technician. These require infrastructure the agent doesn't own. The physical world is a moat.
+- **Real-world execution** → Booking a flight, processing a payment, shipping a package, dispatching a technician. These require infrastructure the agent doesn't own. The physical world is a moat.
 
-**Domain logic.** Complex calculations, compliance rules, risk models. The agent can invoke these but not replicate them — yet. This boundary shifts as models improve, which means it's safe for now, not safe forever. The honest framing: domain logic is a time-bounded advantage whose clock is ticking.
+- **Domain logic** → Complex calculations, compliance rules, risk models. The agent can invoke these but not replicate them — yet. This boundary shifts as models improve, which means it's safe for now, not safe forever. The honest framing: domain logic is a time-bounded advantage whose clock is ticking.
 
-**Certified trust.** Medical diagnosis tools, legal compliance checkers, financial audit systems. Users need *certified* outputs, not LLM approximations. This is the most durable safe zone because it's regulatory, not technical. Regulations don't move at the speed of model improvement.
+- **Certified trust** → Medical diagnosis tools, legal compliance checkers, financial audit systems. Users need *certified* outputs, not LLM approximations. This is the most durable safe zone because it's regulatory, not technical. Regulations don't move at the speed of model improvement.
 
 One category I think is underappreciated: capabilities that expand who gets to use a service. As I argued in the [second post](/web4-succeeds-where-web3-failed/), the delegation model doesn't just help existing users — it makes services accessible to people currently excluded by complex interfaces. Building for that accessibility layer through the agent is a durable value source, not a feature.
 
@@ -119,9 +117,8 @@ The mental model shift: **don't build interfaces, build capabilities.** The MCP 
 
 AI coding tools are enabling a wave of solopreneurs building products that previously required funded teams. This looks like a SaaS renaissance. I think it's actually two overlapping waves that will diverge.
 
-**The last SaaS hurrah.** Solopreneurs building traditional SaaS products — comparison tools, dashboards, aggregators — faster and cheaper than ever. But if *everyone* can build a SaaS product in a weekend, competition explodes, niches fill instantly, and the moat — UI polish — is exactly the thing agents commoditise.
-
-**The first Web 4.0 ecosystem.** Solopreneurs building MCP skills, niche domain tools, agent infrastructure — things that *serve* the new platform rather than compete with it. Building an MCP skill is closer to building an API than building an app. The economics favour small teams.
+- **The last SaaS hurrah** → Solopreneurs building traditional SaaS products — comparison tools, dashboards, aggregators — faster and cheaper than ever. But if *everyone* can build a SaaS product in a weekend, competition explodes, niches fill instantly, and the moat — UI polish — is exactly the thing agents commoditise.
+- **The first Web 4.0 ecosystem** → Solopreneurs building MCP skills, niche domain tools, agent infrastructure — things that *serve* the new platform rather than compete with it. Building an MCP skill is closer to building an API than building an app. The economics favour small teams.
 
 The challenge is that most solopreneurs can't easily tell which wave they're riding. But there are litmus tests that I think are useful, even if they're not binary:
 
@@ -135,7 +132,7 @@ Even "last hurrah" products may generate real revenue for years — the transiti
 
 Here's where I think the picture gets uncomfortable, especially for those of us who build software for a living.
 
-The transition itself is a massive employment programme for developers. Building MCP servers, designing tool schemas, constructing trust infrastructure, migrating services from UI-first to API-first — agents aren't close to doing this autonomously. The scope of work is enormous. In the near term, developer demand may actually *increase*.
+The transition itself is a massive employment programme for developers. Building MCP servers, designing tool schemas, constructing trust infrastructure, migrating services from UI-first to API-first — agents aren't close to doing this autonomously. The scope of work is very large. In the near term, developer demand may actually *increase*.
 
 But there's something different about this transition: the productivity multiplier arrives simultaneously. When the web arrived, humans had to build all the web software. When mobile arrived, humans had to build all the mobile apps. This time, agentic coding tools dramatically amplify what each developer can produce. The new platform gets built by fewer people than any prior transition required.
 
@@ -147,7 +144,7 @@ I think of it as three reinforcing dynamics:
 
 This suggests a three-phase timeline. A **transition boom** — where we are now, possibly more demand, not less. A **plateau** — infrastructure matures, patterns stabilise, new SaaS products stop being built at the old rate. And a possible **contraction** — similar or more software to build, but dramatically fewer people needed to build it, with shorter commercial lifespans.
 
-Now, I should be honest about what I'm not sure of here. Historically, every productivity improvement in software development — higher-level languages, frameworks, cloud infrastructure, open source — has been accompanied by a massive expansion in what gets built. The productivity gains got absorbed by growing demand. This is the Jevons paradox applied to software: make it cheaper to build, and people build more of it, and the net effect on employment is neutral or positive. That pattern has held for decades.
+Now, I should be honest about what I'm not sure of here. Historically, every productivity improvement in software development — higher-level languages, frameworks, cloud infrastructure, open source — has been accompanied by a massive expansion in what gets built. The productivity gains got absorbed by growing demand. This is the [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) applied to software: make it cheaper to build, and people build more of it, and the net effect on employment is neutral or positive. That pattern has held for decades.
 
 I think this time *might* be different, for two reasons. First, the productivity leap appears to be qualitatively larger than prior transitions — though the magnitude is genuinely uncertain and varies enormously by category of work. Second, the demand expansion depends on new markets opening up, and if the agent layer handles much of what those new markets would need, the demand for *custom software* may not expand the way it did before.
 
