@@ -128,7 +128,11 @@ The realistic picture isn't sovereign platform races in every major bloc. India,
 
 ### The EU's position
 
-Europe has strong regulatory infrastructure and weak platform-building capability. That's been the pattern for two decades, and I'm not going to pretend I expect it to change overnight. Mistral is the most credible European bet on the model layer — a French company with genuine technical capability and government backing. But a model alone isn't a platform. The platform requires discovery, payments, trust infrastructure, developer ecosystem — all the layers we've been discussing.
+Europe has strong regulatory infrastructure and weak platform-building capability. That's been the pattern for two decades, and I'm not going to pretend I expect it to change overnight.
+
+And the picture is more contradictory than the sovereignty rhetoric suggests. The EU restricts US tech companies with one hand — GDPR, DMA, antitrust actions — while individual member states deepen dependency with the other. Germany integrates Palantir, a US company with deep ties to American intelligence agencies, into state police infrastructure. The same political class that calls for technology sovereignty signs procurement contracts that entrench the opposite. This isn't unique to Germany — it's the pattern across the bloc. The regulatory posture and the procurement reality point in different directions, and the procurement reality is what actually builds dependency.
+
+Mistral is the most credible European bet on the model layer — a French company with genuine technical capability and government backing. But a model alone isn't a platform. The platform requires discovery, payments, trust infrastructure, developer ecosystem — all the layers we've been discussing.
 
 What Europe *can* build, and where I think the real opportunity is: compliance infrastructure. The regulatory frameworks that make agent-mediated transactions legally sound in European contexts — biometric confirmation under eIDAS, payment processing under PSD2, data governance under GDPR, dispute resolution under consumer protection law. This is infrastructure that US platforms will need to integrate with, and that creates leverage. Not platform control, but regulatory moat.
 
