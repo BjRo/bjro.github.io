@@ -3,6 +3,18 @@ title: "The Supply Side of Web 4.0"
 excerpt: "The SaaS era was the golden age of building interfaces. What comes next rewards capability, not chrome."
 ---
 
+**What this post covers:**
+- Why providers would join a platform that commoditises them
+- Three forces killing the SaaS playbook — independent of the platform thesis
+- Which products die, get commoditised, or survive
+- What to build instead — where durable value lives
+- The solopreneur wave — two overlapping dynamics
+- The developer transition — boom, plateau, contraction
+- Where VC capital flows — and how the model reshapes
+- Platform economics and discovery
+
+---
+
 In the [first post](/openclaw-end-of-saas-era-web4/) of this series, I laid out the architecture: an open protocol, an agent layer, a marketplace, multi-client adoption. In the [second](/web4-succeeds-where-web3-failed/), I made the consumer case — why delegation beats self-service for friction-heavy tasks, and why this time the experience threshold is crossed.
 
 This post flips to the builder's side. If the demand story holds, what does it mean for your company, your product, your career?
