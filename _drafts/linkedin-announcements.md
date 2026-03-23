@@ -29,3 +29,17 @@ The uncomfortable part for those of us who build software: the same transition t
 The SaaS era was the golden age of building interfaces. What comes next rewards capability, not chrome.
 
 Part 3 of my series on the next platform shift — the builder's perspective:
+
+## Post 4: Who Owns Web 4.0?
+
+If an AI agent mediates your transactions, your research, and your decisions — who controls it matters more than who built it.
+
+Every prior platform shift created gatekeepers. Microsoft for the desktop. Google for the web. Apple and Google for mobile. An LLM platform that sees all of it — your intent, your finances, your health research, your deliberations — concentrates more leverage than any of them.
+
+Four companies, four different bets. Google is playing defence — embedding Gemini into everything, betting no new platform emerges. Apple has the strongest structural hand (devices + payments + identity + privacy) but hasn't shipped a competitive agent. OpenAI is assembling the most complete stack but lacks the engagement depth that made prior platforms durable. Anthropic is betting the protocol layer is the platform — elegant, but protocol designers rarely capture the economics.
+
+And then there's the dimension most AI coverage ignores entirely: sovereignty. An LLM platform isn't another Google dependency. It's the integration of all previous dependencies into one. For anyone building outside the US, that's not abstract. It's the question of whether your infrastructure will still be available on the same terms in five years.
+
+The race isn't to build the best model. Models are converging. The race is to build the best personalised agent — the one that knows your preferences, earns your trust, and becomes the thing you delegate to by default. That contest is barely underway.
+
+Penultimate post in my series on the next platform shift. The final one — on what Web 4.0 does to us — will follow after a family vacation next week.
