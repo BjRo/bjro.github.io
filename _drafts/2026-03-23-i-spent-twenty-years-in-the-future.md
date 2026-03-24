@@ -21,7 +21,7 @@ And what a blast it was. Getting to know all of these people, working with them,
 
 ## The people I actually know
 
-Here's what strikes me. I've worked in a company where Ukrainian and Russian colleagues got along perfectly well. Not despite the political tensions between their countries — it just didn't come up that way. They were colleagues. They were good at their jobs. That was the relevant fact.
+Here's what strikes me. I've recently worked in a company where colleagues of Ukrainian and Russian origin got along perfectly well. Not despite the political tensions between their countries — it just didn't come up that way. They were colleagues. They were good at their jobs. That was the relevant fact. And they showed each other that they genuinely cared for each other.
 
 Same thing with Americans. The time I spent working working remotely for an US company, I got to know a lot of great people. I wouldn't want to miss that experience. Yet when I see what their country is doing right now, it couldn't be further from how I'd like the world to be. The Americans I know — the ones I worked with, ate lunch with, solved problems with — bear no resemblance to what their government currently projects.
 
@@ -31,7 +31,7 @@ There's a distance between the people I actually know and the headlines about th
 
 ## What worked, at least in my experience
 
-Looking back, I think what made all of this work was surprisingly simple. Nobody had to give up who they were. Nobody had to pretend to be someone else. The deal was: show up open, do good work, meet people halfway. Integration, not assimilation. There's a difference, and it matters.
+Looking back, I think what made all of this work was surprisingly simple. Nobody had to give up who they were. Nobody had to pretend to be someone else. The deal was: show up open, do good work, be respectful, meet people halfway. Integration, not assimilation. There's a difference, and it matters.
 
 I realise this sounds a bit like Gene Roddenberry's Star Trek — the bridge of the Enterprise, where it didn't matter where you came from as long as you were competent and brought the right attitude. And honestly? That's not a bad description of the best teams I've worked on. Origin mattered less than what you contributed. Different perspectives in one room didn't create friction — they created something better than any of us could have produced alone.
 
