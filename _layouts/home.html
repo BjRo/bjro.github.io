@@ -1,0 +1,35 @@
+---
+layout: default
+nav_section: home
+---
+<div class="layout layout-bio">
+  {% include bio.html %}
+
+  <main>
+    {% assign all_posts = site.posts %}
+    {% assign lead = all_posts.first %}
+    {% if lead %}
+    <article class="lead">
+      <div class="lead-meta"><span class="star">✷</span> The Lead · {{ lead.date | date: "%b %-d, %Y" }}{% if lead.read_time %} · {{ lead.content | number_of_words | divided_by: 200 | plus: 1 }} min{% endif %}</div>
+      <h2><a href="{{ lead.url | relative_url }}">{{ lead.title }}</a></h2>
+      {% if lead.excerpt %}<p class="dek">{{ lead.excerpt | strip_html | strip_newlines }}</p>{% endif %}
+      <a class="more-link" href="{{ lead.url | relative_url }}">Continue reading →</a>
+    </article>
+    {% endif %}
+
+    {% assign rest = all_posts | slice: 1, 50 %}
+    {% if rest.size > 0 %}
+    <div class="section-eyebrow">More dispatches · {{ rest.size }} {% if rest.size == 1 %}post{% else %}posts{% endif %}</div>
+    <ol class="post-list">
+      {% for post in rest %}
+      <li>
+        <span class="num">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>
+        <h3 class="title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% if post.excerpt %}<p class="excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 220 }}</p>{% endif %}
+        <span class="meta">{{ post.date | date: "%b %-d, %Y" }} · {{ post.content | number_of_words | divided_by: 200 | plus: 1 }} min</span>
+      </li>
+      {% endfor %}
+    </ol>
+    {% endif %}
+  </main>
+</div>

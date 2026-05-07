@@ -1,0 +1,44 @@
+---
+layout: default
+nav_section: archive
+---
+<div class="layout layout-archive archive">
+  <aside class="archive-side">
+    {% assign by_year = site.posts | group_by_exp: 'p', 'p.date | date: "%Y"' %}
+    {% assign latest_year = by_year.first.name %}
+    <div class="section-eyebrow" style="margin-bottom:14px">By Year</div>
+    <ul class="by-year">
+      {% for yr in by_year %}
+      <li{% if yr.name == latest_year %} class="current"{% endif %}><span><a href="#y-{{ yr.name }}">{{ yr.name }}</a></span><span class="count">{{ yr.items.size }}</span></li>
+      {% endfor %}
+    </ul>
+  </aside>
+
+  <main>
+    {% assign total = site.posts.size %}
+    {% assign words = 0 %}
+    {% for p in site.posts %}{% assign w = p.content | number_of_words %}{% assign words = words | plus: w %}{% endfor %}
+    {% assign hours = words | divided_by: 200 | divided_by: 60 %}
+    {% assign first_year = by_year.last.name | plus: 0 %}
+    {% assign now_year = 'now' | date: '%Y' | plus: 0 %}
+    {% assign span = now_year | minus: first_year | plus: 1 %}
+    <div class="archive-stats">{{ total }} Dispatches · {{ span }} Years · ≈{{ hours }} hrs of reading</div>
+    <h2>{{ page.title | default: "The Archive — every dispatch since 2014." }}</h2>
+
+    {% for yr in by_year %}
+    <section class="year-section" id="y-{{ yr.name }}">
+      <div class="year-head"><h3>{{ yr.name }}</h3><span class="rule"></span><span class="count">{{ yr.items.size }} {% if yr.items.size == 1 %}post{% else %}posts{% endif %}</span></div>
+      <ul class="archive-list">
+        {% for p in yr.items %}
+        <li>
+          <span class="date">{{ p.date | date: "%b %d" }}</span>
+          <span class="title"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></span>
+          <span class="tags">{% if p.series %}{{ p.series }}{% endif %}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% unless forloop.last %}<div class="year-ornament">· · · <span class="star">✷</span> · · ·</div>{% endunless %}
+    {% endfor %}
+  </main>
+</div>
