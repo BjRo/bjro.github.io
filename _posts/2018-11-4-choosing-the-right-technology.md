@@ -1,6 +1,6 @@
 ---
 title: Choosing the right technology for XING One
-excerpt: "How we evaluated Ruby, JavaScript, Elixir, and Scala for our GraphQL gateway using premortems and throwaway prototypes."
+excerpt: "Premortems, throwaway prototypes, and the discipline to ignore what your team already knows. Why Scala beat the languages we were more comfortable in."
 ---
 Figuring out what technology to use for a large scale, long term project is never an easy feat. 8 years ago `XING` was pretty much only using `Perl` and `Ruby (on Rails)` in the backend. In 2017 we had plenty of options to choose from: `Java`, `Scala`, `Elixir`, `PHP`, `Javascript` and `Ruby`. Most of them offer `GraphQL` implementations. 
 

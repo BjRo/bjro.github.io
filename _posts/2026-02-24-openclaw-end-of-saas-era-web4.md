@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw, the End of the SaaS Playbook, and the Arrival of Web 4.0"
-excerpt: "After twenty years in software engineering and a sabbatical spent deep in agentic tooling, I kept circling a pattern I couldn't unsee. Then the OpenClaw acquisition made it click."
+excerpt: "OpenAI's OpenClaw hire was framed as a talent acquisition. Zoom out and you see a platform stack being assembled in plain sight — model, agent, app store, distribution, device. The opening move of Web 4.0."
 ---
 
 After twenty years in software engineering, I took a sabbatical. The first real break of my career. I told myself I'd rest. What actually happened is that I spent months going deep on agentic engineering — building with Claude Code, MCP servers, agent orchestration — and trying to make sense of where this industry is heading. Not for a client or an employer. For myself. I'd already been [writing about how AI changes our day-to-day work](/ai-and-existential-fears/), but the more I built, the more I saw a pattern forming that was bigger than tooling. I needed to understand what I was looking at before deciding what the next chapter of my career looks like.

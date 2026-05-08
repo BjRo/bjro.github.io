@@ -1,0 +1,48 @@
+---
+layout: default
+title: "Now"
+permalink: /now/
+nav_section: now
+---
+<div class="layout layout-now now">
+  {% include bio.html %}
+
+  <main>
+    <div class="now-meta"><span class="dot"></span> Now · a /now page · last updated {{ site.now.updated | default: "May 7, 2026" }}</div>
+    <h2>What I&rsquo;m working on, right this quarter.</h2>
+    <p class="preface">Inspired by Derek Sivers&rsquo; <a href="https://nownownow.com/about">/now</a> convention. A standing answer to &ldquo;what are you up to these days?&rdquo;</p>
+    <hr class="thin" />
+
+    <section class="now-section">
+      <div class="label">Working with</div>
+      <p>Engineering teams adopting agentic workflows — from Hamburg, with clients across Europe.</p>
+      <p>Giving trainings as part of <a href="https://www.hackersandwizards.dev/">Hackers &amp; Wizards</a>.</p>
+      <p class="sub"><a href="mailto:{{ site.author.email }}">Get in touch →</a></p>
+    </section>
+
+    <section class="now-section">
+      <div class="label">Writing</div>
+      <p>The <em>Web 4.0</em> series — four parts published, the closer in draft. After that: a longer field guide on team-level agent adoption.</p>
+    </section>
+
+    <section class="now-section">
+      <div class="label">Reading</div>
+      <p>James S.A. Corey&rsquo;s <em>The Captive&rsquo;s War</em> series. Karen Hao&rsquo;s <em>Empire of AI</em>.</p>
+    </section>
+
+    <section class="now-section">
+      <div class="label">Building</div>
+      <p>A re-usable Software Factory on top of Claude Code and Codex.</p>
+      <p>Antonego — a way to evaluate agentic coding pipelines.</p>
+    </section>
+  </main>
+
+  <aside>
+    <div class="elsewhere">Elsewhere</div>
+    <ul class="elsewhere-list">
+      <li>→ <a href="{{ site.author.linkedin }}">LinkedIn</a></li>
+      <li>→ <a href="{{ site.author.github }}">GitHub</a></li>
+      <li>→ <a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+    </ul>
+  </aside>
+</div>

@@ -1,6 +1,6 @@
 ---
 title: "On Boilerplate and the Death of Old Principles"
-excerpt: "If machines write code and can rewrite it at will, does 'no more code than strictly necessary' still matter? The answer is yes — but for entirely different reasons than you think."
+excerpt: "When a machine can rewrite a module in seconds, do YAGNI and DRY still earn their place? The principles survive — but the reasons we hold them shouldn't."
 ---
 
 A few days ago, I published [a piece on AI and existential fears](/ai-and-existential-fears/) — my attempt to navigate the space between hype and dismissal in the current AI-assisted coding landscape. It struck a nerve, and the responses were thoughtful. One in particular made me stop and think.
