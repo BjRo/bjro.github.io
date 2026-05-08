@@ -589,16 +589,6 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid var(--rule);
 }
 
-/* Drop-cap on first paragraph of article */
-.article > p:first-of-type::first-letter,
-.article > p.dropcap::first-letter {
-  font-family: var(--serif);
-  font-weight: 500;
-  font-size: 3em;
-  float: left;
-  line-height: 0.85;
-  padding: 6px 10px 0 0;
-}
 
 /* Archive list anchors */
 .archive-list .title a { color: inherit; text-decoration: none; }

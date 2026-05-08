@@ -1,6 +1,6 @@
 ---
 title: Kickstarting the XING One project
-excerpt: "How we set up our GraphQL initiative for success through stakeholder alignment, mission clarity, and finding the right lighthouse project."
+excerpt: "Most projects don't fail for technical reasons. The naming, mission, and lighthouse-project work that set up XING One before a single line was written."
 ---
 The last time around I shed some light on why `GraphQL` was appealing to me for sorting out our API game. It would have been easy after the project was green lit just to directly dive into the technical challenges. 
 

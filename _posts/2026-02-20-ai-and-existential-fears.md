@@ -1,6 +1,6 @@
 ---
 title: On AI and Existential Fears
-excerpt: "An engineering manager's perspective on AI-assisted coding after 2+ years: where it genuinely helps, where it falls short, and why we're not obsolete."
+excerpt: "Two years through Copilot, Cursor, Devin, Claude, Codex — and every stage of the hype cycle that came with them. Where AI-assisted coding actually helps, and where the wonder runs out."
 ---
 
 Let me tell you about the dumbest smart thing I've recently done.
