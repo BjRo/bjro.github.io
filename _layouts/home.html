@@ -10,7 +10,7 @@ nav_section: home
     {% assign lead = all_posts.first %}
     {% if lead %}
     <article class="lead">
-      <div class="lead-meta"><span class="star">✷</span> The Lead · {{ lead.date | date: "%b %-d, %Y" }}{% if lead.read_time %} · {{ lead.content | number_of_words | divided_by: 200 | plus: 1 }} min{% endif %}</div>
+      <div class="lead-meta"><span class="star">✷</span> Latest · {{ lead.date | date: "%b %-d, %Y" }}{% if lead.read_time %} · {{ lead.content | number_of_words | divided_by: 200 | plus: 1 }} min{% endif %}</div>
       <h2><a href="{{ lead.url | relative_url }}">{{ lead.title }}</a></h2>
       {% if lead.excerpt %}<p class="dek">{{ lead.excerpt | strip_html | strip_newlines }}</p>{% endif %}
       <a class="more-link" href="{{ lead.url | relative_url }}">Continue reading →</a>
@@ -19,7 +19,7 @@ nav_section: home
 
     {% assign rest = all_posts | slice: 1, 50 %}
     {% if rest.size > 0 %}
-    <div class="section-eyebrow">More dispatches · {{ rest.size }} {% if rest.size == 1 %}post{% else %}posts{% endif %}</div>
+    <div class="section-eyebrow">Archive · {{ rest.size }} {% if rest.size == 1 %}post{% else %}posts{% endif %}</div>
     <ol class="post-list">
       {% for post in rest %}
       <li>
