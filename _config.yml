@@ -5,7 +5,6 @@ tagline                  : "Field notes on agentic engineering · Hamburg · MMX
 description              : "Field notes on agentic engineering by Björn Rochel — independent coach, working with teams from Hamburg."
 url                      : "https://bjro.github.io"
 baseurl                  :
-repository               : "bjro/bjro.github.io"
 
 # SEO
 google_site_verification : "Ao9ozZz4Tex8Qb6oHnI1UKlsjaJPuY0gBpB-EP_GquY"
@@ -79,12 +78,6 @@ timezone:
 
 # Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-include-cache
-
-whitelist:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
