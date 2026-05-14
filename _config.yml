@@ -15,7 +15,7 @@ social:
   type                   : Person
   name                   : "Björn Rochel"
   links:
-    - "https://www.linkedin.com/in/bj%C3%B6rn-rochel-51958a58/"
+    - "https://www.linkedin.com/in/bjoern-rochel/"
     - "https://github.com/bjro"
 
 # Site Author
@@ -24,7 +24,7 @@ author:
   bio              : "independent coach for agentic engineering, working with teams from Hamburg."
   location         : "Hamburg"
   email            : "bjoern@bjro.de"
-  linkedin         : "https://www.linkedin.com/in/bj%C3%B6rn-rochel-51958a58/"
+  linkedin         : "https://www.linkedin.com/in/bjoern-rochel/"
   github           : "https://github.com/bjro"
 
 # Reading Files
